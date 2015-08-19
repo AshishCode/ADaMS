@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>
+			Timesheet	
+		</title>
+	</head>
+	<body>	
+		<h1>This will be the page having the timesheet entries</h1>
+		<table class="table">
+			<thead>                         
+  			<tr class="danger">                          
+			    <th>ID</th>
+			    <th>Client</th>
+			    <th>Project</th>
+			    <th>Task</th>
+			    <th>Date</th>
+			    <th>Hours</th>
+			    <th>Is_Billed</th>
+			    <th>At_Home</th>
+			    <th>At_ClientSite</th>
+			    <th>Comments</th>
+			    <th>Employee_ID</th>
+			  </tr>
+			</thead>
+			<tbody>
+		<% @timesheet.each do |entry| %>
+		  <tr>
+		    <td><%= entry.id %></td> 
+		    <td><%= entry.client %></td> 
+		    <td><%= entry.project %></td>  
+		    <td><%= entry.task %></td>  
+		    <td><%= entry.timesheetdate %></td>  
+		    <td><%= entry.hours %></td>  
+		    <td><%= entry.is_billed %></td>  
+		    <td><%= entry.at_home %></td>  
+		    <td><%= entry.at_clientsite %></td>  
+		    <td><%= entry.comments %></td>  
+		    <td><%= entry.employee_id %></td>  
+		  </tr>
+		<% end %>      
+		</tbody>
+		</table> 
+		<%= link_to "/timesheet/new", class: 'btn btn-success btn-bg' do %>
+  			<i class="glyphicon glyphicon-plus"></i> Add Entry
+		<% end %>
+		
+	</body>
+
+</html>
