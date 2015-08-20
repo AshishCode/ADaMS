@@ -4,6 +4,14 @@ source 'https://rubygems.org'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
+#best_in_place for editing entries in-line
+gem 'best_in_place', '~>3.0.1'
+
+#Google Auth
+gem "omniauth-google-oauth2", "~> 0.2.1"
+
+gem 'responders', '~> 2.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use postgresql as the database for Active Record

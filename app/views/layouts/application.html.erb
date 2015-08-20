@@ -8,6 +8,12 @@
 </head>
 <body>
   <%= render 'shared/navigation' %>
+<div style="margin-left: 44%;">
+   <% if current_user %>
+      <% else %>
+        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", class: "btn btn-success btn-bg" %>
+      <% end %>
+</div>
 	<div id="main-container" class="container">
       <div class="row">
         <!--

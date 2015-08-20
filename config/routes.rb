@@ -1,11 +1,17 @@
 Rails.application.routes.draw do
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
+  get 'home/show'
+
   get 'timesheet/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'login#index'
+  #root 'login#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -56,9 +62,22 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-	get '/login' => 'login#index'
-	get '/timesheet' => 'timesheet#index'
-	get '/timesheet/new' => 'timesheet#new'
+	get '/login' => 'login#index', :as => :home
+	get '/timesheet' => 'timesheet#index', :as => :timesheet
+	get '/timesheet/new' => 'timesheet#new', :as => :new_entry
 	post '/timesheet/new' => 'timesheet#create'
+  get '/timesheet/edit/:id' => 'timesheet#edit', :as => :edit_timesheet
+  put '/timesheet.(:id)' => 'timesheet#update', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }
+  delete '/timesheet/delete/:id' => 'timesheet#delete', 
+  :as => :delete_entry
 
+#google auth routes
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+
+  resources :sessions, only: [:create, :destroy]
+  resource :home, only: [:show]
+
+  root to: "home#show"
 end

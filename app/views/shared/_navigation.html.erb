@@ -1,7 +1,37 @@
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container">
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/"><b>ADaMs</b></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+	    	<li><%= if current_user
+                  link_to 'View Timesheet', timesheet_path 
+                else 
+                  end %>
+        </li>
+	    	<li><%= if current_user
+                  link_to 'New Entry', new_entry_path
+                  else 
+                  end %>
+        </li>
+        <li><%= if current_user 
+                  link_to "Sign out", signout_path, id: "sign_out" 
+                else 
+                end 
+            %>
+        </li>
+        <li style="color:white; margin-top: 15px;
+    margin-left: 220px;"> <strong>
+            <%= 
+              if current_user
+                current_user.name
+              else
+              end %>
+          </strong>
+        </li>
+  		</ul> 
     </div>
   </div>
 </nav>
