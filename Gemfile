@@ -7,8 +7,11 @@ gem 'autoprefixer-rails'
 #best_in_place for editing entries in-line
 gem 'best_in_place', '~>3.0.1'
 
+#nested form for inline insertions
+gem 'nested_form'
+
 #Google Auth
-gem "omniauth-google-oauth2", "~> 0.2.1"
+gem 'omniauth-google-oauth2', '~> 0.2.1'
 
 gem 'responders', '~> 2.0'
 

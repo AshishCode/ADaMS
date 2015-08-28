@@ -63,15 +63,39 @@ Rails.application.routes.draw do
   #   end
 
 	get '/login' => 'login#index', :as => :home
+
+  #timesheet related routes
+
+  #get routes
 	get '/timesheet' => 'timesheet#index', :as => :timesheet
 	get '/timesheet/new' => 'timesheet#new', :as => :new_entry
-	post '/timesheet/new' => 'timesheet#create'
   get '/timesheet/edit/:id' => 'timesheet#edit', :as => :edit_timesheet
+  get '/timesheet/:employee_id' => 'timesheet#my_index', :as => :my_timesheet
+  get '/timesheet/cascade/project' => 'timesheet#update_project'
+  get 'timesheet/cascade/rate' => 'timesheet#update_rate'
+
+  #post routes
+  post '/timesheet/new' => 'timesheet#create'
+  post '/timesheet/:id' => 'timesheet#create_inline'
+  
+  #put routes
   put '/timesheet.(:id)' => 'timesheet#update', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }
+
+  #delete routes
   delete '/timesheet/delete/:id' => 'timesheet#delete', 
   :as => :delete_entry
 
-#google auth routes
+  
+  #routes related to the clients/projects/roles resources
+  get '/details' => 'details#index', :as => :details
+  post '/details/clients' => 'details#add_client'
+  post '/details/projects' => 'details#add_project'
+  post '/details/roles' => 'details#add_role'
+  post '/details/currencies' => 'details#add_currency'
+
+
+
+  #google auth routes
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'

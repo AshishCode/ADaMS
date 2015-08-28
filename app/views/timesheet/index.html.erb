@@ -6,42 +6,42 @@
 	</head>
 	<body>	
 		<h1>This will be the page having the timesheet entries</h1>
-		<table class="table">
+		
+		<table id ="boots" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto"
+		>
 			<thead>                         
   			<tr class="success">                          
-			    <th>ID</th>
-			    <th>Client</th>
-			    <th>Project</th>
+			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
+			    <th data-sortable="true">Client</th>
+			    <th data-sortable="true">Project</th>
 			    <th>Task</th>
-			    <th>Date</th>
+			    <th data-sortable="true">Date</th>
 			    <th>Hours</th>
-			    <th>Is_Billed</th>
-			    <th>At_Home</th>
-			    <th>At_ClientSite</th>
+			    <th>Role</th>
+			    <th>Rate</th>
+			    <th data-sortable="true">Is_Billed</th>
+			    <th>Workspace</th>
 			    <th>Comments</th>
-			    <th>Employee_ID</th>
-			    <th>Action</th>
+			    <th>Employee_Name</th>
 			  </tr>
 			</thead>
 			<tbody>
 		<% @timesheet.each do |entry| %>
 		  <tr>
 		    <td><%= entry.id %></td> 
-		    <td><%= best_in_place entry, :client, type: :input %></td> 
-		    <td><%= best_in_place entry, :project %></td>  
-		    <td><%= best_in_place entry, :task %></td> 
+		    <td><%= entry.client%></td> 
+		    <td><%= entry.project %></td>  
+		    <td><%= entry.task %></td> 
 
 		    <td><%= entry.timesheetdate %></td>  
 
-		    <td><%= best_in_place entry, :hours %></td>  
-		    <td><%= best_in_place entry, :is_billed %></td>  
-		    <td><%= best_in_place entry, :at_home %></td>  
-		    <td><%= best_in_place entry, :at_clientsite %></td>  
-		    <td><%= best_in_place entry, :comments %></td>  
-		    <td><%= entry.employee_id %></td>  
-		    <td><%= link_to "/timesheet/delete/"+entry.id.to_s, method: :delete do %>
-  			<i class="glyphicon glyphicon-remove"></i>
-		<% end %></td>
+		    <td><%= entry.hours %></td>  
+		    <td><%= entry.role %></td>  
+		    <td><%= entry.rate %></td>  
+		    <td><%= entry.is_billed %></td>  
+		    <td><%= entry.workspace %></td>  
+		    <td><%= entry.comments %></td>  
+		    <td><%= User.find(entry.employee_id).name %></td>  
 		  </tr>
 		<% end %>      
 		</tbody>
@@ -52,4 +52,13 @@
 		
 	</body>
 
+		<script type="text/javascript">
+			$(function () {
+			    $('#boots').bootstrapTable(); // init via javascript
+
+			    $(window).resize(function () {
+			        $('#boots').bootstrapTable('resetView');
+			    });
+			});
+		</script>
 </html>

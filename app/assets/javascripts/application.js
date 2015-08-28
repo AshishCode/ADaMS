@@ -16,4 +16,6 @@
 //= require best_in_place
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require bootstrap-table
+//= require jquery_nested_form
 //= require_tree .

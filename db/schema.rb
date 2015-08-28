@@ -11,29 +11,70 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150820045244) do
+ActiveRecord::Schema.define(version: 20150827092400) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "clients", force: :cascade do |t|
+    t.text     "client_name"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.text     "client_address"
+  end
+
+  create_table "currencies", force: :cascade do |t|
+    t.string   "currency_name"
+    t.string   "currency_symbol"
+    t.string   "country"
+    t.text     "description"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
   create_table "employees", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "projects", force: :cascade do |t|
+    t.text     "project_name"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.integer  "client_id"
+    t.integer  "role_id"
+    t.text     "project_description"
+    t.string   "contact_person"
+    t.string   "contact_mail"
+    t.integer  "contact_phone",       limit: 8
+  end
+
+  create_table "roles", force: :cascade do |t|
+    t.string   "role_name"
+    t.float    "rate"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.text     "role_description"
+    t.integer  "currency_id"
+    t.integer  "currencies_id"
+  end
+
+  add_index "roles", ["currencies_id"], name: "index_roles_on_currencies_id", using: :btree
+
   create_table "timesheets", force: :cascade do |t|
     t.text     "client"
     t.text     "project"
     t.text     "task"
     t.datetime "timesheetdate"
-    t.integer  "hours"
-    t.integer  "is_billed"
-    t.integer  "at_home"
-    t.integer  "at_clientsite"
     t.text     "comments"
     t.integer  "employee_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.boolean  "is_billed"
+    t.float    "hours"
+    t.string   "role"
+    t.float    "rate"
+    t.string   "workspace"
   end
 
   create_table "users", force: :cascade do |t|
@@ -44,6 +85,10 @@ ActiveRecord::Schema.define(version: 20150820045244) do
     t.datetime "oauth_expires_at"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.string   "email"
   end
 
+  add_foreign_key "projects", "clients"
+  add_foreign_key "projects", "roles"
+  add_foreign_key "roles", "currencies"
 end

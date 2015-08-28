@@ -1,13 +1,13 @@
 <nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/"><b>ADaMs</b></a>
+      <a class="navbar-brand" href="/timesheet"><b>ADaMs</b></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <ul class="nav navbar-nav">
 	    	<li><%= if current_user
-                  link_to 'View Timesheet', timesheet_path 
+                  link_to 'My Timesheet', my_timesheet_path(current_user.id) 
                 else 
                   end %>
         </li>
@@ -17,16 +17,22 @@
                   end %>
         </li>
         <li><%= if current_user 
+                  link_to "Manage Details", details_path, id: "manage_details" 
+                else 
+                end 
+            %>
+        </li>
+         <li><%= if current_user 
                   link_to "Sign out", signout_path, id: "sign_out" 
                 else 
                 end 
             %>
         </li>
         <li style="color:white; margin-top: 15px;
-    margin-left: 220px;"> <strong>
+    margin-left: 100px;"> <strong>
             <%= 
               if current_user
-                current_user.name
+                current_user.email
               else
               end %>
           </strong>

@@ -1,73 +1,96 @@
-<h2>New Entry</h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Time Entry</title>
+</head>
+<body>
+    <h2>New Entry</h2>
 <%= form_for :timesheet,html: {role: "form", class: "form-horizontal"} do |t| %>  
 
   <div class="form-group"> 
-  	<label for="client" class="col-sm-2 control-label">Client</label>
+    <label for="client" class="col-sm-2 control-label">Client</label>
     <div class="col-sm-10">
-      <%= t.text_field :client, class: "form-control", :required => true %>
+      <%= select("timesheet", "client", 
+       @client.collect {|p| [ p.client_name, p.client_name ] },{include_blank: "Select Client Name"}, {:class => "form-control", :required => true, :id => "client_select"
+        }) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="project" class="col-sm-2 control-label">Project</label>
+    <div class="col-sm-10">
+      <%= select("timesheet", "project", 
+       @project.collect {|p| [ p.project_name, p.project_name ] },{include_blank: "Select Project Name"}, {:class => "form-control", :required => true, :id => "project_select"}) %>
     </div>
   </div>
 
   <div class="form-group"> 
-  	<label for="project" class="col-sm-2 control-label">Project</label>
-    <div class="col-sm-10">
-      <%= t.text_field :project, class: "form-control"  %>
-    </div>
-  </div>
-
-  <div class="form-group"> 
-  	<label for="task" class="col-sm-2 control-label">Task</label>
+    <label for="task" class="col-sm-2 control-label">Task</label>
     <div class="col-sm-10">
       <%= t.text_field :task, class: "form-control" %>
     </div>
   </div>
 
   <div class="form-group"> 
-  	<label for="timesheetdate" class="col-sm-2 control-label">TimesheetDate</label>
+    <label for="timesheetdate" class="col-sm-2 control-label">TimesheetDate</label>
     <div class="col-sm-10">
       <%= t.date_select :timesheetdate, class: "form-control"  %>
     </div>
   </div>
 
   <div class="form-group"> 
-  	<label for="hours" class="col-sm-2 control-label">Hours</label>	
+    <label for="hours" class="col-sm-2 control-label">Hours</label> 
     <div class="col-sm-10">
-      <%= t.number_field :hours, class: "form-control"  %>
+      <%= t.number_field :hours,min: 0, class: "form-control", :step => '0.5'  %>
     </div>
   </div>
 
   <div class="form-group"> 
-  	<label for="is_billed" class="col-sm-2 control-label">Is Billed</label>
+    <label for="role" class="col-sm-2 control-label">Role</label> 
     <div class="col-sm-10">
-      <%= t.number_field :is_billed, class: "form-control"  %>
+      <%= select("timesheet", "role", 
+       @roles.collect {|r| [ r.role_name, r.role_name ] },{include_blank: "Select Role Name"}, {:class => "form-control", :required => true, :id => "role_select"}) %>
     </div>
   </div>
 
   <div class="form-group"> 
-  	<label for="at_home" class="col-sm-2 control-label">At Home</label>
+    <label for="rate" class="col-sm-2 control-label">Rate</label> 
     <div class="col-sm-10">
-      <%= t.number_field :at_home, class: "form-control"  %>
+      <%= t.number_field :rate ,min: 0, class: "form-control", :step => 'any'  %>
     </div>
   </div>
 
   <div class="form-group"> 
-  	<label for="at_clientsite" class="col-sm-2 control-label">At ClientSide</label>
+    <label for="is_billed" class="col-sm-2 control-label">Is Billed</label>
     <div class="col-sm-10">
-      <%= t.number_field :at_clientsite, class: "form-control"  %>
+      <label for="is_billed">Yes</label> 
+      <%= t.radio_button :is_billed,"1"%><br>
+      <label for="is_billed">No</label> 
+      <%= t.radio_button :is_billed,"0"%>
     </div>
   </div>
 
   <div class="form-group"> 
-  	<label for="Comments" class="col-sm-2 control-label">Comments</label>
+    <label for="workspace" class="col-sm-2 control-label">Workplace</label>
+    <div class="col-sm-10">
+      <label for="at_home">Home</label> 
+      <%= t.radio_button :workspace,"Home"%><br>
+      <label for="at_office">Office</label> 
+      <%= t.radio_button :workspace,"Office"%><br>
+      <label for="at_clientsite">Clientsite</label>
+      <%= t.radio_button :workspace,"Clientsite"%>
+    </div>
+  </div>
+  <div class="form-group"> 
+    <label for="Comments" class="col-sm-2 control-label">Comments</label>
     <div class="col-sm-10">
       <%= t.text_field :comments, class: "form-control"  %>
     </div>
   </div>
 
   <div class="form-group"> 
-  	<label for="employee_id" class="col-sm-2 control-label">Employee ID </label>
     <div class="col-sm-10">
-      <%= t.number_field :employee_id, class: "form-control"  %>
+      <%= t.hidden_field :employee_id,:value => current_user.id ,class: "form-control"  %>
     </div>
   </div> 
 
@@ -77,4 +100,31 @@
       <input type="button" value="Cancel" />
     </div>
   </div>
+
 <% end %>
+</div>
+</body>
+  <script type="text/javascript">
+  $( '#timesheet_timesheetdate_1i' ).addClass( 'form-control' );
+  $( '#timesheet_timesheetdate_2i' ).addClass( 'form-control' );
+  $( '#timesheet_timesheetdate_3i' ).addClass( 'form-control' );
+
+  $('#timesheet_at_home_1').change(function(){
+      $('#timesheet_at_clientsite_0').prop('checked', true)
+  });
+  $('#timesheet_at_home_0').change(function(){
+      $('#timesheet_at_clientsite_1').prop('checked', true)
+  });
+  $('#timesheet_at_clientsite_1').change(function(){
+      $('#timesheet_at_home_0').prop('checked', true)
+  });
+  $('#timesheet_at_clientsite_0').change(function(){
+      $('#timesheet_at_home_1').prop('checked', true)
+  });
+
+  $('#timesheet_is_billed_0').change(function(){
+      $('#timesheet_rate').val('0');
+  });
+  </script>
+</html>
+
