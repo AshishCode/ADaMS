@@ -4,108 +4,162 @@
 			Timesheet	
 		</title>
 		<style>
-
-			table {
-				table-layout: fixed;
+			.form-group {
 			}
 
-			th, td {
-			    overflow: hidden;
+			.form-control {
+
 			}
 			#inline_form {
+				display: table;
 				display :none;
+				background:#71946E;
+				color:#FFF;
+				width: 100%;
+				padding: 20px;
+				border-radius: 5px;
+			}
+
+
+			#cancel {
+				margin-left: 10%;
+				
+				position: absolute;
+
+			}
+			#submit {
+				float:left;
 			}
 		</style>
 	</head>
 	<body>	
-		<h1>This will be the page having the timesheet entries</h1>
-				<%= form_for :timesheets,html: {role: "form" ,class: "form-horizontal"} do |t| %>
+		<%= link_to "#", class: 'btn btn-success btn-bg container-fluid', :id => "add_new" do %>
+  			<i class="glyphicon glyphicon-plus"></i> Add Entry
+		<% end %>
 
-		<table id ="boots" class ="table" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto"
-		>
+		<div id="inline_form">
+			<%= form_for :timesheets,html: {role: "form" ,class: "form-inline"} do |t| %>
+		<!-- Inline insertion -->
+	      <div class="form-group"> 
+		    <label for="client">Client</label>
+		    <div class="col-sm-10">
+		      	<%= select("timesheets", "client", 
+			       @client.collect {|p| [ p.client_name, p.client_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "client_select"
+			    }) %>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="project">Project</label>
+		    <div class="col-sm-10">
+			  	<%= select("timesheets", "project", 
+		       @project.collect {|p| [ p.project_name, p.project_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "project_select"
+		       	}) %>
+
+		    </div>
+		  </div>
+
+		  <div class="form-group"> 
+		    <label for="task" style="float:left;">Task</label>
+		    <div class="col-sm-10">
+			  	<%= t.text_area :task, class: "form-control", :required => true %>
+			</div>
+			</div>
+
+			<div class="form-group"> 
+			    <label for="timesheetdate">TimesheetDate</label>
+			    <div class="col-sm-10">
+			  	<%= t.date_select :timesheetdate, class: "form-control", :required => true  %>
+
+    		</div>
+  			</div>
+  			<br><br>
+		  <div class="form-group"> 
+		    <label for="hours" style="float:left;">Hours</label> 
+		    <div class="col-sm-10">
+			  	<%= t.number_field :hours,min: 0, class: "form-control", :step => '0.25',style: "width:60px; text-align:center;", :required => true  %>
+
+		    </div>
+		  </div>
+
+		  <div class="form-group"> 
+		    <label for="role">Role</label> 
+		    <div class="col-sm-10">
+			  	<%= select("timesheets", "role", 
+       @rolez.collect {|r| [ r.role_name, r.role_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "role_select"}) %>
+
+		    </div>
+		  </div>
+
+		  <div class="form-group"> 
+		    <label for="rate">Rate</label> 
+		    <div class="col-sm-10">
+	  	      	<%= t.number_field :rate ,min: 0, class: "form-control",:readonly => true, :step => 'any', style: "width:60px; text-align:center;"  %>
+
+		    </div>
+		  </div>
+
+		  <div class="form-group"> 
+		    <label for="is_billed">Is Billed</label>
+		    <div class="col-sm-10">
+			  	<%= t.radio_button :is_billed,"1",  :required => true%>Yes<br>
+			  	<%= t.radio_button :is_billed,"0",  :required => true%>No<br>
+		    </div>
+		  </div>
+
+		  <div class="form-group"> 
+		    <label for="workspace">Workplace</label>
+		    <div class="col-sm-10">
+			  	<%= t.radio_button :workspace,"Home"%>Home<br>
+      			<%= t.radio_button :workspace,"Office"%>Office<br>
+      			<%= t.radio_button :workspace,"Clientsite"%>Clientsite
+		    </div>
+		  </div>
+		  <div class="form-group"> 
+		    <label for="Comments">Comments</label>
+		    <div class="col-sm-10">
+			  	<%= t.text_area :comments, class: "form-control"  %>
+		    </div>
+		  </div>
+
+		  <div class="form-group"> 
+		    <div class="col-sm-10">
+		  	    <%= t.hidden_field :employee_id,:value => current_user.id ,class: "form-control"  %>
+		    </div>
+		  </div> 
+		  <br><br>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <input class ="btn btn-success btn-bg" id="submit" type="submit" value="Save" />
+		      <input class ="btn btn-warning btn-bg" id="cancel" type="button" value="Cancel" />
+		    </div>
+		  </div>
+		<% end %>
+
+    		<!-- Inline insertion row ends -->
+		</div>
+		<!-- table displaying the timsheet -->
+		<br><br>
+		<table id ="boots" class ="table" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto" data-show-filter="true">
+			<div id="filter-bar" style="float:left;"> </div>
 			<thead>                         
   			<tr class="success">                          
 			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
-			    <th data-sortable="true">Client</th>
-			    <th data-sortable="true">Project</th>
+			    <th data-field="client" data-sortable="true">Client</th>
+			    <th data-field="project" data-sortable="true">Project</th>
 			    <th>Task</th>
 			    <th data-sortable="true">Date</th>
 			    <th>Hours</th>
 			    <th>Role</th>
 			    <th>Rate</th>
-			    <th data-sortable="true">Is_Billed</th>
+			    <th data-field="date" data-sortable="true">Is_Billed</th>
 			    <th>Workspace</th>
 			    <th>Comments</th>
-			    <th>Employee_Name</th>
+			    <th data-field="employee_name">Employee_Name</th>
 			    <th>Action</th>
 			  </tr>
 			</thead>
 			<tbody>
-
-
-<!-- Inline insertion row -->
-    		<tr class="fields" id="inline_form">
-		      <td>
-		        <%= t.hidden_field :id%>
-		      </td>
-		      <td> 
-		      	<%= select("timesheets", "client", 
-			       @client.collect {|p| [ p.client_name, p.client_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "client_select", :style => "width:auto;"
-			    }) %>
-			  </td>
-			  <td>
-			  	<%= select("timesheets", "project", 
-		       @project.collect {|p| [ p.project_name, p.project_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "project_select", :style => "width:auto;"
-		       	}) %>
-			  </td>
-			  <td>
-			  	<%= t.text_field :task, class: "form-control" %>
-
-			  </td>
-			  <td>
-			  	<%= t.date_select :timesheetdate, class: "form-control"  %>
-
-			  </td>
-			  <td>
-			  	<%= t.number_field :hours,min: 0, class: "form-control", :step => '0.5'  %>
-
-			  </td>
-			  <td>
-			  	<%= select("timesheets", "role", 
-       @rolez.collect {|r| [ r.role_name, r.role_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "role_select", :style => "width:auto;"}) %>
-			  </td>
-
-			  <td>
-	  	      	<%= t.number_field :rate ,min: 0, class: "form-control",:readonly => true, :step => 'any'  %>
-
-			  </td>
-			  <td>
-			  	<%= t.radio_button :is_billed,"1"%>Yes<br>
-			  	<%= t.radio_button :is_billed,"0"%>No<br>
-			  </td>
-			  <td>
-			  	<%= t.radio_button :workspace,"Home"%>Home<br>
-      			<%= t.radio_button :workspace,"Office"%>Office<br>
-      			<%= t.radio_button :workspace,"Clientsite"%>Clientsite
-
-			  </td>
-			  <td>
-			  	<%= t.text_field :comments, class: "form-control"  %>
-
-			  </td>
-			  <td>
-		  	    <%= t.hidden_field :employee_id,:value => current_user.id ,class: "form-control"  %>
-
-			  </td>
-			  <td>
-			  	<input type="submit" value="Save" /><br><br>
-			  	<button id="cancel">Cancel</button>
-			  	 <% end %>
-			  </td>
-    		</tr>
-    		<!-- Inline insertion row ends -->
-
-
 
 		<% @timesheet.collect do |entry| %>
 		  <tr>
@@ -128,20 +182,10 @@
 		<% end %></td>
 		  </tr>
 		<% end %>
-
-
 		
 		</tbody>
 		</table>
  
-
-
-
-
-		<%= link_to "#", class: 'btn btn-success btn-bg', :id => "add_new" do %>
-  			<i class="glyphicon glyphicon-plus"></i> Add Entry
-		<% end %>
-		
 	</body>
 
 		<script type="text/javascript">
@@ -179,6 +223,7 @@
 			*/
 
 			//code to add a new row dynamically
+			/*
 			function addTableRow(jQtable){
 			    jQtable.each(function(){
 			        var $table = $(this);
@@ -196,14 +241,70 @@
 			            $(this).append(fend);
 			        }
 			    });
-			}
+			} */
  			$("#add_new").click(function () {
- 				$(".fields").show();
+ 				$("#inline_form").slideToggle();
+ 				$("#add_new").hide();
+
+
 			});
 
 			$("#cancel").click(function () {
- 				$(".fields").hide();
+ 				$("#inline_form").slideToggle();
+ 				$("#add_new").show();
+
 			});
 
+			/*
+			//java script function:
+ 			$(function() {
+       		 $('#filter-bar').bootstrapTableFilter({
+            filters:[
+                {
+                    field: 'id',    // field identifier
+                    label: 'ID',    // filter label
+                    type: 'range'   // filter type
+                },
+                {
+                    field: 'client',
+                    label: 'Client',
+                    type: 'search',
+                    //enabled: true   // filter is visible by default
+                },
+                {
+                    field: 'project',
+                    label: 'Project',
+                    type: 'search',
+                    //enabled: true   // filter is visible by default
+                },
+                {
+                    field: 'is_billed',
+                    label: 'Billed',
+                    type: 'select',
+                    values: [
+                        {id: 'ROLE_ANONYMOUS', label: 'Yes'},
+                        {id: 'ROLE_USER', label: 'No'}                        
+                    ],
+                },
+                
+                {
+                    field: 'username',
+                    label: 'User Name',
+                    type: 'search'
+                },
+                {
+                    field: 'city',
+                    label: 'City',
+                    type: 'ajaxSelect',
+                    source: 'http://example.com/get-cities.php'
+                }
+            ],
+            onSubmit: function() {
+                var data = $('#filter-bar').bootstrapTableFilter('getData');
+                console.log(data);
+            }
+        });
+    });
+			*/
 		</script>
 </html>

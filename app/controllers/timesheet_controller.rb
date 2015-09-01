@@ -69,7 +69,7 @@ class TimesheetController < ApplicationController
 	def create_inline
 		@timesheet = Timesheet.new(timesheets_params)
 		if @timesheet.save
-			redirect_to '/timesheet'
+			redirect_to '/timesheet/'+current_user.id.to_s
 		else
 			render 'new'
 		end

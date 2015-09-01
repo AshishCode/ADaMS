@@ -74,7 +74,7 @@ Rails.application.routes.draw do
   get '/timesheet/cascade/project' => 'timesheet#update_project'
   get 'timesheet/cascade/rate' => 'timesheet#update_rate'
 
-  #post routes
+  #post #routes for timesheet entries
   post '/timesheet/new' => 'timesheet#create'
   post '/timesheet/:id' => 'timesheet#create_inline'
   

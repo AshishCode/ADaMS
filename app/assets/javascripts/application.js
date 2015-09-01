@@ -17,5 +17,5 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap-table
-//= require jquery_nested_form
+//= require bootstrap-table-filter
 //= require_tree .
