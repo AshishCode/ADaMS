@@ -7,7 +7,7 @@
 	<body>	
 				<div id="filter-bar"> </div>
 
-		<table id ="boots" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto" data-show-filter="true"
+		<table id ="boots" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto" data-show-filter="true" data-sort-name="id" data-sort-order	="desc"
 		>
 			<thead>                         
   			<tr class="success">                          
@@ -38,7 +38,7 @@
 		    <td><%= entry.hours %></td>  
 		    <td><%= entry.role %></td>  
 		    <td><%= entry.rate %></td>  
-		    <td><%= entry.is_billed %></td>  
+		    <td><%= entry.is_billed == true ? "Yes" :"No" %></td>  
 		    <td><%= entry.workspace %></td>  
 		    <td><%= entry.comments %></td>  
 		    <td><%= User.find(entry.employee_id).name %></td>  
@@ -46,9 +46,6 @@
 		<% end %>      
 		</tbody>
 		</table> 
-		<%= link_to "/timesheet/new", class: 'btn btn-success btn-bg' do %>
-  			<i class="glyphicon glyphicon-plus"></i> Add Entry
-		<% end %>
 		
 	</body>
 

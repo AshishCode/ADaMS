@@ -10,6 +10,8 @@ gem 'best_in_place', '~>3.0.1'
 #nested form for inline insertions
 gem 'nested_form'
 
+gem 'jquery-ui-rails'
+
 #Google Auth
 gem 'omniauth-google-oauth2', '~> 0.2.1'
 

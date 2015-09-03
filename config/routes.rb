@@ -62,17 +62,19 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-	get '/login' => 'login#index', :as => :home
+	#get '/login' => 'login#index', :as => :home
 
   #timesheet related routes
 
-  #get routes
+  #get routes for timesheet entries
 	get '/timesheet' => 'timesheet#index', :as => :timesheet
-	get '/timesheet/new' => 'timesheet#new', :as => :new_entry
+	#get '/timesheet/new' => 'timesheet#new', :as => :new_entry
   get '/timesheet/edit/:id' => 'timesheet#edit', :as => :edit_timesheet
   get '/timesheet/:employee_id' => 'timesheet#my_index', :as => :my_timesheet
   get '/timesheet/cascade/project' => 'timesheet#update_project'
   get 'timesheet/cascade/rate' => 'timesheet#update_rate'
+  get 'timesheet/cascade/role' => 'timesheet#update_role'
+
 
   #post #routes for timesheet entries
   post '/timesheet/new' => 'timesheet#create'

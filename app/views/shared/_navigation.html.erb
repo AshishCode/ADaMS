@@ -11,11 +11,6 @@
                 else 
                   end %>
         </li>
-	    	<li><%= if current_user
-                  link_to 'New Entry', new_entry_path
-                  else 
-                  end %>
-        </li>
         <li><%= if current_user 
                   link_to "Manage Details", details_path, id: "manage_details" 
                 else 
@@ -28,8 +23,8 @@
                 end 
             %>
         </li>
-        <li style="color:white; margin-top: 15px;
-    margin-left: 100px;"> <strong>
+        <li style="color:white; margin-top: 3%;
+    margin-left: 200px;"> <strong>
             <%= 
               if current_user
                 current_user.email

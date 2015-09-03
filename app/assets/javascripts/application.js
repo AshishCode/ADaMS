@@ -14,6 +14,9 @@
 //= require jquery.purr
 //= require jquery_ujs
 //= require best_in_place
+//= require jquery-ui
+//= require best_in_place.jquery-ui
+//= require best_in_place.purr
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap-table

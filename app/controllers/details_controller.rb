@@ -1,6 +1,6 @@
 class DetailsController < ApplicationController
 	
-	#this is the method which displays all the existing details
+	#this is the method which displays all the existing details of clients, projects,roles and currencies
 	def index
 		#for displaying the data in these tables
 		@clients = Client.all
@@ -32,16 +32,21 @@ class DetailsController < ApplicationController
 			@currency_names [cr.id] = cr.currency_symbol
 		}
 
-
+		#to return the respetive role names and project names for their relation
+		@role_project_names = Hash.new();
 		@role_names = Hash.new();
-		@roles.each { |r|
+		@projects.each { |p|
 
-			@projects.each { |p|
+			@roles.each { |r|
 
-					if(p.role_id == r.id)
-						@role_names[r.id] = r.role_name
-					end
+					if(r.project_id == p.id)
+						@role_project_names[p.id] = p.project_name
+						@role_names[p.id] = r.role_name + "," + @role_names[p.id].to_s
+					end					
 			}
+			@str = @role_names[p.id].to_s
+			@str = @str[0...-1]
+			@role_names[p.id] = @str
 
 		}
 
@@ -51,6 +56,7 @@ class DetailsController < ApplicationController
 		@role_detail = Role.new 
 	end
 
+	#method for adding a new client
 	def add_client
 
 		@clients = Client.new(client_params)
@@ -61,6 +67,7 @@ class DetailsController < ApplicationController
 		end
 	end
 
+	#method for adding a new project
 	def add_project
 
 		@projects = Project.new(project_params)
@@ -71,6 +78,7 @@ class DetailsController < ApplicationController
 		end
 	end
 
+	#method for adding a new role
 	def add_role
 
 		@roles = Role.new(role_params)
@@ -82,6 +90,7 @@ class DetailsController < ApplicationController
 
 	end
 
+	#method for adding a new currency
 	def add_currency
 
 		@currencies = Currency.new(currency_params)
@@ -104,12 +113,12 @@ class DetailsController < ApplicationController
 
 	private 
 	def project_params
-		params.require(:project_detail).permit(:project_name,:project_description,:contact_person,:contact_mail,:contact_phone, :client_id, :role_id)
+		params.require(:project_detail).permit(:project_name,:project_description,:contact_person,:contact_mail,:contact_phone, :client_id)
 	end
 
 	private 
 	def role_params
-		params.require(:role_detail).permit(:role_name, :rate, :currency_id, :role_description)
+		params.require(:role_detail).permit(:role_name, :rate, :currency_id, :role_description, :project_id)
 	end
 
 	private 

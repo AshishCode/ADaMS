@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150827092400) do
+ActiveRecord::Schema.define(version: 20150902065615) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 20150827092400) do
     t.datetime "created_at",                    null: false
     t.datetime "updated_at",                    null: false
     t.integer  "client_id"
-    t.integer  "role_id"
     t.text     "project_description"
     t.string   "contact_person"
     t.string   "contact_mail"
@@ -57,15 +56,18 @@ ActiveRecord::Schema.define(version: 20150827092400) do
     t.text     "role_description"
     t.integer  "currency_id"
     t.integer  "currencies_id"
+    t.integer  "project_id"
+    t.integer  "projects_id"
   end
 
   add_index "roles", ["currencies_id"], name: "index_roles_on_currencies_id", using: :btree
+  add_index "roles", ["projects_id"], name: "index_roles_on_projects_id", using: :btree
 
   create_table "timesheets", force: :cascade do |t|
     t.text     "client"
     t.text     "project"
     t.text     "task"
-    t.datetime "timesheetdate"
+    t.date     "timesheetdate"
     t.text     "comments"
     t.integer  "employee_id"
     t.datetime "created_at",    null: false
@@ -89,6 +91,6 @@ ActiveRecord::Schema.define(version: 20150827092400) do
   end
 
   add_foreign_key "projects", "clients"
-  add_foreign_key "projects", "roles"
   add_foreign_key "roles", "currencies"
+  add_foreign_key "roles", "projects"
 end

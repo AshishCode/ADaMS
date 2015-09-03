@@ -9,9 +9,14 @@ class TimesheetController < ApplicationController
 
   	#method to return the timesheet of a particular employee
   	def my_index
+  		
+  		#for inline editing part
   		@timesheet = Timesheet.where(:employee_id => params[:employee_id])
   		@roles = Role.all.map{|x| [x.role_name, x.role_name]}
-  		@workspace = [["Home","Home"],["Office","Office"],["Clientsite","Clientsite"]];
+  		@workspace = [["Home","Home"],["Office","Office"],["Clientsite","Clientsite"]]
+  		@is_billed = [["true","Yes"],["false","No"]]
+  		@clients = Client.all.map {|x| [x.client_name, x.client_name]}
+  		@projects = Project.all.map {|x| [x.project_name, x.project_name]}
 
   		#for the insertion part
   		@timesheets = Timesheet.new
@@ -29,7 +34,8 @@ class TimesheetController < ApplicationController
 		@roles = Role.all
 	end	
 
-	#method to update the project names as per the clients
+	#method to cascade the project names as per the clients
+	#used the partial method here hence the response is in the form of script
 	def update_project
 		@client_select = params[:client_name]
 		@clients = Client.where("client_name = ?", @client_select)
@@ -44,7 +50,18 @@ class TimesheetController < ApplicationController
   		#end
 	end
 
-	#method to update the project names as per the clients
+	#method to cascade the role names as per the projects
+	#simple ajax response
+	def update_role
+		@project_select = params[:project_name]
+		@project_id = Project.where("project_name = ?", @project_select)
+		@roles = Role.where("project_id = ?", @project_id[0][:id]).all
+
+		# render an array in JSON containing arrays like:
+    	render :json => @roles.map{|c| [c.id, c.role_name]}
+	end
+
+	#method to cascade the rates as per the role
 	def update_rate
 		@role_select = params[:role_name]
 		@rate = Role.where("role_name = ?", @role_select).all
@@ -70,6 +87,7 @@ class TimesheetController < ApplicationController
 		@timesheet = Timesheet.new(timesheets_params)
 		if @timesheet.save
 			redirect_to '/timesheet/'+current_user.id.to_s
+			
 		else
 			render 'new'
 		end
@@ -90,7 +108,7 @@ class TimesheetController < ApplicationController
 		
 	 	respond_to do |format|
 		    if @timesheet.update_attributes(timesheet_params)
-		      format.html { redirect_to(@user, :notice => 'Entry was successfully updated.') }
+		      format.html { redirect_to(@timesheet, :notice => 'Entry was successfully updated.') }
 		      format.json { respond_with_bip(@timesheet) }
 		    else
 		      format.html { render :action => "edit" }
@@ -105,7 +123,7 @@ class TimesheetController < ApplicationController
 		@timesheet = Timesheet.find(params[:id])
 
 		if @timesheet.destroy
-			redirect_to "/timesheet"
+			redirect_to "/timesheet/"+ current_user.id.to_s
 		else
 			reder :action => "delete"
 		end

@@ -26,4 +26,26 @@ $(document).on 'change', '#role_select', (evt) ->
       console.log 'AJAX Error: ' + textStatus
     success: (data, textStatus, jqXHR) ->
       $('#timesheets_rate').val(data)
-      $('#timesheet_rate').val(data)
+      $('#timesheets_is_billed_1').prop('checked', true)
+
+
+$(document).on 'change', '#project_select', (evt) ->
+  role = undefined
+  $.ajax 'cascade/role',
+    type: 'GET'
+    dataType: 'JSON'
+    data: project_name: $('#project_select option:selected').val()
+    error: (jqXHR, textStatus, errorThrown) ->
+      console.log 'AJAX Error: ' + textStatus
+    success: (data, textStatus, jqXHR) ->
+      role = $('#role_select')
+      role.empty()
+      role.prepend '<option value=\'\' selected=\'selected\'>Select role</option>'
+      $.each data, (index, value) ->
+        opt = undefined
+        opt = $('<option/>')
+        opt.attr 'value', value[1]
+        opt.text value[1]
+        opt.appendTo role
+        return
+      return

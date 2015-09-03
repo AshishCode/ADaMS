@@ -4,12 +4,14 @@
 			Timesheet	
 		</title>
 		<style>
+
 			.form-group {
 			}
 
 			.form-control {
 
 			}
+
 			#inline_form {
 				display: table;
 				display :none;
@@ -20,15 +22,19 @@
 				border-radius: 5px;
 			}
 
-
 			#cancel {
 				margin-left: 10%;
 				
 				position: absolute;
 
 			}
+
 			#submit {
 				float:left;
+			}
+
+			#date_input {
+				    margin-left: 5%;
 			}
 		</style>
 	</head>
@@ -66,10 +72,13 @@
 			</div>
 			</div>
 
-			<div class="form-group"> 
+			<div class="form-group" id="date_input"> 
 			    <label for="timesheetdate">TimesheetDate</label>
 			    <div class="col-sm-10">
-			  	<%= t.date_select :timesheetdate, class: "form-control", :required => true  %>
+			  	<%= #t.date_select :timesheetdate, type: "date", class: "form-control", :required => true
+			  		date_field(:timesheets, :timesheetdate,value: Date.today, class: "form-control", :required => true)
+			  		#text_field_tag :timesheetdate, Date.today, type: :date, class: "form-control"
+			  	  %>
 
     		</div>
   			</div>
@@ -110,9 +119,9 @@
 		  <div class="form-group"> 
 		    <label for="workspace">Workplace</label>
 		    <div class="col-sm-10">
-			  	<%= t.radio_button :workspace,"Home"%>Home<br>
-      			<%= t.radio_button :workspace,"Office"%>Office<br>
-      			<%= t.radio_button :workspace,"Clientsite"%>Clientsite
+			  	<%= t.radio_button :workspace,"Home", :required => true%>Home<br>
+      			<%= t.radio_button :workspace,"Office", :required => true%>Office<br>
+      			<%= t.radio_button :workspace,"Clientsite", :required => true%>Clientsite
 		    </div>
 		  </div>
 		  <div class="form-group"> 
@@ -140,7 +149,7 @@
 		</div>
 		<!-- table displaying the timsheet -->
 		<br><br>
-		<table id ="boots" class ="table" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto" data-show-filter="true">
+		<table id ="boots" class ="table" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto" data-show-filter="true" data-sort-name="id" data-sort-order	="desc">
 			<div id="filter-bar" style="float:left;"> </div>
 			<thead>                         
   			<tr class="success">                          
@@ -166,35 +175,70 @@
 		    <td><%= entry.id %></td> 
 		    <td><%= entry.client %></td> 
 		    <td><%= entry.project %></td>  
-		    <td><%= best_in_place entry, :task %></td> 
+		    <td><%= best_in_place entry, :task, type: :textarea %></td> 
 
-		    <td><%= entry.timesheetdate %></td>  
+		    <td><%= best_in_place entry, :timesheetdate, :as => :date %></td>  
 
 		    <td><%= best_in_place entry, :hours %></td> 
-		    <td><%= best_in_place entry, :role, :type=>:select, :collection => @roles %></td> 
+		    <td><%= #best_in_place entry, :role, :type=>:select, :collection => @roles
+		    		entry.role
+		     %></td> 
 		    <td><%= entry.rate %></td>  
-		    <td><%= best_in_place entry, :is_billed %></td>  
+		    <td><%= best_in_place entry, :is_billed, :type=>:select, :collection => @is_billed %></td>  
 		    <td><%= best_in_place entry, :workspace, :type=>:select, :collection => @workspace %></td>   
 		    <td><%= best_in_place entry, :comments,  type: :textarea %></td>  
 		    <td><%= User.find(entry.employee_id).name %></td>  
-		    <td><%= link_to "/timesheet/delete/"+entry.id.to_s, method: :delete do %>
-  			<i class="glyphicon glyphicon-remove"></i>
-		<% end %></td>
+		    <td>
+
+				<!-- Delete confirmation modal -->
+				<i class="glyphicon glyphicon-remove" data-toggle="modal" data-target="#delete_modal" style="color:#B12424; margin-left: 39%;"> </i>
+				 <!-- Modal -->
+				<div id="delete_modal" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+				    <!-- Modal content-->
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <p>Are you sure?</p>
+				      </div>
+				      <div class="modal-footer">
+				      	 <%= link_to "/timesheet/delete/"+entry.id.to_s, method: :delete do %>
+				         	<button type="button" data-dismiss="modal" class="btn btn-primary" id="delete_row">Delete</button>		
+				         <% end %>
+						<button type="button" data-dismiss="modal" class="btn">Cancel</button>
+				      </div>
+				    </div>
+
+				  </div>
+				</div>
+
+			</td>
 		  </tr>
 		<% end %>
 		
 		</tbody>
 		</table>
- 
+
 	</body>
 
 		<script type="text/javascript">
+
+			//setting the default date format for datepicker
+			$.datepicker.setDefaults({
+			    dateFormat: 'yy-mm-dd'
+			});
+
+
+			$(document).ready(function() {
+			  /* Activating Best In Place */
+			  jQuery(".best_in_place").best_in_place();
+			});
 
 			$(function () {
 			    $('#boots').bootstrapTable(); // init via javascript
 
 			    $(window).resize(function () {
-			        $('#boots').bootstrapTable('resetView');
+			        //$('#boots').bootstrapTable('resetView');
 			    });
 			});
 
