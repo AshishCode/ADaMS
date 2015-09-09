@@ -5,142 +5,107 @@
 		</title>
 		<style>
 
-			.form-group {
-			}
-
-			.form-control {
-
-			}
-
 			#inline_form {
 				display: table;
 				display :none;
-				background:#71946E;
+				background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #000);
+				//background:#71946E;
 				color:#FFF;
 				width: 100%;
 				padding: 20px;
-				border-radius: 5px;
+				//border-radius: 5px;
 			}
 
 			#cancel {
-				margin-left: 10%;
-				
-				position: absolute;
+				//margin-left: 10%;
+				background-color: #A21414;
+				//position: absolute;
 
 			}
 
 			#submit {
-				float:left;
+				background-color: #428BCA;
+				//float:left;
 			}
 
 			#date_input {
-				    margin-left: 5%;
+				    //margin-left: 5%;
 			}
-		</style>
+
+	</style>
 	</head>
 	<body>	
-		<%= link_to "#", class: 'btn btn-success btn-bg container-fluid', :id => "add_new" do %>
-  			<i class="glyphicon glyphicon-plus"></i> Add Entry
-		<% end %>
-
+		<button type="button" class="buttons" id="add_new">
+  			<i class="glyphicon glyphicon-plus"></i> &nbsp;Add Entry
+  		</button>
 		<div id="inline_form">
-			<%= form_for :timesheets,html: {role: "form" ,class: "form-inline"} do |t| %>
+			<%= form_for :timesheets,html: {role: "form" ,class: "form-horizontal"} do |t| %>
 		<!-- Inline insertion -->
 	      <div class="form-group"> 
-		    <label for="client">Client</label>
-		    <div class="col-sm-10">
-		      	<%= select("timesheets", "client", 
-			       @client.collect {|p| [ p.client_name, p.client_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "client_select"
-			    }) %>
-		    </div>
-		  </div>
-
-		  <div class="form-group">
-		    <label for="project">Project</label>
-		    <div class="col-sm-10">
-			  	<%= select("timesheets", "project", 
-		       @project.collect {|p| [ p.project_name, p.project_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "project_select"
-		       	}) %>
-
-		    </div>
-		  </div>
-
-		  <div class="form-group"> 
-		    <label for="task" style="float:left;">Task</label>
-		    <div class="col-sm-10">
-			  	<%= t.text_area :task, class: "form-control", :required => true %>
+	      	<div class="col-sm-3">
+			    <label for="client">Client</label>
+			      	<%= select("timesheets", "client", 
+				       @client.collect {|p| [ p.client_name, p.client_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "client_select"
+				    }) %>
 			</div>
+			<div class="col-sm-3">
+			    <label for="project">Project</label>
+				  	<%= select("timesheets", "project", 
+			       @project.collect {|p| [ p.project_name, p.project_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "project_select"
+			       	}) %>
 			</div>
-
-			<div class="form-group" id="date_input"> 
+			<div class="col-sm-3">
+		    	<label for="task">Task</label>
+			  		<%= t.text_area :task, class: "form-control", :required => true %>
+			</div>
+			<div class="col-sm-3">
 			    <label for="timesheetdate">TimesheetDate</label>
-			    <div class="col-sm-10">
 			  	<%= #t.date_select :timesheetdate, type: "date", class: "form-control", :required => true
 			  		date_field(:timesheets, :timesheetdate,value: Date.today, class: "form-control", :required => true)
 			  		#text_field_tag :timesheetdate, Date.today, type: :date, class: "form-control"
 			  	  %>
-
     		</div>
-  			</div>
-  			<br><br>
-		  <div class="form-group"> 
-		    <label for="hours" style="float:left;">Hours</label> 
-		    <div class="col-sm-10">
-			  	<%= t.number_field :hours,min: 0, class: "form-control", :step => '0.25',style: "width:60px; text-align:center;", :required => true  %>
-
-		    </div>
-		  </div>
-
-		  <div class="form-group"> 
-		    <label for="role">Role</label> 
-		    <div class="col-sm-10">
-			  	<%= select("timesheets", "role", 
-       @rolez.collect {|r| [ r.role_name, r.role_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "role_select"}) %>
-
-		    </div>
-		  </div>
-
-		  <div class="form-group"> 
-		    <label for="rate">Rate</label> 
-		    <div class="col-sm-10">
-	  	      	<%= t.number_field :rate ,min: 0, class: "form-control",:readonly => true, :step => 'any', style: "width:60px; text-align:center;"  %>
-
-		    </div>
-		  </div>
-
-		  <div class="form-group"> 
-		    <label for="is_billed">Is Billed</label>
-		    <div class="col-sm-10">
-			  	<%= t.radio_button :is_billed,"1",  :required => true%>Yes<br>
-			  	<%= t.radio_button :is_billed,"0",  :required => true%>No<br>
-		    </div>
-		  </div>
-
-		  <div class="form-group"> 
-		    <label for="workspace">Workplace</label>
-		    <div class="col-sm-10">
-			  	<%= t.radio_button :workspace,"Home", :required => true%>Home<br>
-      			<%= t.radio_button :workspace,"Office", :required => true%>Office<br>
-      			<%= t.radio_button :workspace,"Clientsite", :required => true%>Clientsite
-		    </div>
-		  </div>
-		  <div class="form-group"> 
-		    <label for="Comments">Comments</label>
-		    <div class="col-sm-10">
-			  	<%= t.text_area :comments, class: "form-control"  %>
-		    </div>
-		  </div>
-
-		  <div class="form-group"> 
-		    <div class="col-sm-10">
-		  	    <%= t.hidden_field :employee_id,:value => current_user.id ,class: "form-control"  %>
-		    </div>
-		  </div> 
-		  <br><br>
+  		</div>
 		  <div class="form-group">
-		    <div class="col-sm-offset-2 col-sm-10">
-		      <input class ="btn btn-success btn-bg" id="submit" type="submit" value="Save" />
-		      <input class ="btn btn-warning btn-bg" id="cancel" type="button" value="Cancel" />
+		  	<div class="col-sm-3"> 
+		    	<label for="hours">Hours</label> 
+			  		<%= t.number_field :hours,min: 0, class: "form-control", :step => '0.25', :required => true  %>
+		  	</div>
+		  	<div class="col-sm-3">
+		    	<label for="role">Role</label> 
+			  		<%= select("timesheets", "role", 
+      			 	@rolez.collect {|r| [ r.role_name, r.role_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "role_select"}) %>
+		    </div>
+		    <div class="col-sm-3">
+		    	<label for="rate">Rate</label> 
+	  	      	<%= t.number_field :rate ,min: 0, class: "form-control",:readonly => true, :step => 'any'%>
+		  	</div>
+		  	<div class="col-sm-3">
+		    	<label for="is_billed">Is Billed</label><br>
+			  		<%= t.radio_button :is_billed,"1",  :required => true%>Yes	&nbsp;
+			  		<%= t.radio_button :is_billed,"0",  :required => true%>No 	&nbsp;
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-3">
+		    	<label for="workspace">Workplace</label><br>
+			  		<%= t.radio_button :workspace,"Home", :required => true%>Home 	&nbsp;
+      				<%= t.radio_button :workspace,"Office", :required => true%>Office 	&nbsp;
+      				<%= t.radio_button :workspace,"Clientsite", :required => true%>Clientsite 	&nbsp;
+		    </div>
+		    <div class="col-sm-3">
+		    	<label for="Comments">Comments</label>
+			  		<%= t.text_area :comments, class: "form-control"  %>
+		    </div>
+		    <div class="col-sm-3" style="
+									    float: right;
+							    		margin-top: 3%;
+							    		margin-right: -7%;}">
+		      <input class ="buttons" id="submit" type="submit" value="Save" />
+		      <input class ="buttons" id="cancel" type="button" value="Cancel" />
+		    </div>
+		    <div class="col-sm-3">
+		  	    <%= t.hidden_field :employee_id,:value => current_user.id ,class: "form-control"  %>
 		    </div>
 		  </div>
 		<% end %>
@@ -149,8 +114,8 @@
 		</div>
 		<!-- table displaying the timsheet -->
 		<br><br>
-		<table id ="boots" class ="table" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto" data-show-filter="true" data-sort-name="id" data-sort-order	="desc">
-			<div id="filter-bar" style="float:left;"> </div>
+		<table id ="boots" class ="table" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="id" data-sort-order="desc">
+			<!-- <div id="filter-bar" style="float:left;"> </div> -->
 			<thead>                         
   			<tr class="success">                          
 			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
@@ -218,7 +183,6 @@
 		
 		</tbody>
 		</table>
-
 	</body>
 
 		<script type="text/javascript">
@@ -234,13 +198,13 @@
 			  jQuery(".best_in_place").best_in_place();
 			});
 
-			$(function () {
-			    $('#boots').bootstrapTable(); // init via javascript
+			// $(function () {
+			//     $('#boots').bootstrapTable(); // init via javascript
 
-			    $(window).resize(function () {
-			        //$('#boots').bootstrapTable('resetView');
-			    });
-			});
+			//     $(window).resize(function () {
+			//         $('#boots').bootstrapTable('resetView');
+			//     });
+			// });
 
 	
 		  $( '#timesheets_timesheetdate_1i' ).addClass( 'form-control' );

@@ -5,11 +5,10 @@
 		</title>
 	</head>
 	<body>	
-				<div id="filter-bar"> </div>
+		<table id ="boots" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="id" data-sort-order ="desc"
+		> 
 
-		<table id ="boots" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto" data-show-filter="true" data-sort-name="id" data-sort-order	="desc"
-		>
-			<thead>                         
+			<thead>                      
   			<tr class="success">                          
 			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
 			    <th data-sortable="true">Client</th>
@@ -50,12 +49,12 @@
 	</body>
 
 		<script type="text/javascript">
-			$(function () {
-			    $('#boots').bootstrapTable(); // init via javascript
+			// $(function () {
+			//     $('#boots').bootstrapTable(); // init via javascript
 
-			    $(window).resize(function () {
-			        $('#boots').bootstrapTable('resetView');
-			    });
-			});
+			//     $(window).resize(function () {
+			//         $('#boots').bootstrapTable('resetView');
+			//     });
+			// });
 		</script>
 </html>

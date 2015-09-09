@@ -5,26 +5,268 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
 </head>
+<style type="text/css">
+
+      .modal-header {
+          background: #555555 url(http://jackrugile.com/images/misc/noise-diagonal.png);
+          color:white;
+      }
+
+      .buttons {
+        display: inline-block;
+        font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        position: relative;
+        padding: .8em 1.4em;
+        //padding-right: 4.7em;
+        background: #555555 url(http://jackrugile.com/images/misc/noise-diagonal.png);
+        border: none;
+        color: white;
+        transition: .2s;
+      }
+
+      body {
+        background: #fafafa url(http://jackrugile.com/images/misc/noise-diagonal.png);
+        color: #444;
+        //font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
+        //text-shadow: 0 1px 0 #fff;
+      }
+
+      strong {
+        font-weight: bold; 
+      }
+
+      em {
+        font-style: italic; 
+      }
+
+      table {
+        background: #f5f5f5;
+        border-collapse: separate;
+        box-shadow: inset 0 1px 0 #fff;
+        font-size: 12px;
+        line-height: 24px;
+        //margin: 30px auto;
+        text-align: left;
+        width: 800px;
+      } 
+
+      th {
+        background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+        border-left: 1px solid #555;
+        border-right: 1px solid #777;
+        border-top: 1px solid #555;
+        border-bottom: 1px solid #333;
+        box-shadow: inset 0 1px 0 #999;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 15px;
+        position: relative;
+        text-shadow: 0 1px 0 #000;  
+      }
+
+      th:after {
+        background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+        content: '';
+        display: block;
+        height: 25%;
+        left: 0;
+        margin: 1px 0 0 0;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+      }
+
+      th:first-child {
+        border-left: 1px solid #777;  
+        box-shadow: inset 1px 1px 0 #999;
+      }
+
+      th:last-child {
+        box-shadow: inset -1px 1px 0 #999;
+      }
+
+      td {
+        border-right: 1px solid #fff;
+        border-left: 1px solid #e8e8e8;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 10px 15px;
+        position: relative;
+        transition: all 300ms;
+      }
+
+      td:first-child {
+        box-shadow: inset 1px 0 0 #fff;
+      } 
+
+      td:last-child {
+        border-right: 1px solid #e8e8e8;
+        box-shadow: inset -1px 0 0 #fff;
+      } 
+
+      tr {
+        background: url(http://jackrugile.com/images/misc/noise-diagonal.png);  
+      }
+
+      tr:nth-child(odd) td {
+        background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);  
+      }
+
+      tr:last-of-type td {
+        box-shadow: inset 0 -1px 0 #fff; 
+      }
+
+      tr:last-of-type td:first-child {
+        box-shadow: inset 1px -1px 0 #fff;
+      } 
+
+      tr:last-of-type td:last-child {
+        box-shadow: inset -1px -1px 0 #fff;
+      } 
+
+      tbody:hover td {
+        color: transparent;
+        text-shadow: 0 0 3px #aaa;
+      }
+
+      tbody:hover tr:hover td {
+        color: #444;
+        text-shadow: 0 1px 0 #fff;
+      }
+</style>
 <body>
-  <%= render 'shared/navigation' %>
+ <nav id = "temp" class="navbar navbar-default no-margin">
+    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header fixed-brand">
+                     <!-- <button type="button" class="navbar-toggle collapse in" data-toggle="collapse"  id="menu-toggle"> 
+                      <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                    </button> --> 
+                    <a class="navbar-brand" href="/timesheet"><i class="fa fa-rocket fa-4"></i> ADaMS</a>
+                </div> 
+                <!-- navbar-header-->
+        <% if current_user %>
+          
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active" ><button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></button></li>
+                                <li style="margin-left:157%; margin-top:-18%;">
+                                  <span><b><%= current_user.email %></b></span>
+                                </li>
+                            </ul>
+                </div>  <!-- bs-example-navbar-collapse-1 -->
+        <% else
+            end %>
+</nav>
+  <%= if current_user
+      render 'shared/navigation'
+      else
+      end %>
 <div style="margin-left: 44%;">
    <% if current_user %>
       <% else %>
-        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", class: "btn btn-success btn-bg" %>
+        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", class: "buttons", style: "text-decoration:none;color:white;" %>
       <% end %>
 </div>
-	<div id="main-container" class="container">
-      <div class="row">
-        <!--
-        <div class="col-xs-3">
-          <h3>Adams Timesheet Manager</h3>
-        </div>
-        -->
-        <div class="col-xs-12">
-          <%= yield %>
+  	<div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <%= yield %>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
+  </div> 
 </body>
+<script type="text/javascript">
+
+    //setting up the active class manually for the menu items - based on the current url
+    $(document).ready(function() {
+      
+      var path = window.location.pathname;
+
+      if(path != "/timesheet")
+        $("#li_akira").removeClass('active');
+
+      if (path.indexOf("/timesheet/") >= 0)        
+       $("#my_timesheet").addClass('active');
+
+      if(path == "/details")
+        $("#manage_details").addClass('active');
+
+
+    });
+
+    $('.nav-pills').on('click', function (e) {
+      //e.preventDefault();
+      if(window.location.pathname != "/details")
+        $(this).closest('ul').find('li.active').removeClass('active');
+      
+      $(this).closest('li').addClass('active');
+
+    });
+
+    $("#details").click(function(){
+
+      if(window.location.pathname != "/details")
+        window.location.replace("/details");
+    });
+
+    //side bar toggle
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+
+    $("#menu-toggle-2").click(function(e) {
+
+      //trigger resize event so that table css doesnt go wrong
+      //$(window).resize();
+      e.preventDefault();
+
+      $("#wrapper").toggleClass("toggled-2");
+      $('#menu ul').hide();
+     });
+ 
+     function initMenu() {
+      $('#menu ul').hide();
+      $('#menu ul').children('.current').parent().show();
+      //$('#menu ul:first').show();
+      $('#menu li a').click(
+        function() {
+          var checkElement = $(this).next();
+          if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+            }
+          if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+            }
+          }
+        );
+      }
+    $(document).ready(function() {
+
+      var path = window.location.pathname;
+
+      if(path != "/details")
+        initMenu();
+
+    });
+
+    //resetting the table view to ajust the header row
+    $(function () {
+      $('.table').bootstrapTable(); // init via javascript
+
+      $(window).resize(function () {
+          $('.table').bootstrapTable('resetView');
+    });
+});
+    
+</script>
 </html>

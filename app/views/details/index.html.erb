@@ -3,11 +3,24 @@
 <head>
 	<title>Manage Details</title>
 </head>
+<style type="text/css">
+	.buttons.save {
+				background-color: #428BCA;
+			}
+
+			
+	.buttons.cancel {
+		background-color: #A21414;
+
+	}
+
+</style>
 <body>
 	<div>
 
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs nav-justified" role="tablist">
+  
+  <!-- <ul class="nav nav-tabs nav-justified" role="tablist">
 
     <li role="presentation" class="active"><a href="#client" aria-controls="client" role="tab" data-toggle="tab">Clients</a></li>
 
@@ -17,14 +30,14 @@
 
 	 <li role="presentation"><a href="#currency" aria-controls="currency" role="tab" data-toggle="tab">Currencies</a></li>
 
-  </ul>
+  </ul> -->
 
   <!-- Tab panes -->
   <div class="tab-content">
 
     <div role="tabpanel" class="tab-pane fade in active" id="client">
     	
-    	<table id ="client" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto">
+    	<table id ="client" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
 			<thead>                         
   			<tr class="success">                          
 			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
@@ -47,7 +60,7 @@
 
 
 		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_client">Add New Client</button>
+		<button type="button" class="buttons" data-toggle="modal" data-target="#modal_client"><i class="glyphicon glyphicon-plus"></i>&nbsp;Add New Client</button>
 
 		<!-- Modal -->
 		<div id="modal_client" class="modal fade" role="dialog">
@@ -79,14 +92,14 @@
 
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <input type="submit" class= "btn btn-default"value="Save" />
+				      <input type="submit" class= "buttons save"value="Save" />
 				    </div>
 				  </div>
 
 				<% end %>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="buttons cancel" data-dismiss="modal">Close</button>
 		      </div>
 		    </div>
 
@@ -98,7 +111,7 @@
 
     <div role="tabpanel" class="tab-pane fade" id="project">
 
-    	<table id ="project" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto">
+    	<table id ="project" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
 			<thead>                         
   			<tr class="success">                          
 			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
@@ -130,7 +143,7 @@
 
 
 		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_project">Add New Project</button>
+		<button type="button" class="buttons" data-toggle="modal" data-target="#modal_project"><i class="glyphicon glyphicon-plus"></i>&nbsp;Add New Project</button>
 
 		<!-- Modal -->
 		<div id="modal_project" class="modal fade" role="dialog">
@@ -191,14 +204,14 @@
 
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <input type="submit" class= "btn btn-default"value="Save" />
+				      <input type="submit" class= "buttons save" value="Save" />
 				    </div>
 				  </div>
 
 				<% end %>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="buttons cancel" data-dismiss="modal">Close</button>
 		      </div>
 		    </div>
 
@@ -212,7 +225,7 @@
     <!-- Role Tab -->
     <div role="tabpanel" class="tab-pane fade" id="role">
 
-    <table id ="role" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto">
+    <table id ="role" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
 			<thead>                         
   			<tr class="success">                          
 			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
@@ -238,7 +251,7 @@
 
 
 		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_role">Add New Role</button>
+		<button type="button" class="buttons" data-toggle="modal" data-target="#modal_role"><i class="glyphicon glyphicon-plus"></i>&nbsp;Add New Role</button>
 
 		<!-- Modal -->
 		<div id="modal_role" class="modal fade" role="dialog">
@@ -294,14 +307,14 @@
 
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <input type="submit" class= "btn btn-default"value="Save" />
+				      <input type="submit" class= "buttons save" value="Save" />
 				    </div>
 				  </div>
 
 				<% end %>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="buttons cancel" data-dismiss="modal">Close</button>
 		      </div>
 		    </div>
 
@@ -314,7 +327,7 @@
     <!-- Currency Tab -->
     <div role="tabpanel" class="tab-pane fade" id="currency">
 
-    <table id ="currency" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-height="auto">
+    <table id ="currency" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
 			<thead>                         
   			<tr class="success">                          
 			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
@@ -340,7 +353,7 @@
 
 
 		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_currency">Add New Currency</button>
+		<button type="button" class="buttons" data-toggle="modal" data-target="#modal_currency"><i class="glyphicon glyphicon-plus"></i>&nbsp;Add New Currency</button>
 
 		<!-- Modal -->
 		<div id="modal_currency" class="modal fade" role="dialog">
@@ -385,14 +398,14 @@
 
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <input type="submit" class= "btn btn-default"value="Save" />
+				      <input type="submit" class= "buttons save"value="Save" />
 				    </div>
 				  </div>
 
 				<% end %>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="buttons cancel" data-dismiss="modal">Close</button>
 		      </div>
 		    </div>
 
@@ -406,13 +419,13 @@
 </div>
 </body>
 <script type="text/javascript">
-			$(function () {
-			   $('.table').bootstrapTable(); // init via javascript
+			// $(function () {
+			//    $('.table').bootstrapTable(); // init via javascript
 
-			    $(window).resize(function () {
-			        $('.table').bootstrapTable('resetView');
-			    });
+			//     $(window).resize(function () {
+			//         $('.table').bootstrapTable('resetView');
+			//     });
 
-			});
+			// });
 </script>
 </html>

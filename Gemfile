@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+#font-awesome
+gem "font-awesome-rails"
 
 #Bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'

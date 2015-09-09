@@ -1,38 +1,39 @@
-<nav class="navbar navbar-inverse" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/timesheet"><b>ADaMs</b></a>
-    </div>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-         <ul class="nav navbar-nav">
-	    	<li><%= if current_user
-                  link_to 'My Timesheet', my_timesheet_path(current_user.id) 
-                else 
-                  end %>
-        </li>
-        <li><%= if current_user 
-                  link_to "Manage Details", details_path, id: "manage_details" 
-                else 
-                end 
-            %>
-        </li>
-         <li><%= if current_user 
-                  link_to "Sign out", signout_path, id: "sign_out" 
-                else 
-                end 
-            %>
-        </li>
-        <li style="color:white; margin-top: 3%;
-    margin-left: 200px;"> <strong>
-            <%= 
-              if current_user
-                current_user.email
-              else
-              end %>
-          </strong>
-        </li>
-  		</ul> 
-    </div>
-  </div>
-</nav>
+            <li class="active" id="li_akira">
+                <a href="/timesheet"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span>Akira Timesheet</a>
+            </li>
+            <li id="my_timesheet">
+                <a href="<%= my_timesheet_path(current_user.id) %>" ><span class="fa-stack fa-lg pull-left"><i class="fa fa-clock-o fa-stack-1x "></i></span> My Timesheet</a>
+            </li>
+            <li id="manage_details">
+                <a href="/details" id = "details"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x"></i></span> Manage Details</a>
+                <!--
+                <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                    <li><a href="/details#client"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Clients</a></li>
+                    <li><a href="#project" aria-controls="project" role="tab" data-toggle="tab"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Projects</a></li>
+                    <li><a href="/details#role"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Roles</a></li>
+                    <li><a href="/details#currency"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Currencies</a></li>
+
+                </ul>
+                -->
+                 <ul class="nav-pills nav-stacked" style="list-style-type:none;" role="tablist">
+
+                    <li role="presentation" class="active"><a href="#client" aria-controls="client" role="tab" data-toggle="tab"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Clients</a></li>
+
+                    <li role="presentation"><a href="#project" aria-controls="project" role="tab" data-toggle="tab"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Projects</a></li>
+
+                    <li role="presentation"><a href="#role" aria-controls="role" role="tab" data-toggle="tab"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Roles & Rates</a></li>
+
+                     <li role="presentation"><a href="#currency" aria-controls="currency" role="tab" data-toggle="tab"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Currencies</a></li>
+
+                  </ul>   
+            </li>
+            <li>
+                <a href="/signout"><span class="fa-stack fa-lg pull-left"><i class="fa fa-sign-out fa-stack-1x "></i></span>Sign Out</a>
+            </li>
+        </ul>
+    </div><!-- /#sidebar-wrapper -->
