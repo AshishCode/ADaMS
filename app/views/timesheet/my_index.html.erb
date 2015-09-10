@@ -156,9 +156,9 @@
 		    <td>
 
 				<!-- Delete confirmation modal -->
-				<i class="glyphicon glyphicon-remove" data-toggle="modal" data-target="#delete_modal" style="color:#B12424; margin-left: 39%;"> </i>
+				<i class="glyphicon glyphicon-remove" data-toggle="modal" data-target="#<%='delete_modal'+entry.id.to_s%>" style="color:#B12424; margin-left: 39%;"> </i>
 				 <!-- Modal -->
-				<div id="delete_modal" class="modal fade" role="dialog">
+				<div id="<%='delete_modal'+entry.id.to_s %>" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 
 				    <!-- Modal content-->
