@@ -84,12 +84,29 @@ class TimesheetController < ApplicationController
 
 	#method to create a new timesheet entry inline
 	def create_inline
-		@timesheet = Timesheet.new(timesheets_params)
-		if @timesheet.save
-			redirect_to '/timesheet/'+current_user.id.to_s
+		if (params[:timesheets][:timesheetdate] != params[:date][:range])
 			
+			start_date = params[:timesheets][:timesheetdate]
+			end_date = params[:date][:range] 
+			start_date.upto(end_date) do |date|
+
+				params[:timesheets][:timesheetdate] = date
+				@timesheet = Timesheet.new(timesheets_params)
+				if @timesheet.save
+					#render :json => @timesheet			
+				else
+					render 'new'
+				end
+			end
+			redirect_to '/timesheet/'+current_user.id.to_s
 		else
-			render 'new'
+			@timesheet = Timesheet.new(timesheets_params)
+			if @timesheet.save
+				redirect_to '/timesheet/'+current_user.id.to_s
+				#render :json => @timesheet			
+			else
+				render 'new'
+			end
 		end
 	end
 
