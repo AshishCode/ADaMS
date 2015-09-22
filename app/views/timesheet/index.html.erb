@@ -5,16 +5,16 @@
 		</title>
 	</head>
 	<body>	
-		<table id ="boots" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="id" data-sort-order ="desc"
+		<table id ="boots" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="date" data-sort-order ="desc"
 		> 
 
 			<thead>                      
   			<tr class="success">                          
-			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
+			    <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
 			    <th data-sortable="true">Client</th>
 			    <th data-sortable="true">Project</th>
 			    <th>Task</th>
-			    <th data-sortable="true">Date</th>
+			    <th data-field="date" data-sortable="true">Date</th>
 			    <th>Hours</th>
 			    <th>Role</th>
 			    <th>Rate</th>
@@ -27,7 +27,7 @@
 			<tbody>
 		<% @timesheet.each do |entry| %>
 		  <tr>
-		    <td><%= entry.id %></td> 
+		    <!-- <td></td> -->
 		    <td><%= entry.client%></td> 
 		    <td><%= entry.project %></td>  
 		    <td><%= entry.task %></td> 

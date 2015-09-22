@@ -32,6 +32,7 @@
 				    //margin-left: 5%;
 			}
 
+
 	</style>
 	</head>
 	<body>	
@@ -87,10 +88,10 @@
     		</div>
 		  </div>
 		  <div class="form-group">
-		  	<div class="col-sm-3">
+		  	<div class="col-sm-3" id="styled_label">
 		    	<label for="is_billed">Is Billed</label><br>
-			  		<%= t.radio_button :is_billed,"1",  :required => true%>Yes	&nbsp;
-			  		<%= t.radio_button :is_billed,"0",  :required => true%>No 	&nbsp;
+			  		<%= t.radio_button :is_billed,"1",  :required => true%><label class="styled_label" for="timesheets_is_billed_1">Yes</label>	&nbsp;
+			  		<%= t.radio_button :is_billed,"0",  :required => true%><label class="styled_label" for="timesheets_is_billed_0">No</label> 	&nbsp;
 		    </div>
 		    <div class="col-sm-3">
 		    	<label for="workspace">Workplace</label><br>
@@ -107,7 +108,7 @@
 							    		margin-top: 3%;
 							    		margin-right: -7%;}">
 		      <input class ="buttons" id="submit" type="submit" value="Save" />
-		      <input class ="buttons" id="cancel" type="button" value="Cancel" />
+		      <input class ="buttons" id="cancel" type="button" value="Close" />
 		    </div>
 		    <div class="col-sm-3">
 		  	    <%= t.hidden_field :employee_id,:value => current_user.id ,class: "form-control"  %>
@@ -119,19 +120,19 @@
 		</div>
 		<!-- table displaying the timsheet -->
 		<br><br>
-		<table id ="boots" class ="table" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="id" data-sort-order="desc">
+		<table id ="boots" class ="table" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="date" data-sort-order="desc">
 			<!-- <div id="filter-bar" style="float:left;"> </div> -->
 			<thead>                         
   			<tr class="success">                          
-			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
+			    <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
 			    <th data-field="client" data-sortable="true">Client</th>
 			    <th data-field="project" data-sortable="true">Project</th>
 			    <th>Task</th>
-			    <th data-sortable="true">Date</th>
+			    <th data-field="date" data-sortable="true">Date</th>
 			    <th>Hours</th>
 			    <th>Role</th>
 			    <th>Rate</th>
-			    <th data-field="date" data-sortable="true">Is_Billed</th>
+			    <th data-sortable="true">Is_Billed</th>
 			    <th>Workspace</th>
 			    <th>Comments</th>
 			    <th data-field="employee_name">Employee_Name</th>
@@ -142,7 +143,7 @@
 
 		<% @timesheet.collect do |entry| %>
 		  <tr>
-		    <td><%= entry.id %></td> 
+		    <!-- <td></td> -->
 		    <td><%= entry.client %></td> 
 		    <td><%= entry.project %></td>  
 		    <td><%= best_in_place entry, :task, type: :textarea %></td> 
