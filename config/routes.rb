@@ -64,8 +64,10 @@ Rails.application.routes.draw do
 
 	#get '/login' => 'login#index', :as => :home
 
+  #
   #timesheet related routes
-
+  #
+  #
   #get routes for timesheet entries
 	get '/timesheet' => 'timesheet#index', :as => :timesheet
 	#get '/timesheet/new' => 'timesheet#new', :as => :new_entry
@@ -87,14 +89,30 @@ Rails.application.routes.draw do
   delete '/timesheet/delete/:id' => 'timesheet#delete', 
   :as => :delete_entry
 
-  
+  #
   #routes related to the clients/projects/roles resources
+  #
+  #
+  #get routes
   get '/details' => 'details#index', :as => :details
+
+  #post routes
   post '/details/clients' => 'details#add_client'
   post '/details/projects' => 'details#add_project'
   post '/details/roles' => 'details#add_role'
   post '/details/currencies' => 'details#add_currency'
 
+  #delete routes
+  delete '/details/clients/:id' => 'details#delete_client'
+  delete '/details/projects/:id' => 'details#delete_project'
+  delete '/details/roles/:id' => 'details#delete_role'
+  delete '/details/currencies/:id' => 'details#delete_currency'
+
+  #put routes
+  put '/client.(:id)' => 'details#update_client', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }, :as => :client
+  put '/project.(:id)' => 'details#update_project', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }, :as => :project
+  put '/role.(:id)' => 'details#update_role', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }, :as => :role
+  put '/currency.(:id)' => 'details#update_currency', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }, :as => :currency
 
 
   #google auth routes

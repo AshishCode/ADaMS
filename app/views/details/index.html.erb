@@ -47,15 +47,41 @@
 			    <th data-sortable="true">Client Name</th>
 			    <th data-sortable="true">Client Address</th>
 			    <th data-sortable="true">Projects</th>
+			   	<th>Action</th>
 			  </tr>
 			</thead>
 			<tbody>
 		<% @clients.each do |client| %>
 		  <tr>
 		    <!-- <td></td> -->
-		    <td><%= client.client_name%></td>
-		    <td><%= client.client_address%></td> 
-		    <td><%= @project_names[client.id]%></td> 
+		    <td><%= best_in_place client, :client_name %></td>
+		    <td><%= best_in_place client, :client_address%></td> 
+		    <td><%= @project_names[client.id]%></td>
+		    <td>
+
+				<!-- Delete confirmation modal -->
+				<i class="glyphicon glyphicon-remove" data-toggle="modal" data-target="#<%='delete_modal_client'+client.id.to_s%>" style="color:#B12424; margin-left: 39%;"> </i>
+				 <!-- Modal -->
+				<div id="<%='delete_modal_client'+client.id.to_s %>" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+				    <!-- Modal content-->
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <p>Are you sure?</p>
+				      </div>
+				      <div class="modal-footer">
+				      	 <%= link_to "/details/clients/"+client.id.to_s, method: :delete do %>
+				         	<button type="button" data-dismiss="modal" class="btn btn-primary" id="delete_row">Delete</button>		
+				         <% end %>
+						<button type="button" data-dismiss="modal" class="btn">Cancel</button>
+				      </div>
+				    </div>
+
+				  </div>
+				</div>
+
+			</td> 
 		  </tr>
 		<% end %>      
 		</tbody>
@@ -127,20 +153,45 @@
 			    <th data-sortable="true">Contact Mail</th>
 			    <th data-sortable="true">Client Name</th>
 			    <th data-sortable="true">Roles</th>
+			    <th>Action</th>
 			  </tr>
 			</thead>
 			<tbody>
 		<% @projects.each do |project| %>
 		  <tr>
 		    <!-- <td></td> -->
-		    <td><%= project.project_name%></td>
-		    <td><%= project.project_description%></td>
-		    <td><%= project.contact_person%></td>
-		    <td><%= project.contact_phone%></td>
-		    <td><%= project.contact_mail%></td> 
+		    <td><%= best_in_place project, :project_name%></td>
+		    <td><%= best_in_place project, :project_description%></td>
+		    <td><%= best_in_place project, :contact_person%></td>
+		    <td><%= best_in_place project, :contact_phone%></td>
+		    <td><%= best_in_place project, :contact_mail%></td> 
 		    <td><%= @client_names[project.client_id] %></td> 
 		   	<td><%= @role_names[project.id] %></td> 
+		   	<td>
 
+				<!-- Delete confirmation modal -->
+				<i class="glyphicon glyphicon-remove" data-toggle="modal" data-target="#<%='delete_modal_project'+project.id.to_s%>" style="color:#B12424; margin-left: 39%;"> </i>
+				 <!-- Modal -->
+				<div id="<%='delete_modal_project'+project.id.to_s %>" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+				    <!-- Modal content-->
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <p>Are you sure?</p>
+				      </div>
+				      <div class="modal-footer">
+				      	 <%= link_to "/details/projects/"+project.id.to_s, method: :delete do %>
+				         	<button type="button" data-dismiss="modal" class="btn btn-primary" id="delete_row">Delete</button>		
+				         <% end %>
+						<button type="button" data-dismiss="modal" class="btn">Cancel</button>
+				      </div>
+				    </div>
+
+				  </div>
+				</div>
+
+			</td> 
 		  </tr>
 		<% end %>      
 		</tbody>
@@ -239,17 +290,45 @@
 			    <th data-sortable="true">Role</th>
 			    <th data-sortable="true">Rate</th>
 			    <th data-sortable="true">Project</th>
-			    <th>Description</th>			    
+			    <th>Description</th>
+			   	<th>Action</th>			    			    
 			  </tr>
 			</thead>
 			<tbody>
 		<% @roles.each do |role| %>
 		  <tr>
 		    <!-- <td></td> -->
-		    <td><%= role.role_name%></td> 
-		    <td><%= @currency_names[role.currency_id].to_s + role.rate.to_s%></td> 
+		    <td><%= best_in_place role, :role_name%></td> 
+		    <td><label><%= @currency_names[role.currency_id].to_s%></label> 
+		    	<%= best_in_place role, :rate%>
+		    </td> 
 		   	<td><%= @role_project_names[role.project_id]%></td>
-		    <td><%= role.role_description%></td>
+		    <td><%= best_in_place role, :role_description%></td>
+		    <td>
+
+				<!-- Delete confirmation modal -->
+				<i class="glyphicon glyphicon-remove" data-toggle="modal" data-target="#<%='delete_modal_role'+role.id.to_s%>" style="color:#B12424; margin-left: 39%;"> </i>
+				 <!-- Modal -->
+				<div id="<%='delete_modal_role'+role.id.to_s %>" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+				    <!-- Modal content-->
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <p>Are you sure?</p>
+				      </div>
+				      <div class="modal-footer">
+				      	 <%= link_to "/details/roles/"+role.id.to_s, method: :delete do %>
+				         	<button type="button" data-dismiss="modal" class="btn btn-primary" id="delete_row">Delete</button>		
+				         <% end %>
+						<button type="button" data-dismiss="modal" class="btn">Cancel</button>
+				      </div>
+				    </div>
+
+				  </div>
+				</div>
+
+			</td> 
 
 		  </tr>
 		<% end %>      
@@ -343,18 +422,43 @@
 			    <th data-sortable="true">Currency Name</th>
 			    <th data-sortable="true">Currency Symbol</th>
 			    <th>Country</th>
-			    <th>Description</th>			    
+			    <th>Description</th>
+			    <th>Action</th>			    			    
 			  </tr>
 			</thead>
 			<tbody>
 		<% @currencies.each do |currency| %>
 		  <tr>
 		    <!-- <td></td> -->
-		    <td><%= currency.currency_name%></td> 
-		    <td><%= currency.currency_symbol%></td> 
-		    <td><%= currency.country%></td>
-		    <td><%= currency.description%></td>
+		    <td><%= best_in_place currency, :currency_name%></td> 
+		    <td><%= best_in_place currency, :currency_symbol%></td> 
+		    <td><%= best_in_place currency, :country%></td>
+		    <td><%= best_in_place currency, :description%></td>
+		     <td>
 
+				<!-- Delete confirmation modal -->
+				<i class="glyphicon glyphicon-remove" data-toggle="modal" data-target="#<%='delete_modal_currency'+currency.id.to_s%>" style="color:#B12424; margin-left: 39%;"> </i>
+				 <!-- Modal -->
+				<div id="<%='delete_modal_currency'+currency.id.to_s %>" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+				    <!-- Modal content-->
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <p>Are you sure?</p>
+				      </div>
+				      <div class="modal-footer">
+				      	 <%= link_to "/details/currencies/"+currency.id.to_s, method: :delete do %>
+				         	<button type="button" data-dismiss="modal" class="btn btn-primary" id="delete_row">Delete</button>		
+				         <% end %>
+						<button type="button" data-dismiss="modal" class="btn">Cancel</button>
+				      </div>
+				    </div>
+
+				  </div>
+				</div>
+
+			</td> 
 		  </tr>
 		<% end %>      
 		</tbody>
@@ -427,6 +531,14 @@
 </div>
 </body>
 <script type="text/javascript">
+
+			//for best in place plugin
+			$(document).ready(function() {
+			  /* Activating Best In Place */
+			  jQuery(".best_in_place").best_in_place();
+			});
+
+
 			// $(function () {
 			//    $('.table').bootstrapTable(); // init via javascript
 

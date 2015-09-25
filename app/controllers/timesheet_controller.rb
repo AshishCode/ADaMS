@@ -152,11 +152,13 @@ class TimesheetController < ApplicationController
 	#this private method is used to permit the form parameters and make them
 	#accessible to the class
 	private 
+	#parameters for update
 	def timesheet_params
 		params.require(:timesheet).permit(:client,:project,:task,:timesheetdate,:hours,:role,:rate,:is_billed,:workspace,:comments, 
 		:employee_id)
 	end
 
+	#parameters for insertion
 	private 
 	def timesheets_params
 		params.require(:timesheets).permit(:client_id,:project_id,:task,:timesheetdate,:hours,:role_id,:rate,:is_billed,:workspace,:comments, 

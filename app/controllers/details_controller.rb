@@ -102,6 +102,118 @@ class DetailsController < ApplicationController
 
 	end
 
+	#method to delete a client entry
+	def delete_client
+		@client = Client.find(params[:id])
+
+		if @client.destroy
+			redirect_to "/details"
+		else
+			reder :action => "delete_client"
+		end
+	end
+
+	#method to delete a client entry
+	def delete_project
+		@project = Project.find(params[:id])
+
+		if @project.destroy
+			redirect_to "/details"
+		else
+			reder :action => "delete_project"
+		end
+	end
+
+	#method to delete a client entry
+	def delete_role
+		@role = Role.find(params[:id])
+
+		if @role.destroy
+			redirect_to "/details"
+		else
+			reder :action => "delete_role"
+		end
+	end
+
+	#method to delete a client entry
+	def delete_currency
+		@currency = Currency.find(params[:id])
+
+		if @currency.destroy
+			redirect_to "/details"
+		else
+			reder :action => "delete_currency"
+		end
+	end
+
+	#method to create a new client object for the edit setup
+	def edit_client
+		@client = Client.find(params[:id])
+	end
+
+	#method to update the client entries
+	def update_client
+		@client = Client.find(params[:id])
+
+	 	respond_to do |format|
+		    if @client.update_attributes(client_update_params)
+		      format.html { redirect_to(@client, :notice => 'Entry was successfully updated.') }
+		      format.json { respond_with_bip(@client) }
+		    else
+		      format.html { render :action => "edit" }
+		      format.json { respond_with_bip(@client) }
+		    end
+
+  	    end
+	end
+
+	#method to update the project entries
+	def update_project
+		@project = Project.find(params[:id])
+
+	 	respond_to do |format|
+		    if @project.update_attributes(project_update_params)
+		      format.html { redirect_to(@project, :notice => 'Entry was successfully updated.') }
+		      format.json { respond_with_bip(@project) }
+		    else
+		      format.html { render :action => "edit" }
+		      format.json { respond_with_bip(@project) }
+		    end
+
+  	    end
+	end
+
+	#method to update the role entries
+	def update_role
+		@role = Role.find(params[:id])
+
+	 	respond_to do |format|
+		    if @role.update_attributes(role_update_params)
+		      format.html { redirect_to(@role, :notice => 'Entry was successfully updated.') }
+		      format.json { respond_with_bip(@role) }
+		    else
+		      format.html { render :action => "edit" }
+		      format.json { respond_with_bip(@role) }
+		    end
+
+  	    end
+	end
+
+	#method to update the currency entries
+	def update_currency
+		@currency = Currency.find(params[:id])
+
+	 	respond_to do |format|
+		    if @currency.update_attributes(currency_update_params)
+		      format.html { redirect_to(@currency, :notice => 'Entry was successfully updated.') }
+		      format.json { respond_with_bip(@currency) }
+		    else
+		      format.html { render :action => "edit" }
+		      format.json { respond_with_bip(@currency) }
+		    end
+
+  	    end
+	end
 
 
 	#this private method is used to permit the form parameters and make them
@@ -111,9 +223,19 @@ class DetailsController < ApplicationController
 		params.require(:client_detail).permit(:client_name, :client_address)
 	end
 
+	private
+	def client_update_params
+		params.require(:client).permit(:client_name, :client_address)
+	end
+
 	private 
 	def project_params
 		params.require(:project_detail).permit(:project_name,:project_description,:contact_person,:contact_mail,:contact_phone, :client_id)
+	end
+
+	private
+	def project_update_params
+		params.require(:project).permit(:project_name,:project_description,:contact_person,:contact_mail,:contact_phone, :client_id)
 	end
 
 	private 
@@ -122,7 +244,17 @@ class DetailsController < ApplicationController
 	end
 
 	private 
+	def role_update_params
+		params.require(:role).permit(:role_name, :rate, :currency_id, :role_description, :project_id)
+	end
+
+	private 
 	def currency_params
 		params.require(:currency_detail).permit(:currency_name, :currency_symbol, :country, :description)
+	end
+
+	private 
+	def currency_update_params
+		params.require(:currency).permit(:currency_name, :currency_symbol, :country, :description)
 	end
 end
