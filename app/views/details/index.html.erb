@@ -44,6 +44,7 @@
 			<thead>                         
   			<tr class="success">                          
 			    <!-- <th data-field="id" data-align="right" data-sortable="true" >ID</th> -->
+			    <th data-sortable="true">Client Code</th>
 			    <th data-sortable="true">Client Name</th>
 			    <th data-sortable="true">Client Address</th>
 			    <th data-sortable="true">Projects</th>
@@ -54,6 +55,7 @@
 		<% @clients.each do |client| %>
 		  <tr>
 		    <!-- <td></td> -->
+		    <td><%= best_in_place client, :client_code %></td>
 		    <td><%= best_in_place client, :client_name %></td>
 		    <td><%= best_in_place client, :client_address%></td> 
 		    <td><%= @project_names[client.id]%></td>
@@ -103,8 +105,15 @@
 		      <div class="modal-body">
 		        <%= form_for :client_detail, url: {action: "add_client"}, html: {role: "form", class: "form-horizontal"} do |cd| %>  
 
+		          <div class="form-group"> 
+				    <label for="client_code" class="col-sm-2 control-label">Client Code</label>
+				    <div class="col-sm-10">
+				      <%= cd.text_field :client_code, class: "form-control" %>
+				    </div>
+				  </div>
+
 				  <div class="form-group"> 
-				    <label for="client" class="col-sm-2 control-label">Client Name</label>
+				    <label for="client_name" class="col-sm-2 control-label">Client Name</label>
 				    <div class="col-sm-10">
 				      <%= cd.text_field :client_name, class: "form-control" %>
 				    </div>
@@ -146,6 +155,7 @@
 			<thead>                         
   			<tr class="success">                          
 			    <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
+			    <th data-sortable="true">Project Code</th>
 			    <th data-sortable="true">Project Name</th>
 			    <th data-sortable="true">Project Description</th>
 			    <th data-sortable="true">Contact Person</th>
@@ -160,6 +170,7 @@
 		<% @projects.each do |project| %>
 		  <tr>
 		    <!-- <td></td> -->
+		    <td><%= best_in_place project, :project_code%></td>		    
 		    <td><%= best_in_place project, :project_name%></td>
 		    <td><%= best_in_place project, :project_description%></td>
 		    <td><%= best_in_place project, :contact_person%></td>
@@ -212,6 +223,13 @@
 		      </div>
 		      <div class="modal-body">
 		        <%= form_for :project_detail, url: {action: "add_project"}, html: {role: "form", class: "form-horizontal"} do |pd| %>  
+
+		          <div class="form-group"> 
+				    <label for="project_code" class="col-sm-2 control-label">Project Code</label>
+				    <div class="col-sm-10">
+				      <%= pd.text_field :project_code, class: "form-control" %>
+				    </div>
+				  </div>
 
 				  <div class="form-group"> 
 				    <label for="project_name" class="col-sm-2 control-label">Project Name</label>

@@ -220,22 +220,22 @@ class DetailsController < ApplicationController
 	#accessible to the class
 	private 
 	def client_params
-		params.require(:client_detail).permit(:client_name, :client_address)
+		params.require(:client_detail).permit(:client_code, :client_name, :client_address)
 	end
 
 	private
 	def client_update_params
-		params.require(:client).permit(:client_name, :client_address)
+		params.require(:client).permit(:client_code, :client_name, :client_address)
 	end
 
 	private 
 	def project_params
-		params.require(:project_detail).permit(:project_name,:project_description,:contact_person,:contact_mail,:contact_phone, :client_id)
+		params.require(:project_detail).permit(:project_code,:project_name,:project_description,:contact_person,:contact_mail,:contact_phone, :client_id)
 	end
 
 	private
 	def project_update_params
-		params.require(:project).permit(:project_name,:project_description,:contact_person,:contact_mail,:contact_phone, :client_id)
+		params.require(:project).permit(:project_code, :project_name,:project_description,:contact_person,:contact_mail,:contact_phone, :client_id)
 	end
 
 	private 
