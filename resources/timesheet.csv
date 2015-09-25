@@ -387,9 +387,7 @@
 386,Decathlon Store Visit$$$ WAPP Testing and changes to handle negative stock,2015-09-07,NULL,10,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
 387,Bootstrap implementation for login page,2015-09-07,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
 388,SQL certification preparation,2015-09-07,NULL,16,2015-09-24,2015-09-24,0,8,0,NULL,30,7,49
-389,Creation of Staging tables 
-$$$Loading data from retail database (source) to staging tables
-$$$Loading from Stage to mart ,2015-09-08,NULL,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
+389,Creation of Staging tables $$$Loading data from retail database (source) to staging tables$$$Loading from Stage to mart ,2015-09-08,NULL,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
 390,Phase 1 ETL rework$$$ fact claimline and meetings,2015-09-08,NULL,12,2015-09-24,2015-09-24,1,12,743.75,NULL,11,5,4
 391,Cleanup of existing packages and changes,2015-09-08,in hive,6,2015-09-24,2015-09-24,1,4,743.75,NULL,28,12,4
 392,Testing Seven Day ADL procedures and review,2015-09-08,NULL,6,2015-09-24,2015-09-24,1,2,875,NULL,18,5,5
@@ -406,8 +404,7 @@ $$$Loading from Stage to mart ,2015-09-08,NULL,14,2015-09-24,2015-09-24,1,8,743.
 403,Store Visit & Discussions,2015-09-09,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
 404,Decathlon Store Visit$$$ BI4 Interaction,2015-09-09,NULL,10,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
 405,Tried bootstrap for displaying sales report in mobile,2015-09-09,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
-406,Creation of Calendar Dimension Table using stored procedure
-$$$Implementing the incremental approach( based on last updated date) for ReturnReason Table,2015-09-09,NULL,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
+406,Creation of Calendar Dimension Table using stored procedure$$$Implementing the incremental approach( based on last updated date) for ReturnReason Table,2015-09-09,NULL,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
 407,SCD 2 for Lifestage table (created tables and jobs$$$ but with errors) ,2015-09-07,NULL,9,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
 408,Leave,2015-09-08,NULL,16,2015-09-24,2015-09-24,0,4,0,NULL,16,6,10
 409,SSIS packages alterations and load,2015-09-09,NULL,16,2015-09-24,2015-09-24,0,8,743.75,NULL,28,12,4
@@ -424,8 +421,7 @@ $$$Implementing the incremental approach( based on last updated date) for Return
 420,Phase 1 ETL rework$$$ fact claimline and meetings,2015-09-12,NULL,12,2015-09-24,2015-09-24,1,4,743.75,NULL,11,5,4
 421,Phase 1 ETL rework$$$ fact claimline and meetings,2015-09-13,NULL,12,2015-09-24,2015-09-24,1,6,743.75,NULL,11,5,4
 422,Creating Calendar dimension table $$$Function call should return the values from the dimCalender table.,2015-09-10,NULL,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
-423,Calendar- calendar() which inserts the data into dimCalendar table(1965-2049)$$$ Creation of stage table which includes all the rows from Retail and Supply(Source)$$$
-creation of stage table which loads a,2015-09-11,ll the records from Shopmart excel sheet,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
+423,Calendar- calendar() which inserts the data into dimCalendar table(1965-2049)$$$ Creation of stage table which includes all the rows from Retail and Supply(Source)$$$creation of stage table which loads a,2015-09-11,ll the records from Shopmart excel sheet,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
 424,Customer Record Retrieval,2015-09-03,NULL,14,2015-09-24,2015-09-24,1,4,743.75,NULL,13,4,4
 425,Sick Leave,2015-09-03,NULL,14,2015-09-24,2015-09-24,0,4,0,NULL,31,6,12
 426,NZ Report Changes$$$ Stock Testing$$$ m_transaction debugging$$$ Access,2015-09-07,NULL,8,2015-09-24,2015-09-24,1,10,750,NULL,26,4,53
@@ -452,8 +448,7 @@ creation of stage table which loads a,2015-09-11,ll the records from Shopmart ex
 447,Phase 1 reports rework$$$ validations$$$ meetings and discussion,2015-09-15,NULL,12,2015-09-24,2015-09-24,1,8,743.75,NULL,11,5,4
 448,Phase 1 reports rework$$$ validations$$$ meetings and discussion,2015-09-16,NULL,12,2015-09-24,2015-09-24,1,6,743.75,NULL,11,5,4
 449,Creation of stage and mart tables $$$Implementing Incremental approach$$$ Logging for DocType Table(Local)$$$Logging for ReturnReason table.,2015-09-14,NULL,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
-450,Creation of all the stage and dim tables for DocType$$$ Org$$$ Return Reason (tables) from local to VM using forticlient$$$Setting up the connections for the above mentioned table in Pentaho$$$
-Issue handling,2015-09-15, for transformation level logging (Resolved),14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
+450,Creation of all the stage and dim tables for DocType$$$ Org$$$ Return Reason (tables) from local to VM using forticlient$$$Setting up the connections for the above mentioned table in Pentaho$$$Issue handling,2015-09-15, for transformation level logging (Resolved),14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
 451,Org Table $$$Loaded all the transformation from local to VM (Did minor database connection changes for each transformation)$$$ Review,2015-09-16,NULL,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
 452,Load checks issue customer loads,2015-09-17,in hive,6,2015-09-24,2015-09-24,1,0.5,743.75,NULL,28,12,4
 453,Creating template for Logging and ETL package,2015-09-17,in hive,6,2015-09-24,2015-09-24,1,3,743.75,NULL,28,12,4
@@ -537,9 +532,7 @@ Issue handling,2015-09-15, for transformation level logging (Resolved),14,2015-0
 531,Worked on set Analysis part of qlikview,2015-09-22,Radhika K,15,2015-09-24,2015-09-24,0,5,875,NULL,26,4,5
 532,Regression testing on Retail dashboard ,2015-09-22,Radhika K,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
 533,Sales issue test for bannerghatta store,2015-09-22,Radhika K,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
-534,Created all the tables and loaded all the transformations and jobs in the new configured DB( IP: 52.74.29.71)
-$$$ Setting up connections for all the transformations from Pentaho and DB$$$
-Loading data fro,2015-09-21,m CSV file for Customer to a stage table,14,2015-09-24,2015-09-24,1,10,743.75,NULL,13,4,4
+534,Created all the tables and loaded all the transformations and jobs in the new configured DB( IP: 52.74.29.71)$$$ Setting up connections for all the transformations from Pentaho and DB$$$Loading data fro,2015-09-21,m CSV file for Customer to a stage table,14,2015-09-24,2015-09-24,1,10,743.75,NULL,13,4,4
 535,Logging for Org$$$DocType(For all the transformations and related jobs)$$$ Customer Table(Stage to Mart)$$$Tried implementing Incremental approach for Org table (data from multiple sources),2015-09-22,NULL,14,2015-09-24,2015-09-24,1,8,743.75,NULL,13,4,4
 536,Changes to calendar and Org(Fixed the Bigserial sequence while loading it from Stage to mart)$$$ Logging -ReturnReason for all the transformations and the job$$$ Created the Mart table for ReturnReason ag,2015-09-23,"ain,Done with creating the package for POMovement (facing some issue related to datatype conversion)",14,2015-09-24,2015-09-24,1,9,743.75,NULL,13,4,4
 537,User level authentication and display and hiding of buttons,2015-03-16,NULL,19,2015-09-24,2015-09-24,1,2,743.75,NULL,8,11,4
@@ -773,13 +766,9 @@ Loading data fro,2015-09-21,m CSV file for Customer to a stage table,14,2015-09-
 765,Executive Report Providded access$$$ wrapped up technical document$$$ qlikview access and export to excel problem in supply$$$ Executive report tried to debug data model$$$ Extracting Data for Analysis and ex,2015-04-06,NULL,8,2015-09-24,2015-09-24,1,8,625,NULL,26,4,6
 766,Removed ecommerce from comparable stores(Change in data model)$$$ Export to Excel change in Supply$$$ moved to live$$$ new A codes list moved to live$$$ Qlikview Access$$$ change in StoreMap.xls for A Codes Rup,2015-04-06,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
 767,Access to Users$$$ Qlikview Excluding Rohini from Rupture in live reports$$$ Retail change Store brand growth vs comparable stores growth$$$ Defective Returns QTY extract$$$ return reason included in adhoc di,2015-04-06,NULL,13,2015-09-24,2015-09-24,1,4,743.75,NULL,4,4,4
-768,Calendar- calendar() which inserts the data into dimCalendar table(1965-2049)$$$ Creation of stage table which includes all the rows from Retail and Supply(Source)$$$
-creation of stage table which loads a,2015-04-06,NULL,13,2015-09-24,2015-09-24,1,4,743.75,NULL,4,4,4
-769,Creation of all the stage and dim tables for DocType$$$ Org$$$ Return Reason (tables) from local to VM using forticlient$$$Setting up the connections for the above mentioned table in Pentaho$$$
-Issue handling,2015-04-07,NULL,19,2015-09-24,2015-09-24,0,2,0,NULL,14,7,22
-770,Created all the tables and loaded all the transformations and jobs in the new configured DB( IP: 52.74.29.71)
-$$$ Setting up connections for all the transformations from Pentaho and DB$$$
-Loading data fro,2015-04-07,NULL,19,2015-09-24,2015-09-24,0,6,0,NULL,14,7,22
+768,Calendar- calendar() which inserts the data into dimCalendar table(1965-2049)$$$ Creation of stage table which includes all the rows from Retail and Supply(Source)$$$creation of stage table which loads a,2015-04-06,NULL,13,2015-09-24,2015-09-24,1,4,743.75,NULL,4,4,4
+769,Creation of all the stage and dim tables for DocType$$$ Org$$$ Return Reason (tables) from local to VM using forticlient$$$Setting up the connections for the above mentioned table in Pentaho$$$Issue handling,2015-04-07,NULL,19,2015-09-24,2015-09-24,0,2,0,NULL,14,7,22
+770,Created all the tables and loaded all the transformations and jobs in the new configured DB( IP: 52.74.29.71)$$$ Setting up connections for all the transformations from Pentaho and DB$$$Loading data fro,2015-04-07,NULL,19,2015-09-24,2015-09-24,0,6,0,NULL,14,7,22
 771,Changes to calendar and Org(Fixed the Bigserial sequence while loading it from Stage to mart)$$$ Logging -ReturnReason for all the transformations and the job$$$ Created the Mart table for ReturnReason ag,2015-04-07,NULL,6,2015-09-24,2015-09-24,1,0.5,743.75,NULL,28,12,4
 772,Call with Alec about future work and budget. Priorities and time management discussed,2015-04-07,NULL,6,2015-09-24,2015-09-24,1,0.5,743.75,NULL,8,11,4
 773,Copying dimensionality to OPD cube from Order and Invoice cube,2015-04-07,NULL,6,2015-09-24,2015-09-24,1,3.5,743.75,NULL,28,12,4
