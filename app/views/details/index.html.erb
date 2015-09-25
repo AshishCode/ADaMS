@@ -43,7 +43,7 @@
     	<table id ="client" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
 			<thead>                         
   			<tr class="success">                          
-			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
+			    <!-- <th data-field="id" data-align="right" data-sortable="true" >ID</th> -->
 			    <th data-sortable="true">Client Name</th>
 			    <th data-sortable="true">Client Address</th>
 			    <th data-sortable="true">Projects</th>
@@ -52,7 +52,7 @@
 			<tbody>
 		<% @clients.each do |client| %>
 		  <tr>
-		    <td><%= client.id %></td> 
+		    <!-- <td></td> -->
 		    <td><%= client.client_name%></td>
 		    <td><%= client.client_address%></td> 
 		    <td><%= @project_names[client.id]%></td> 
@@ -119,7 +119,7 @@
     	<table id ="project" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
 			<thead>                         
   			<tr class="success">                          
-			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
+			    <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
 			    <th data-sortable="true">Project Name</th>
 			    <th data-sortable="true">Project Description</th>
 			    <th data-sortable="true">Contact Person</th>
@@ -132,7 +132,7 @@
 			<tbody>
 		<% @projects.each do |project| %>
 		  <tr>
-		    <td><%= project.id %></td> 
+		    <!-- <td></td> -->
 		    <td><%= project.project_name%></td>
 		    <td><%= project.project_description%></td>
 		    <td><%= project.contact_person%></td>
@@ -235,7 +235,7 @@
     <table id ="role" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
 			<thead>                         
   			<tr class="success">                          
-			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
+			    <!--<th data-field="id" data-align="right" data-sortable="true">ID</th> -->
 			    <th data-sortable="true">Role</th>
 			    <th data-sortable="true">Rate</th>
 			    <th data-sortable="true">Project</th>
@@ -245,7 +245,7 @@
 			<tbody>
 		<% @roles.each do |role| %>
 		  <tr>
-		    <td><%= role.id %></td> 
+		    <!-- <td></td> -->
 		    <td><%= role.role_name%></td> 
 		    <td><%= @currency_names[role.currency_id].to_s + role.rate.to_s%></td> 
 		   	<td><%= @role_project_names[role.project_id]%></td>
@@ -339,7 +339,7 @@
     <table id ="currency" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
 			<thead>                         
   			<tr class="success">                          
-			    <th data-field="id" data-align="right" data-sortable="true">ID</th>
+			    <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
 			    <th data-sortable="true">Currency Name</th>
 			    <th data-sortable="true">Currency Symbol</th>
 			    <th>Country</th>
@@ -349,7 +349,7 @@
 			<tbody>
 		<% @currencies.each do |currency| %>
 		  <tr>
-		    <td><%= currency.id %></td> 
+		    <!-- <td></td> -->
 		    <td><%= currency.currency_name%></td> 
 		    <td><%= currency.currency_symbol%></td> 
 		    <td><%= currency.country%></td>

@@ -10,7 +10,7 @@ $ ->
       type: 'GET'
       dataType: 'script'
       data: {
-        client_name: $("#client_select option:selected").val()
+        client_id: $("#client_select option:selected").val()
       }
       error: (jqXHR, textStatus, errorThrown) ->
         console.log("AJAX Error: #{textStatus}")
@@ -21,7 +21,7 @@ $(document).on 'change', '#role_select', (evt) ->
   $.ajax 'cascade/rate',
     type: 'GET'
     dataType: 'JSON'
-    data: role_name: $('#role_select option:selected').val()
+    data: role_id: $('#role_select option:selected').val()
     error: (jqXHR, textStatus, errorThrown) ->
       console.log 'AJAX Error: ' + textStatus
     success: (data, textStatus, jqXHR) ->
@@ -34,7 +34,7 @@ $(document).on 'change', '#project_select', (evt) ->
   $.ajax 'cascade/role',
     type: 'GET'
     dataType: 'JSON'
-    data: project_name: $('#project_select option:selected').val()
+    data: project_id: $('#project_select option:selected').val()
     error: (jqXHR, textStatus, errorThrown) ->
       console.log 'AJAX Error: ' + textStatus
     success: (data, textStatus, jqXHR) ->
@@ -44,7 +44,7 @@ $(document).on 'change', '#project_select', (evt) ->
       $.each data, (index, value) ->
         opt = undefined
         opt = $('<option/>')
-        opt.attr 'value', value[1]
+        opt.attr 'value', value[0]
         opt.text value[1]
         opt.appendTo role
         return

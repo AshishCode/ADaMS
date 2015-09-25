@@ -5,6 +5,9 @@ class TimesheetController < ApplicationController
 	def index
 		@timesheet = Timesheet.all
 		@users  = User.all
+		@client = Client.all
+		@project = Project.all
+		@rolez = Role.all
   	end
 
   	#method to return the timesheet of a particular employee
@@ -12,11 +15,11 @@ class TimesheetController < ApplicationController
   		
   		#for inline editing part
   		@timesheet = Timesheet.where(:employee_id => params[:employee_id])
-  		@roles = Role.all.map{|x| [x.role_name, x.role_name]}
+  		@roles = Role.all.map{|x| [x.id, x.role_name]}
   		@workspace = [["Home","Home"],["Office","Office"],["Clientsite","Clientsite"]]
   		@is_billed = [["true","Yes"],["false","No"]]
-  		@clients = Client.all.map {|x| [x.client_name, x.client_name]}
-  		@projects = Project.all.map {|x| [x.project_name, x.project_name]}
+  		@clients = Client.all.map {|x| [x.id, x.client_name]}
+  		@projects = Project.all.map {|x| [x.id, x.project_name]}
 
   		#for the insertion part
   		@timesheets = Timesheet.new
@@ -37,9 +40,9 @@ class TimesheetController < ApplicationController
 	#method to cascade the project names as per the clients
 	#used the partial method here hence the response is in the form of script
 	def update_project
-		@client_select = params[:client_name]
-		@clients = Client.where("client_name = ?", @client_select)
-		@projects = Project.where("client_id = ?",@clients[0][:id]).all
+		@client_select = params[:client_id]
+		@clients = Client.where("id = ?", @client_select)
+		@projects = Project.where("id = ?",@clients[0][:id]).all
 		
 		respond_to do |format|
       		format.js
@@ -53,8 +56,8 @@ class TimesheetController < ApplicationController
 	#method to cascade the role names as per the projects
 	#simple ajax response
 	def update_role
-		@project_select = params[:project_name]
-		@project_id = Project.where("project_name = ?", @project_select)
+		@project_select = params[:project_id]
+		@project_id = Project.where("id = ?", @project_select)
 		@roles = Role.where("project_id = ?", @project_id[0][:id]).all
 
 		# render an array in JSON containing arrays like:
@@ -63,8 +66,8 @@ class TimesheetController < ApplicationController
 
 	#method to cascade the rates as per the role
 	def update_rate
-		@role_select = params[:role_name]
-		@rate = Role.where("role_name = ?", @role_select).all
+		@role_select = params[:role_id]
+		@rate = Role.where("id = ?", @role_select).all
 		
 		# render an array in JSON containing arrays like:
     	render :json => @rate[0]['rate']
@@ -156,7 +159,7 @@ class TimesheetController < ApplicationController
 
 	private 
 	def timesheets_params
-		params.require(:timesheets).permit(:client,:project,:task,:timesheetdate,:hours,:role,:rate,:is_billed,:workspace,:comments, 
+		params.require(:timesheets).permit(:client_id,:project_id,:task,:timesheetdate,:hours,:role_id,:rate,:is_billed,:workspace,:comments, 
 		:employee_id)
 	end
 end

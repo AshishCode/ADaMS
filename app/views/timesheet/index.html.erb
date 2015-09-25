@@ -28,14 +28,14 @@
 		<% @timesheet.each do |entry| %>
 		  <tr>
 		    <!-- <td></td> -->
-		    <td><%= entry.client%></td> 
-		    <td><%= entry.project %></td>  
+		    <td><%= @client.where("id" =>entry.client_id).first.client_name%></td> 
+		    <td><%= @project.where("id" => entry.project_id).first.project_name %></td>  
 		    <td><%= entry.task %></td> 
 
 		    <td><%= entry.timesheetdate %></td>  
 
 		    <td><%= entry.hours %></td>  
-		    <td><%= entry.role %></td>  
+		    <td><%= @rolez.where("id" => entry.role_id).first.role_name %></td>  
 		    <td><%= entry.rate %></td>  
 		    <td><%= entry.is_billed == true ? "Yes" :"No" %></td>  
 		    <td><%= entry.workspace %></td>  

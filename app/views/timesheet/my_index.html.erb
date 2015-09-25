@@ -45,14 +45,14 @@
 	      <div class="form-group"> 
 	      	<div class="col-sm-3">
 			    <label for="client">Client</label>
-			      	<%= select("timesheets", "client", 
-				       @client.collect {|p| [ p.client_name, p.client_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "client_select"
+			      	<%= select("timesheets", "client_id", 
+				       @client.collect {|p| [ p.client_name, p.id ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "client_select"
 				    }) %>
 			</div>
 			<div class="col-sm-3">
 			    <label for="project">Project</label>
-				  	<%= select("timesheets", "project", 
-			       @project.collect {|p| [ p.project_name, p.project_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "project_select"
+				  	<%= select("timesheets", "project_id", 
+			       @project.collect {|p| [ p.project_name, p.id ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "project_select"
 			       	}) %>
 			</div>
 			<div class="col-sm-3">
@@ -74,8 +74,8 @@
 		  	</div>
 		  	<div class="col-sm-3">
 		    	<label for="role">Role</label> 
-			  		<%= select("timesheets", "role", 
-      			 	@rolez.collect {|r| [ r.role_name, r.role_name ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "role_select"}) %>
+			  		<%= select("timesheets", "role_id", 
+      			 	@rolez.collect {|r| [ r.role_name, r.id ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "role_select"}) %>
 		    </div>
 		    <div class="col-sm-3">
 		    	<label for="rate">Rate</label> 
@@ -144,15 +144,15 @@
 		<% @timesheet.collect do |entry| %>
 		  <tr>
 		    <!-- <td></td> -->
-		    <td><%= entry.client %></td> 
-		    <td><%= entry.project %></td>  
+		    <td><%= @client.where("id" =>entry.client_id).first.client_name %></td> 
+		    <td><%= @project.where("id" => entry.project_id).first.project_name %></td>  
 		    <td><%= best_in_place entry, :task, type: :textarea %></td> 
 
 		    <td><%= best_in_place entry, :timesheetdate, :as => :date %></td>  
 
 		    <td><%= best_in_place entry, :hours %></td> 
 		    <td><%= #best_in_place entry, :role, :type=>:select, :collection => @roles
-		    		entry.role
+		    		@rolez.where("id" => entry.role_id).first.role_name
 		     %></td> 
 		    <td><%= entry.rate %></td>  
 		    <td><%= best_in_place entry, :is_billed, :type=>:select, :collection => @is_billed %></td>  
