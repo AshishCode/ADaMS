@@ -1,6 +1,6 @@
 <% if current_user %>
   <script type="text/javascript">
-    window.location.href="/timesheet"  // put your correct path in a string here
+    window.location.href="/timesheet/"+ <%= current_user.id %>   // put your correct path in a string here
   </script>
 <% end %>
 <img src="https://media.licdn.com/media/p/4/005/04c/122/25e5f15.png" style="    margin-left: 25%;
