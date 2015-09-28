@@ -1,0 +1,659 @@
+﻿id,task,timesheetdate,comments,employee_id,created_at,updated_at,is_billed,hours,rate,workspace,project_id,client_id,role_id
+1,UI designing for BI portal,2015-07-21,Radhika K,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+7,Apache Data,2015-07-21,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,7,5,4
+8,Decathlon Discussion & suppport,2015-07-21,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+10,Testing portal,2015-07-22,Radhika K,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+18,Data Issues in Stock,2015-07-22,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+25,Testing portal & changes,2015-07-23,Radhika K,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+26,Citra Member Month,2015-07-23,NULL,15,2015-09-24,2015-09-24,1,13.5,743.75,NULL,11,5,4
+35,Testing portal & changes,2015-07-24,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+36,Citra Member Month,2015-07-24,NULL,15,2015-09-24,2015-09-24,1,5,743.75,NULL,11,5,4
+45,UI designing for BI portal,2015-07-27,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+46,Decathlon Visit & Data Model Size Optimisation,2015-07-27,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+53,Data Model Size Optimisation,2015-07-28,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+54,Date Issue Investiagtion,2015-07-28,NULL,15,2015-09-24,2015-09-24,1,2.5,875,NULL,15,12,5
+55,UI designing for BI portal,2015-07-28,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+62,BI Portal UI designing,2015-07-29,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+67,Data Model Size Optimisation,2015-07-29,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+73,Apache Dashboard,2015-07-30,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,7,5,4
+76,UI designing for BI portal,2015-07-30,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+78,Data Model Size Optimisation,2015-07-30,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+83,UI designing for BI portal,2015-07-31,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+85,Call+ changes,2015-07-31,NULL,15,2015-09-24,2015-09-24,1,2.25,875,NULL,15,12,5
+87,UI designing for BI portal,2015-08-03,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+93,Meeting at EMIDS,2015-08-03,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+94,QlikView slow and not responding issue,2015-08-03,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+95,UI designing for BI portal,2015-08-04,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+101,QlikView slow and not responding issue,2015-08-04,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+102,Meeting at EMIDS - 7DLB,2015-08-04,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+103,BI Portal UI changes $$$ Adding DSI TO and QTY$$$ OTB changes,2015-08-04,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+110,Meeting at EMIDS - 7DLB,2015-08-05,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+111,UI designing for BI portal,2015-08-05,Radhika K,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+117, BI portal's UI designing,2015-08-06,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+119,requirement doc & discussions -Supply mart ,2015-08-06,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+126,Meeting at EMIDS - 7DLB,2015-08-07,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+128,Google mail authentication for portal,2015-08-07,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+132,Store Visit$$$ meetings,2015-08-10,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+138,Supply mart data Analysis,2015-08-10,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,13,4,7
+141,Using OAuth 2.0 to Access Google APIs for BI Portal,2015-08-11,Radhika K,15,2015-09-24,2015-09-24,0,5,875,NULL,26,4,5
+142,Meeting at EMIDS - QA,2015-08-11,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+148,Supply mart data Analysis & doc,2015-08-11,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,13,4,7
+150, OAuth 2.0 to Access Google APIs for BI Portal,2015-08-12,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+151,Meeting at EMIDS - QA,2015-08-12,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+158,Supply mart db Design,2015-08-12,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,13,4,7
+166,Using OAuth 2.0 to Access Google APIs for BI Portal,2015-08-13,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+167,Suppply Mart design document,2015-08-13,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,13,4,7
+177,Testing BI Portal,2015-08-14,Radhika K,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+178,Meeting at EMIDS,2015-08-14,NULL,15,2015-09-24,2015-09-24,1,5,743.75,NULL,18,5,4
+179,Company meeting,2015-08-14,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,21,7,19
+180,Suppply Mart design document,2015-08-14,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,13,4,7
+182,Store Visit Meeting & Perf analysis,2015-08-17,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+192,Play framework - Learning,2015-08-17,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+193,Report optimization - ADL QA$$$ Monthly Flow bladder,2015-08-18,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,18,5,4
+195,Comprehending Snackbrand design of ETL packages,2015-08-18,NULL,16,2015-09-24,2015-09-24,0,8,743.75,NULL,28,12,4
+196,Retail Mart Design - Analysis,2015-08-18,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,13,4,7
+203,Play framework - Environment setup,2015-08-18,Radhika K,15,2015-09-24,2015-09-24,0,0,875,NULL,26,4,5
+204,Report Optimsation - MOnthly flow bwl,2015-08-19,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+205,Constructing ETL packages for Snackbrand : Dimcustomer and FactSalesInvoice,2015-08-19,NULL,16,2015-09-24,2015-09-24,0,7,743.75,NULL,28,12,4
+207,Retail Mart Design - Analysis,2015-08-19,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,13,4,7
+215,Play framework - working with an existing project,2015-08-19,Radhika K,15,2015-09-24,2015-09-24,0,0,875,NULL,26,4,5
+216,Constructing and testing ETL packages for Snackbrand : Dimcustomer and FactSalesInvoice,2015-08-20,NULL,16,2015-09-24,2015-09-24,0,8,743.75,NULL,28,12,4
+218,Retail Mart Design - Dimension documentation,2015-08-20,NULL,15,2015-09-24,2015-09-24,1,6,1275,NULL,13,4,7
+226,BI Portal UI designing,2015-08-20,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+230,Testing incremental load and counts and handling errors,2015-08-21,NULL,16,2015-09-24,2015-09-24,0,9,743.75,NULL,28,12,4
+235,Report optimization - Monthly Flow bladder$$$bowel & eating,2015-08-21,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+239,google mail authentication for portal ,2015-08-21,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+240,Error handling of packages,2015-08-24,NULL,16,2015-09-24,2015-09-24,0,6,743.75,NULL,28,12,4
+243,Store Visit,2015-08-24,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+249,Retail Design,2015-08-24,NULL,15,2015-09-24,2015-09-24,1,3,1275,NULL,13,4,7
+252,UI designing for BI portal,2015-08-24,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+253,Testing packages,2015-08-25,NULL,16,2015-09-24,2015-09-24,0,5,743.75,NULL,28,12,4
+254,Report optimization - Monthly Flow bladder$$$bowel & eating,2015-08-25,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+261,forti client vpn login issue handling,2015-08-25,NULL,16,2015-09-24,2015-09-24,0,3,743.75,NULL,13,4,4
+264,Google Oauth 2.0 for BI Portal,2015-08-25,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+265,Adding columns in the ssis etl process and editing report,2015-08-26,NULL,16,2015-09-24,2015-09-24,0,4,743.75,NULL,15,12,4
+266,Preparing for Microsoft SQL certification,2015-08-26,NULL,16,2015-09-24,2015-09-24,0,4,0,NULL,30,7,49
+273,Report optimization - Monthly Flow bladder$$$bowel & eating,2015-08-26,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+276,BI Portal UI designing,2015-08-26,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+280,Preparing for Microsoft SQL certification,2015-08-27,NULL,16,2015-09-24,2015-09-24,0,7,0,NULL,30,7,49
+281,Taking Backup of changes made in dev environment,2015-08-27,NULL,16,2015-09-24,2015-09-24,0,1,743.75,NULL,28,12,4
+285,Report optimization - Monthly Flow bladder$$$bowel & eating,2015-08-27,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+289,Google Oauth 2.0 for BI Portal,2015-08-27,Radhika K,15,2015-09-24,2015-09-24,0,0,875,NULL,26,4,5
+295,Report optimization - Monthly Flow bladder$$$bowel & eating,2015-08-28,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+296,Preparing for Microsoft SQL certification,2015-08-28,NULL,16,2015-09-24,2015-09-24,0,7,0,NULL,30,7,49
+300,UI designing for BI portal,2015-08-28,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+301,WACP Multi-Dates,2015-08-28,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+306,Report optimization - Monthly Flow bladder$$$bowel & eating,2015-08-31,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+307,Preparing for Microsoft SQL certification,2015-08-31,NULL,16,2015-09-24,2015-09-24,0,8,0,NULL,30,7,49
+315,BI Portal UI designing,2015-08-31,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+316,WACP Multi-Dates Testing$$$ Issues debugging,2015-08-31,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+322,Preparing for Microsoft SQL certification,2015-09-01,NULL,16,2015-09-24,2015-09-24,0,8,0,NULL,30,7,49
+325,Excel file download from BI Portal,2015-09-01,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+326,Retail Design,2015-09-01,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,13,4,7
+327,Report optimization - Monthly Observence,2015-09-01,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+330,Learning cube concepts and writing MDX queries,2015-09-02,NULL,16,2015-09-24,2015-09-24,0,3,0,NULL,30,7,49
+331,Adding Filter in GOT SSRS report$$$ writing MDX queries,2015-09-02,NULL,16,2015-09-24,2015-09-24,0,6,743.75,NULL,15,12,4
+340,Report optimization - Monthly Observence & Issues,2015-09-02,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+341,google oauth 2.0 for BI Portal,2015-09-02,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+342,Retail Design,2015-09-02,NULL,15,2015-09-24,2015-09-24,1,5,1275,NULL,13,4,7
+343,Making changes in the SSRS report(Monthly Sales report),2015-09-03,NULL,16,2015-09-24,2015-09-24,0,8,743.75,NULL,15,12,4
+351,QA Issues & ADL,2015-09-03,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,18,5,4
+352,Hiding the url for the links in BI Portal,2015-09-03,Radhika K,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+353,Sales Report check against erp,2015-09-03,Radhika K,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+354,Preparing for Microsoft SQL certification,2015-09-04,NULL,16,2015-09-24,2015-09-24,0,4,0,NULL,30,7,49
+355,Loading source queries and error check in ETL SSIS package,2015-09-04,NULL,16,2015-09-24,2015-09-24,0,4,875,NULL,12,12,5
+366,QA Issues & ADL,2015-09-04,NULL,15,2015-09-24,2015-09-24,1,5,743.75,NULL,18,5,4
+367,Excel file download and google oauth2.0 for BI Portal,2015-09-04,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+385,Holiday,2015-09-07,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+387,Bootstrap implementation for login page,2015-09-07,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+388,SQL certification preparation,2015-09-07,NULL,16,2015-09-24,2015-09-24,0,8,0,NULL,30,7,49
+393,Holiday,2015-09-08,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+395,Tried bootstrap using divs,2015-09-08,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+397,SQL certification preparation,2015-09-08,NULL,16,2015-09-24,2015-09-24,0,4,0,NULL,30,7,49
+403,Store Visit & Discussions,2015-09-09,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+405,Tried bootstrap for displaying sales report in mobile,2015-09-09,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+408,Leave,2015-09-08,NULL,16,2015-09-24,2015-09-24,0,4,0,NULL,16,6,10
+409,SSIS packages alterations and load,2015-09-09,NULL,16,2015-09-24,2015-09-24,0,8,743.75,NULL,28,12,4
+412,Bootstrap implementation in mobile devices,2015-09-10,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+413,SSIS packages alterations and load,2015-09-10,NULL,16,2015-09-24,2015-09-24,0,8,743.75,NULL,28,12,4
+416,Testing of BI Portal in mobile devices,2015-09-11,Radhika K,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+417,Report for review in college,2015-09-11,Radhika K,15,2015-09-24,2015-09-24,0,2,875,NULL,26,4,5
+419,ETL packages load and job run,2015-09-11,NULL,16,2015-09-24,2015-09-24,0,9,743.75,NULL,28,12,4
+472,Agronomy project$$$ creating packages and running loads,2015-09-18,NULL,16,2015-09-24,2015-09-24,1,4,743.75,NULL,28,12,4
+473,Exploring ways to get rid of unncessary columns in warehouse,2015-09-16,This time is productive but not chargeable right now,16,2015-09-24,2015-09-24,0,5,743.75,NULL,28,12,4
+474,Preparation for SQL certification,2015-09-16,NULL,16,2015-09-24,2015-09-24,0,3,0,NULL,30,7,49
+475,SSRS report correction,2015-09-15,NULL,16,2015-09-24,2015-09-24,0,6,743.75,NULL,15,12,4
+476,Praparation for SQL certification,2015-09-15,NULL,16,2015-09-24,2015-09-24,0,2,743.75,NULL,30,7,4
+477,Running SQL server jobs and resolving errors ,2015-09-14,NULL,16,2015-09-24,2015-09-24,0,8,743.75,NULL,28,12,4
+495,Agronomy project$$$ creating packages and running loads,2015-09-18,Unit testing time to go in next week,16,2015-09-24,2015-09-24,0,5,743.75,NULL,28,12,4
+496,Festival (Holiday),2015-09-17,NULL,16,2015-09-24,2015-09-24,0,8,0,NULL,9,6,11
+510,Qlikview tutorial$$$completed upto working with qlikview,2015-09-15,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+511,QlikView tutorial$$$completed upto creating a document and advanced part,2015-09-16,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+513,Optimization discussion,2015-09-03,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+514,Retail Design,2015-09-04,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,13,4,7
+515,Retail Design,2015-09-10,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,13,4,7
+516,Optimization testing,2015-09-09,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+517,MIssing Observations,2015-09-10,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+518,MIssing Observations & Missing Bowel+ Issue fixes,2015-09-14,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,18,5,4
+519,Recruitment,2015-09-11,NULL,15,2015-09-24,2015-09-24,0,14,0,NULL,5,7,14
+520,MIssing Observations & Missing Bowel+ Issue fixes,2015-09-15,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,18,5,4
+521,Positioning Report,2015-09-16,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+522,Holiday,2015-09-17,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,9,6,11
+523,Meeting + Positioning Report + Entry Detail Procs,2015-09-18,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,18,5,4
+524,ADL Issue + other changes,2015-09-19,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,18,5,4
+525,Positioning Report + Entry Detail Procs,2015-09-20,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+526,Testing in perf,2015-09-21,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+527,Issues testing,2015-09-21,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,18,5,4
+528,Agronomy project : implementing incremental and logging,2015-09-21,NULL,16,2015-09-24,2015-09-24,0,8,743.75,NULL,28,12,4
+529,Agronomy project$$$ Unit Testing packages and resolving errors,2015-09-22,NULL,16,2015-09-24,2015-09-24,0,8,743.75,NULL,28,12,4
+530,Worked with the qlikview file for checking the DecathlonIDs against CustomerMongodb file,2015-09-21,Radhika K,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+531,Worked on set Analysis part of qlikview,2015-09-22,Radhika K,15,2015-09-24,2015-09-24,0,5,875,NULL,26,4,5
+532,Regression testing on Retail dashboard ,2015-09-22,Radhika K,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+533,Sales issue test for bannerghatta store,2015-09-22,Radhika K,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+544,Weekly Catch-up & Checkpoint,2015-03-16,NULL,15,2015-09-24,2015-09-24,0,1,62.5,NULL,24,12,35
+545,Technical Document Draft,2015-03-16,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+548,Changes - Executive Dashboard & Others,2015-03-16,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+563,Play Service Issue discussion with Vidya,2015-03-17,NULL,15,2015-09-24,2015-09-24,1,2.5,875,NULL,26,4,5
+564,Executive Report - Brand Movie,2015-03-17,NULL,15,2015-09-24,2015-09-24,1,3.5,875,NULL,26,4,5
+565,Updates & Discussions,2015-03-17,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+573,Executive Dashboard changes to detail table & discussions changes,2015-03-18,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+583,Brand Picture - Match the table to excel,2015-03-19,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+584,Live Loads Failure - ERP Issue,2015-03-19,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+586,Review - Sumeeth & Vidya,2015-03-19,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,21,7,19
+587,Discussion with Prashant,2015-03-19,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,21,7,19
+591,Play Service Discussion - DB  Approach & new  fraamework,2015-03-20,NULL,15,2015-09-24,2015-09-24,1,1.5,875,NULL,26,4,5
+594,Executive Report - Testing & Changes Brand Picture with week  & YTD,2015-03-20,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+595,Review -  Naveen  & Pramod,2015-03-20,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,21,7,19
+605,Testing Executive Report - Brand piucture,2015-03-23,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+617,Meetings & Discussions at Decathlon Anubhava,2015-03-24,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+618,Live Issue with Sales Total for a week,2015-03-24,NULL,15,2015-09-24,2015-09-24,1,0.5,875,NULL,26,4,5
+619,Executive  Report - New Changes Supply Movie & Brand level & KPI level analysis,2015-03-24,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+632,Executive  Report - Brand  or  KPI  analysis & Data  Model  changes,2015-03-25,NULL,15,2015-09-24,2015-09-24,1,7,875,NULL,26,4,5
+633,Checkpoints  & Updates,2015-03-25,NULL,15,2015-09-24,2015-09-24,0,1,62.5,NULL,24,12,35
+646,Executive  Report - OTB & Piloted Value & Data Model change  for PO,2015-03-26,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+656,Play Service update discussion,2015-03-27,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+657,Meeting updates with Pramod,2015-03-27,NULL,15,2015-09-24,2015-09-24,1,1.5,875,NULL,26,4,5
+680,Meetings & Discussions at Decathlon Anubhava,2015-03-30,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+681,Data Model Changes for PO,2015-03-30,NULL,15,2015-09-24,2015-09-24,1,3.5,875,NULL,26,4,5
+690,Data Model Testing  - ED,2015-03-31,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+696,Holiday,2015-04-01,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+713,Invoicing,2015-04-02,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+714,Invoicing,2015-04-02,NULL,15,2015-09-24,2015-09-24,0,0.5,62.5,NULL,24,12,35
+715,Invoicing,2015-04-02,NULL,15,2015-09-24,2015-09-24,1,0.5,743.75,NULL,8,11,4
+723,Data Model Testing  - ED Issues,2015-04-02,NULL,15,2015-09-24,2015-09-24,1,3.5,875,NULL,26,4,5
+724,KT to Sharath,2015-04-02,NULL,15,2015-09-24,2015-09-24,1,2.5,743.75,NULL,10,4,4
+729,Swiggy Discussion,2015-04-02,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,22,2,1
+743,SoW,2015-04-03,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,10,4,4
+744,Discussions & Issues,2015-04-03,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+748,Swiggy Discussion-Satya,2015-04-03,NULL,15,2015-09-24,2015-09-24,0,1,0,NULL,22,2,1
+766,Removed ecommerce from comparable stores(Change in data model)$$$ Export to Excel change in Supply$$$ moved to live$$$ new A codes list moved to live$$$ Qlikview Access$$$ change in StoreMap.xls for A Codes Rup,2015-04-06,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+781,KPI Discussion,2015-04-07,NULL,15,2015-09-24,2015-09-24,1,1.5,743.75,NULL,10,4,4
+782,Discussions$$$ changes,2015-04-07,NULL,15,2015-09-24,2015-09-24,1,3.5,875,NULL,26,4,5
+785,Swiggy -  Funcational Doc dicussion,2015-04-07,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,22,2,1
+787,ComVita Call & Environment Check,2015-04-08,NULL,15,2015-09-24,2015-09-24,1,1.5,743.75,NULL,12,12,4
+792,Discussion with  Sharath on  customer  analytics,2015-04-08,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,10,4,4
+800,Play service issue doc,2015-04-08,"ms, StockDB daily testing",15,2015-09-24,2015-09-24,1,1.5,875,NULL,26,4,5
+801,Issue List work,2015-04-08,ll the records from Shopmart excel sheet,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+814,Issue discussions & Resolution,2015-04-09,NULL,15,2015-09-24,2015-09-24,1,3.5,875,NULL,26,4,5
+815,Customer Load,2015-04-09,NULL,15,2015-09-24,2015-09-24,1,2.5,743.75,NULL,12,12,4
+816,Discussions,2015-04-09,NULL,15,2015-09-24,2015-09-24,1,1.5,743.75,NULL,10,4,4
+824,Customer Load & Fact tables,2015-04-10,NULL,15,2015-09-24,2015-09-24,1,5,743.75,NULL,12,12,4
+825,Discussions,2015-04-10,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,10,4,4
+826,Swiggy -  Funcational Doc dicussion,2015-04-10,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,22,2,1
+830,Decathlon Visit  & executive changes,2015-04-13,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+838,ED -  Retail Movie,2015-04-14,NULL,15,2015-09-24,2015-09-24,1,7,875,NULL,26,4,5
+841,Call & Sales load table creation,2015-04-14,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,12,12,4
+847,Executive dashboard - summary dashboard & retail movie testing,2015-04-15,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+858,Executive dashboard - summary dashboard & testing,2015-04-16,NULL,15,2015-09-24,2015-09-24,1,9,875,NULL,26,4,5
+870,Executive dashboard - summary dashboard & testing,2015-04-17,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+871,POS data  loading,2015-04-17,NULL,15,2015-09-24,2015-09-24,1,8.5,743.75,NULL,12,12,4
+880,Customer Segmentation & Market Basket,2015-04-20,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,10,4,4
+881,Changes discussion,2015-04-20,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+882,OLAP Views & SSAS,2015-04-20,NULL,15,2015-09-24,2015-09-24,1,2.5,743.75,NULL,12,12,4
+891,Customer Segmentation,2015-04-21,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,10,4,4
+892,Store Visit - QlikView Discussion & ED changes,2015-04-21,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+901,Holiday,2015-04-22,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+914,Executive Dashboard Changes,2015-04-23,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+915,Adding Dimensions ,2015-04-23,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,12,12,4
+927,Dimensions & Cube,2015-04-24,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,12,12,4
+928,Adding currency conversion logic,2015-04-24,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,12,12,4
+929,Cluster Analysis fro Customer Analytics,2015-04-24,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,10,4,4
+930,Changes discussion,2015-04-24,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+942,Cluster Analysis fro Customer Analytics,2015-04-25,NULL,15,2015-09-24,2015-09-24,1,12,743.75,NULL,10,4,4
+948,Cluster Analysis fro Customer Analytics,2015-04-26,NULL,15,2015-09-24,2015-09-24,1,12,743.75,NULL,10,4,4
+962,Store Visit,2015-04-27,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+969,Changes$$$  custer installation & Sizing analysis,2015-04-28,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+973,Sizing Analysis,2015-04-28,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+974,Cluster Analysis,2015-04-28,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,10,4,4
+990,Retail Changes & Discussions,2015-04-29,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1001,Changes$$$  custer installation & Sizing analysis,2015-04-30,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,10,4,4
+1008,Bank Holiday,2015-05-01,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,9,6,11
+1019,Holiday,2015-05-04,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+1032,Retail Changes & Dashboard changes,2015-05-05,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1043,Web Customer & Transaction,2015-05-06,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,12,12,4
+1044,Retail Changes & Issue,2015-05-06,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1057,Item Logic$$$ Cost Data$$$ POS data,2015-05-07,NULL,15,2015-09-24,2015-09-24,1,13,743.75,NULL,12,12,4
+1059,Changes,2015-05-07,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1069,DTC Cube,2015-05-08,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,12,12,4
+1070,Retail Changes & Discussions,2015-05-08,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1093,Store VIsit and Retail CHanges,2015-05-11,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1102,TIme Version calcs and UPT$$$ AVT,2015-05-12,NULL,15,2015-09-24,2015-09-24,1,3.75,743.75,NULL,12,12,4
+1107,Data Model Reduction & Retail Changes,2015-05-12,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1117,Calculation and report template,2015-05-13,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,12,12,4
+1122,Data Model Reduction Testing & Retail Changes,2015-05-13,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1129,Report Templates & Web Data,2015-05-14,NULL,15,2015-09-24,2015-09-24,1,12,743.75,NULL,12,12,4
+1189,PO validation$$$ reconcile$$$ invoice generation and e-mails for April 2015 & Changes,2015-05-20,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1199,Status Discussion & analysis of server performance,2015-05-21,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1205,Time Version,2015-05-21,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,12,12,4
+1215,Time Version & Week Groups,2015-05-22,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,12,12,4
+1216,Holiday planning and resourcing for June$$$ rate changes$$$ other discussions & Retail Changes,2015-05-22,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1224,Call$$$ discussion$$$ checkpoint,2015-05-25,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,12,12,4
+1225,Ravi Visit - DIscussions$$$ WACP solution,2015-05-25,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1242,Time Version Calcs,2015-05-26,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,12,12,4
+1243,WACP solution,2015-05-26,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1254,Consumer Type & Time version,2015-05-27,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,12,12,4
+1259,WACP DB solution,2015-05-27,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1281,WACP DB functions,2015-05-28,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1292,WACP QlikView implementation,2015-05-29,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1306,WACP QlikView,2015-06-01,NULL,15,2015-09-24,2015-09-24,1,12,875,NULL,26,4,5
+1317,WACP QlikView Inc,2015-06-02,NULL,15,2015-09-24,2015-09-24,1,10,875,NULL,26,4,5
+1331,WACP QlikView Inc & Testing,2015-06-03,NULL,15,2015-09-24,2015-09-24,1,11,875,NULL,26,4,5
+1343,WACP QlikView Changes,2015-06-04,NULL,15,2015-09-24,2015-09-24,1,11,875,NULL,26,4,5
+1355,WACP QlikView Changes & Testing,2015-06-05,NULL,15,2015-09-24,2015-09-24,1,12,875,NULL,26,4,5
+1493,WACP issue,2015-06-22,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+1500,Apervita discussions,2015-06-22,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,7,5,4
+1509,Data Model Optimisation,2015-06-23,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+1510,Apervita Meeting and design at emids,2015-06-23,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,7,5,4
+1522,Live issue with Rupture Rate,2015-06-24,NULL,15,2015-09-24,2015-09-24,1,2.5,875,NULL,26,4,5
+1523,Cube reconciliation and call,2015-06-24,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,12,12,4
+1524,Apervita platform & design & call,2015-06-24,NULL,15,2015-09-24,2015-09-24,1,5,743.75,NULL,7,5,4
+1530,WACP testing& query,2015-06-25,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+1537,Apervita Meeting and python modules,2015-06-25,NULL,15,2015-09-24,2015-09-24,1,3.5,743.75,NULL,7,5,4
+1538,CITRA Claim Details Issue,2015-06-25,NULL,15,2015-09-24,2015-09-24,1,2.5,743.75,NULL,11,5,4
+1549,Amrtisar WACP issue,2015-06-26,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+1550,Cube reconciliation and call,2015-06-26,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,12,12,4
+1551,upload file module,2015-06-26,NULL,15,2015-09-24,2015-09-24,1,5,743.75,NULL,7,5,4
+1566,python modules & apervita platform,2015-06-29,NULL,15,2015-09-24,2015-09-24,1,9,743.75,NULL,7,5,4
+1567,Discussion regarding issues & loads,2015-06-29,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+1572,DB framework,2015-06-30,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,7,5,4
+1573,Live Rupture Issue,2015-06-30,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+1577,Live - Dev data load & reconciliation,2015-07-01,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,12,12,4
+1578,python modules & apervita platform,2015-07-01,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,7,5,4
+1583,worked on the UI design and getting the popup working from a button,2015-07-01,Radhika,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+1584,python modules & apervita platform,2015-07-02,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,7,5,4
+1585,Discussions on WACP issues,2015-07-02,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+1591,Created the popup windows and file upload functions to browse and upload A Code list and COMM&OBJ Files,2015-07-02,Radhika,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+1597,Invoice discussion & WACP testing discussion,2015-07-03,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+1598,python modules & apervita platform,2015-07-03,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,7,5,4
+1599,Integration of the functions to the popup windows and UI design,2015-07-03,Radhika,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+1610,python modules & .net discussions,2015-07-06,NULL,15,2015-09-24,2015-09-24,1,12,743.75,NULL,7,5,4
+1611,Deployment & Testing,2015-07-06,NULL,15,2015-09-24,2015-09-24,1,4.5,743.75,NULL,12,12,4
+1614,Upgraded Postgreql and did database connectivity with postgresql,2015-07-06,Radhika,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+1620,Extraction of data from database and inserting into tables,2015-07-07,Radhika,15,2015-09-24,2015-09-24,0,8,875,NULL,26,4,5
+1624,python modules & .net discussions,2015-07-07,NULL,15,2015-09-24,2015-09-24,1,15,743.75,NULL,7,5,4
+1625,Extraction of data from the XML file using php$$$inserting it into table$$$functions for calculations,2015-07-08,Radhika,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1631,Tabelau dashboard,2015-07-08,NULL,15,2015-09-24,2015-09-24,1,16,743.75,NULL,7,5,4
+1632,Real time -Completed the calculation functions$$$tables for the calculated data,2015-07-09,Radhika,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1639,Tabelau dashboard$$$python changes & testing,2015-07-09,NULL,15,2015-09-24,2015-09-24,1,18,743.75,NULL,7,5,4
+1646,Real time -Worked on the checkboxes on the tables for extracting related data,2015-07-10,Radhika K,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+1648,Tabelau dashboard$$$python changes & testing,2015-07-10,NULL,15,2015-09-24,2015-09-24,1,10,743.75,NULL,7,5,4
+1655,Real time -Functions for retrieving the data according to selections made,2015-07-13,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1657,POC changes,2015-07-13,NULL,15,2015-09-24,2015-09-24,1,9,743.75,NULL,7,5,4
+1662,Real time -BI Portal - Building functions for data tables,2015-07-14,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1665,POC changes,2015-07-14,NULL,15,2015-09-24,2015-09-24,1,10,743.75,NULL,7,5,4
+1668,Biportal Design,2015-07-15,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1671,Initial deployment,2015-07-15,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,7,5,4
+1678,Biportal Design,2015-07-16,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1686,Biportal Design,2015-07-17,Radhika K,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1687,New data & dashboard & deployment,2015-07-17,NULL,15,2015-09-24,2015-09-24,1,14,743.75,NULL,7,5,4
+1692,New data & dashboard & deployment,2015-07-18,NULL,15,2015-09-24,2015-09-24,1,10,743.75,NULL,7,5,4
+1697,UI designing for BI portal,2015-07-20,Radhika K,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+1705,Case Study on Data warehouse Development: Understanding data and creation of staging database,2015-07-21,NULL,16,2015-09-24,2015-09-24,0,8,0,NULL,30,7,49
+1706,Labour Day,2014-05-01,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,9,6,11
+1707,Food Poisoning,2014-05-02,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1708,Food Poisoning,2014-05-05,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1709,Website Build - Mobile changes,2014-05-06,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,32,7,13
+1710,Production changes & issue resolution,2014-05-07,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1711,Production changes & inrange issue,2014-05-08,NULL,15,2015-09-24,2015-09-24,1,7,743.75,NULL,26,4,4
+1712,InRange fix & Made In India Changes,2014-05-09,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1713,Made In India & Prod Changes,2014-05-12,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1714,DMI to Live & Prod to UAT,2014-05-13,NULL,15,2015-09-24,2015-09-24,1,9,743.75,NULL,26,4,4
+1715,Production App,2014-05-14,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1716,Production App,2014-05-15,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1717,Production App,2014-05-16,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1718,Sick-Off,2014-05-19,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1719,Production App-DOT,2014-05-20,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1720,Production App-Reporting,2014-05-21,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1721,Production App-Bought together report,2014-05-22,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1722,Production App-Other Changes,2014-05-23,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1723,Production Live,2014-05-26,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1724,Production- Some more changes,2014-05-27,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1725,Migration - Installation,2014-05-28,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1726,Migration - User Creation & Creating folder structures,2014-05-29,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1727,Migration,2014-05-30,NULL,15,2015-09-24,2015-09-24,1,6,743.75,NULL,26,4,4
+1729,Sample Row - Task 1,2014-06-01,NULL,15,2015-09-24,2015-09-24,0,4.5,0,NULL,32,7,13
+1730,Sample Row - Task 2,2014-06-01,NULL,15,2015-09-24,2015-09-24,0,3,0,NULL,32,7,13
+1735,Sick-Off,2014-06-02,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1736,Project Plan & proposal - Data Model build,2014-06-03,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,26,4,4
+1740,Migration - Checking Loads & data sources,2014-06-03,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,26,4,4
+1741,Migration - Install SSL & configure Access Point,2014-06-03,NULL,15,2015-09-24,2015-09-24,1,4.5,743.75,NULL,26,4,4
+1742,Production Issue,2014-06-03,NULL,15,2015-09-24,2015-09-24,1,1.5,743.75,NULL,26,4,4
+1743,Checking Load Schedules & User Access,2014-06-04,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,26,4,4
+1748,Project Plan - Data Model,2014-06-04,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,26,4,4
+1749,Fixing Issues,2014-06-04,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,26,4,4
+1752,Store Dashboard,2014-06-05,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1755,Store Dashboard,2014-06-06,NULL,15,2015-09-24,2015-09-24,1,3.5,743.75,NULL,26,4,4
+1756,Tata Sky Office visit,2014-06-06,NULL,15,2015-09-24,2015-09-24,0,4.5,0,NULL,22,2,3
+1759,Store Dashboard,2014-06-09,NULL,15,2015-09-24,2015-09-24,1,8,743.75,NULL,26,4,4
+1761,Retail Supply Split discussion,2014-06-10,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,26,4,4
+1762,Analysis & checking the DBs,2014-06-10,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,26,4,4
+1763,Store Requirement,2014-06-10,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,26,4,4
+1765,Retail Supply Split dev & Test,2014-06-11,NULL,15,2015-09-24,2015-09-24,1,5,743.75,NULL,26,4,4
+1766,Bought Together Discussion,2014-06-11,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,26,4,4
+1774,Rss Dev,2014-06-12,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,26,4,4
+1775,Bought Together Testing & Dev,2014-06-12,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,26,4,4
+1776,Shadow,2014-06-12,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,26,4,4
+1779,Store,2014-06-13,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1787,Tata Sky ,2014-06-16,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,22,2,3
+1790,Store + Confirmed Order issue,2014-06-17,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1797,Issues + Shadow,2014-06-18,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1800,RSS + Shadow,2014-06-19,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1802,CSAT + Store Test,2014-06-20,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1805,Store + Purchase pattern,2014-06-23,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1811,Stock + Purchase pattern,2014-06-24,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1815,Stock New Run,2014-06-25,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1820,Stock New Run,2014-06-26,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1821,Invoice checks and financials,2014-06-26,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+1822,Tata Sky model,2014-06-27,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,22,2,3
+1824,Plan for July-December 2014,2014-06-27,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+1825,Tata Sky,2014-06-27,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,22,2,3
+1826,Holiday,2014-06-30,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+1828,Holiday,2014-06-30,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+1830,New Stock Live & Testing,2014-07-01,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1831,Store - Stock Quality - Data Model,2014-07-02,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1833,Store - Stock Quality Dev,2014-07-03,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1835,Design-Self Service BI,2014-07-04,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,26,4,7
+1840,Tata Sky Demo,2014-07-07,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,22,2,3
+1842,Sick Off - Bike Accident,2014-07-08,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1844,Store and Rupture rate testing,2014-07-09,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1849,Store - Stock Quality Testing,2014-07-10,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1853,Storewise 540s,2014-07-11,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1857,Stock Quality - 540 & 8020 ,2014-07-14,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1862,Stock Quality - Reportioning,2014-07-15,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+1863,Doctor Appointment,2014-07-15,NULL,15,2015-09-24,2015-09-24,0,4,0,NULL,31,6,12
+1867,Sick Off,2014-07-16,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1871,Store Stock Quality,2014-07-17,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+1872,Lead Time - Production,2014-07-17,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+1873,Store Stock Quality UAT,2014-07-18,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1875,Production Changes,2014-07-21,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+1876,Ad-Hoc Application Design,2014-07-21,NULL,15,2015-09-24,2015-09-24,1,7,1275,NULL,26,4,7
+1879,DMI changes,2014-07-22,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+1880,Ad-Hoc Application Design,2014-07-22,NULL,15,2015-09-24,2015-09-24,1,7,1275,NULL,26,4,7
+1883,Store Stock Issue Check,2014-07-23,NULL,15,2015-09-24,2015-09-24,1,1.5,875,NULL,26,4,5
+1884,OTB new phase,2014-07-23,NULL,15,2015-09-24,2015-09-24,1,2.5,875,NULL,26,4,5
+1885,DMI issue,2014-07-23,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+1887,OTB Discussion,2014-07-24,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+1888,Commitment & Objective,2014-07-24,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+1890,Commitment & Objective,2014-07-25,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+1891,OTB Discussion,2014-07-25,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+1892,8020 flag SLT,2014-07-25,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+1905,KT to Pramod & JP,2014-07-30,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+1908,Knee Surgery,2014-07-31,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1909,Knee Surgery,2014-07-31,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1914,Knee Surgery,2014-08-01,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1918,Knee Surgery,2014-08-04,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1921,Knee Surgery,2014-08-05,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1924,Knee Surgery,2014-08-06,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1926,Knee Surgery,2014-08-07,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1928,Knee Surgery,2014-08-08,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1932,Knee Surgery,2014-08-11,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1936,Knee Surgery,2014-08-12,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1940,Knee Surgery,2014-08-13,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1942,Knee Surgery,2014-08-14,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1943,Ind day,2014-08-15,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,9,6,11
+1946,Knee Surgery,2014-08-18,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1948,Knee Surgery,2014-08-19,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1950,Knee Surgery,2014-08-20,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1952,Knee Surgery,2014-08-21,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1955,Knee Surgery,2014-08-22,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1959,Knee Surgery,2014-08-25,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1962,Knee Surgery,2014-08-26,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1964,Knee Surgery,2014-08-27,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1966,Knee Surgery,2014-08-28,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1968,Knee Surgery,2014-08-29,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1973,Knee Surgery,2014-09-01,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1976,Knee Surgery,2014-09-02,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1978,Knee Surgery,2014-09-03,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1982,Knee Surgery,2014-09-04,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1987,Knee Surgery,2014-09-05,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1992,Knee Surgery,2014-09-08,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+1994,Sorting out Pending Issues,2014-09-09,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1996,Store Live,2014-09-10,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+1998,Knee Surgery,2014-09-11,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,31,6,12
+2002,Store Live,2014-09-12,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2005,Store Live,2014-09-15,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2007,Setting Up the environment,2014-09-16,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,8,11,4
+2009,Store Live,2014-09-16,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2011,Store Live,2014-09-17,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2012,Android App Fixing Issues,2014-09-17,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2013,Setting Up the environment,2014-09-18,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,8,11,4
+2015,Android App Fixing Issues,2014-09-18,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2017,Android App Fixing Issues,2014-09-19,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2018,Setting Up the environment,2014-09-20,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,8,11,4
+2019,Setting Up the environment,2014-09-21,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,8,11,4
+2025,Android App fragments Design,2014-09-22,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,26,4,7
+2027,Setting Up the environment,2014-09-23,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,8,11,4
+2030,Android App Current Selection,2014-09-23,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2031,Setting Up the environment,2014-09-24,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,8,11,4
+2034,Android App Current Selection,2014-09-24,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2036,Setting Up the environment,2014-09-25,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,8,11,4
+2038,Android App Current Selection,2014-09-25,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2041,Android App Fixing Issues,2014-09-26,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2042,Setting Up the environment,2014-09-27,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,8,11,4
+2043,Budget Level 1 views,2014-09-29,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,8,11,4
+2045,Android App Fixing Issues,2014-09-29,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2046,Incremental Load Design,2014-09-29,NULL,15,2015-09-24,2015-09-24,1,5.5,1275,NULL,26,4,7
+2048,Budget Level 1 views,2014-09-30,NULL,15,2015-09-24,2015-09-24,1,7,743.75,NULL,8,11,4
+2049,Incremental Load Design,2014-09-30,NULL,15,2015-09-24,2015-09-24,1,6.5,1275,NULL,26,4,7
+2051,Rupture Issue,2014-09-30,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+2052,Android App,2014-09-30,NULL,15,2015-09-24,2015-09-24,1,0.5,875,NULL,26,4,5
+2054,Budget Level  filter views & insert SP,2014-10-01,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,8,11,4
+2055,Grid View issue,2014-10-01,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,8,11,4
+2063,Incremental Load Design,2014-10-01,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,26,4,7
+2067,Budget Level 2 SQL  objects,2014-10-04,NULL,15,2015-09-24,2015-09-24,1,5,743.75,NULL,8,11,4
+2072,Incremental Load Dev,2014-10-06,NULL,15,2015-09-24,2015-09-24,1,5.5,875,NULL,26,4,5
+2074,Issues - QlikView & access,2014-10-06,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+2075,Incremental master split design,2014-10-06,NULL,15,2015-09-24,2015-09-24,1,1,1275,NULL,26,4,7
+2078,Meetings$$$ scope understanding and reviews,2014-10-06,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2085,Incremental Load Dev - m_warehouse,2014-10-07,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2090,App Summary Screen Redesign,2014-10-08,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2091,BudgetLevel3 & BudgetHistory,2014-10-09,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,8,11,4
+2095,Sick off,2014-10-09,NULL,15,2015-09-24,2015-09-24,0,5,0,NULL,31,6,12
+2097,Discussions & Issues,2014-10-10,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2098,Movement transaction change,2014-10-10,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2099,Mobile App look and feel changes,2014-10-10,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2102,Budget screen css fixes,2014-10-12,NULL,15,2015-09-24,2015-09-24,1,4,743.75,NULL,8,11,4
+2105,App Changes,2014-10-13,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2106,Production Go Live,2014-10-13,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+2107,Changes$$$ Issues & Discussions,2014-10-13,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+2113,Budget Level 4 Data,2014-10-14,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,8,11,4
+2116,App - Adding last updated date,2014-10-14,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2117,QlikView changes & Incremental Load,2014-10-14,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+2119,Design Analysis - Incremental Load,2014-10-15,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,26,4,7
+2120,App - Adding last updated date,2014-10-15,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2121,QlikView changes & Issues,2014-10-15,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2123,Budget Level 4 SQL Objects,2014-10-16,NULL,15,2015-09-24,2015-09-24,1,4.5,743.75,NULL,8,11,4
+2130,Live Changes,2014-10-16,NULL,15,2015-09-24,2015-09-24,1,2.5,875,NULL,26,4,5
+2131,Incremental Load,2014-10-16,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2132,Budget Level 4 SQL Objects,2014-10-17,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,8,11,4
+2133,Budget Level 4 SQL Objects,2014-10-17,NULL,15,2015-09-24,2015-09-24,1,0.5,743.75,NULL,8,11,4
+2138,Incremental Load Dev,2014-10-17,NULL,15,2015-09-24,2015-09-24,1,6.25,875,NULL,26,4,5
+2139,Issues & Changes,2014-10-17,NULL,15,2015-09-24,2015-09-24,1,1.5,875,NULL,26,4,5
+2141,Call & Discussion After,2014-10-18,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,8,11,4
+2142,Budget Level 4 Data,2014-10-18,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,8,11,4
+2143,Project Discussions and updates (for the month),2014-10-18,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2149,Incremental Load,2014-10-20,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2150,Issues & Changes,2014-10-20,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2153,Incremental Load & Issues,2014-10-21,NULL,15,2015-09-24,2015-09-24,1,6.75,875,NULL,26,4,5
+2156,Diwali,2014-10-22,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,9,6,11
+2158,Issue Fixes,2014-10-23,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,8,11,4
+2160,Diwali,2014-10-23,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+2162,Changes to Budget Level 4 Central & Balance Issues,2014-10-24,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,8,11,4
+2163,DB Script and code clean up,2014-10-24,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,8,11,4
+2164,Stock Quality Testing,2014-10-24,NULL,15,2015-09-24,2015-09-24,1,7,875,NULL,26,4,5
+2165,m_transaction Incremental Load & Changes,2014-10-24,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2173,Budget Level 4 Issue,2014-10-27,NULL,15,2015-09-24,2015-09-24,1,1,743.75,NULL,8,11,4
+2174,Incremental Load StockDB,2014-10-27,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2175,Store UAT,2014-10-27,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2182,Store UAT,2014-10-28,NULL,15,2015-09-24,2015-09-24,1,5.5,875,NULL,26,4,5
+2183,StockDB Incremental,2014-10-28,NULL,15,2015-09-24,2015-09-24,1,2.5,875,NULL,26,4,5
+2185,Issue fixes & Level 4 central total change,2014-10-29,NULL,15,2015-09-24,2015-09-24,1,4.5,743.75,NULL,8,11,4
+2186,StockDB Incremental,2014-10-29,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2187,Store UAT & Testing,2014-10-29,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2194,Store & Credit note issue,2014-10-30,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2202,Salem Wedding,2014-10-31,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+2205,Level 2 Issue & Level 4 Issue,2014-11-03,NULL,15,2015-09-24,2015-09-24,1,0.75,743.75,NULL,8,11,4
+2206,Store change retract & credit note issue,2014-11-03,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+2215,Credit Note Issue & Stock DB,2014-11-04,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2222,credit note incremental load dev,2014-11-05,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2223,Credit Note Issue,2014-11-05,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2229,Data Model Design,2014-11-06,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,26,4,7
+2232,Data Model Design,2014-11-07,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,26,4,7
+2238,Data Model Design,2014-11-10,NULL,15,2015-09-24,2015-09-24,1,5.5,1275,NULL,26,4,7
+2239,Issue$$$ changes & Discussion,2014-11-10,NULL,15,2015-09-24,2015-09-24,1,2.5,875,NULL,26,4,5
+2244,Changes to Level 4 screen (New Filter Rules),2014-11-11,NULL,15,2015-09-24,2015-09-24,1,3,743.75,NULL,8,11,4
+2245,Data Model Design,2014-11-11,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,26,4,7
+2246,Issues & Investigations,2014-11-11,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2254,Holiday,2014-11-12,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+2257,Issues & Investigations,2014-11-13,NULL,15,2015-09-24,2015-09-24,1,5.5,875,NULL,26,4,5
+2258,Data Model Design,2014-11-13,NULL,15,2015-09-24,2015-09-24,1,2.5,1275,NULL,26,4,7
+2262,Data Model Design,2014-11-14,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,26,4,7
+2263,Issues & Investigations,2014-11-14,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2268,Changes to Level 4 screen (New Filter Rules),2014-11-15,NULL,15,2015-09-24,2015-09-24,1,2,743.75,NULL,8,11,4
+2269,Changes to Level 4 screen (New Filter Rules),2014-11-17,NULL,15,2015-09-24,2015-09-24,1,0.5,743.75,NULL,8,11,4
+2271,Data Model Design,2014-11-17,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,26,4,7
+2272,Issues & Investigations,2014-11-17,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2276,Issue fixes Level 4,2014-11-18,NULL,15,2015-09-24,2015-09-24,1,1.5,743.75,NULL,8,11,4
+2277,Data Model Design,2014-11-18,NULL,15,2015-09-24,2015-09-24,1,7.5,1275,NULL,26,4,7
+2288,Data Model Design,2014-11-19,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,26,4,7
+2296,Data Model Design,2014-11-20,NULL,15,2015-09-24,2015-09-24,1,2.5,1275,NULL,26,4,7
+2297,Ad-Hoc Report UI Design,2014-11-20,NULL,15,2015-09-24,2015-09-24,1,4,1275,NULL,26,4,7
+2298,Issues & Changes,2014-11-20,NULL,15,2015-09-24,2015-09-24,1,1.5,875,NULL,26,4,5
+2306,Ad-Hoc Report Testing,2014-11-21,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+2307,Data Model Testing & Fixes,2014-11-21,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2308,Android App Version 2 discussion & estimates,2014-11-21,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2317,Data Model Testing & Fixes,2014-11-24,NULL,15,2015-09-24,2015-09-24,1,4.5,875,NULL,26,4,5
+2318,First Buyers Logic,2014-11-24,NULL,15,2015-09-24,2015-09-24,1,3.5,1275,NULL,26,4,7
+2323,First Buyers Testing$$$ Data Model Testing & Fixes,2014-11-25,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2328,Data Model misc additions,2014-11-26,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2329,Data Model Testing & Fixes,2014-11-26,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2341,Data Model Testing & Issue Fixes,2014-11-27,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2344,DMI Dashboard,2014-11-28,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2345,Data Model Testing,2014-11-28,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2354,Off,2014-12-01,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,16,6,10
+2362,DMI Dashboard,2014-12-02,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2369,Discussion on App,2014-12-03,write-off,15,2015-09-24,2015-09-24,0,2,743.75,NULL,2,4,4
+2370,DMI Dashboard,2014-12-03,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2375,DMI Dashboard,2014-12-04,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2382,DMI Dashboard,2014-12-05,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2393,DMI Dashboard,2014-12-08,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2398,DMI Dashboard Testing,2014-12-09,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2402,DMI Dashboard changes,2014-12-10,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2406,DMI Dashboard changes,2014-12-11,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2413,DMI Discussiom & Changes,2014-12-12,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+2416,Optimising Data Model,2014-12-15,NULL,15,2015-09-24,2015-09-24,1,5,1275,NULL,26,4,7
+2421,Optimising Data Model,2014-12-16,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,26,4,7
+2425,Optimising Data Model,2014-12-17,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,26,4,7
+2429,Optimising Data Model,2014-12-18,NULL,15,2015-09-24,2015-09-24,1,8,1275,NULL,26,4,7
+2433,Optimising DMI Dashboard,2014-12-19,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2439,Optimising DMI Dashboard,2014-12-22,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2440,Store Dashboard - Dashboard & Commitmeent & Obj,2014-12-22,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2444,Store Dashboard - Dashboard & Commitmeent & Obj,2014-12-23,NULL,15,2015-09-24,2015-09-24,1,4.5,875,NULL,26,4,5
+2445,Optimising Store Dashboard,2014-12-23,NULL,15,2015-09-24,2015-09-24,1,3.5,875,NULL,26,4,5
+2450,Optimising Store Dashboard,2014-12-24,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2453,Christmas,2014-12-25,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,9,6,11
+2455,Holiday,2014-12-26,NULL,15,2015-09-24,2015-09-24,0,5,0,NULL,16,6,10
+2456,Optimising Store Dashboard,2014-12-26,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2459,Optimising Store Dashboard & changes,2014-12-29,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2463,Changes to dashboard,2014-12-30,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2468,Changes to dashboard,2014-12-31,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2475,changes to Store Dashboard,2015-01-01,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+2479,Store Dashboard testing and issue fixes,2015-01-02,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2484,DMI Dashboard changes,2015-01-05,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2490,DMI Dashboard changes,2015-01-06,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2500,DMI Dashboard changes,2015-01-07,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2509,Dashboard Testing  & discussions,2015-01-08,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2516,Store Rupture Issue,2015-01-09,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2521,Store Rupture Issue,2015-01-10,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2523,Store Rupture Issue,2015-01-11,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2524,Store Rupture Issue,2015-01-12,NULL,15,2015-09-24,2015-09-24,1,11.5,875,NULL,26,4,5
+2534,Dashboard changes - rupture$$$ SLT$$$ etc,2015-01-13,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2539,Dashboard changes - rupture$$$ SLT$$$ etc,2015-01-14,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+2544,Dashboard fixes,2015-01-15,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2549,Testing Numbers,2015-01-16,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2554,Testing Numbers,2015-01-19,NULL,15,2015-09-24,2015-09-24,1,9,875,NULL,26,4,5
+2558,Some more changes & go live,2015-01-20,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2563,Testing $$$changes,2015-01-21,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2568,Changes & Fixes,2015-01-22,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2573,Changes & Fixes,2015-01-23,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2578,Rupture Changes & Testing,2015-01-25,NULL,15,2015-09-24,2015-09-24,1,1.5,875,NULL,26,4,5
+2581,Rupture Changes & Testing,2015-01-26,NULL,15,2015-09-24,2015-09-24,1,1.5,875,NULL,26,4,5
+2587,Testing Data,2015-01-27,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2588,Discussions and OTB changes,2015-01-27,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2593,Made In India change,2015-01-28,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2594,Executive Dashboard discussion & Changes,2015-01-28,NULL,15,2015-09-24,2015-09-24,1,4.5,875,NULL,26,4,5
+2599,Retail Changes Discussion,2015-01-29,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2600,Retail Change,2015-01-29,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2603,Live Anubhava Store Issue,2015-01-30,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2604,Retail Changes,2015-01-30,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+2611,New office & research,2015-02-02,NULL,15,2015-09-24,2015-09-24,0,8,0,NULL,27,10,16
+2616,Store and Data model changes,2015-02-03,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2625,Retail changes,2015-02-04,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2633,Data Model & Dashboard Changes,2015-02-05,NULL,15,2015-09-24,2015-09-24,1,7,875,NULL,26,4,5
+2643,StockDB Optimization,2015-02-06,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2652,StockDB Optimization,2015-02-09,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2664,StockDB Optimization & Testing,2015-02-10,NULL,15,2015-09-24,2015-09-24,1,4.5,875,NULL,26,4,5
+2665,Supply Changes & Testing,2015-02-10,NULL,15,2015-09-24,2015-09-24,1,3.5,875,NULL,26,4,5
+2672,StockTesting & data model tesing,2015-02-11,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2681,Price Testing &Stock Value tesing,2015-02-12,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2684,Live Server issue & Stock Testing,2015-02-13,NULL,15,2015-09-24,2015-09-24,1,7,875,NULL,26,4,5
+2692,Testing and minor dashboard changes,2015-02-16,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2699,Executive Report and StockDB Qvd issue fix,2015-02-17,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2707,Fixing Issue with CAR prices and stock value ,2015-02-18,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2717,CAR Price issue and Stock & Price Testing,2015-02-19,NULL,15,2015-09-24,2015-09-24,1,6,875,NULL,26,4,5
+2718,Off,2015-02-19,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,16,6,10
+2722,CAR Price issue and Stock & Price Testing,2015-02-20,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2723,Rohan's Failed meeting,2015-02-20,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,22,2,2
+2724,Internal meeting,2015-02-20,NULL,15,2015-09-24,2015-09-24,0,4,0,NULL,21,7,19
+2736,Reduce load time  of StockDB - Alternate approach,2015-02-23,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2742,Reduce load time  of StockDB - Alternate approach,2015-02-24,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2743,Supply Changes & Testing ,2015-02-24,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2744,Go-Live Discussion,2015-02-24,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+2752,Testing Live,2015-02-25,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+2753,Building datamart,2015-02-25,NULL,15,2015-09-24,2015-09-24,0,4,0,NULL,6,10,29
+2754,Solutions - Research,2015-02-25,NULL,15,2015-09-24,2015-09-24,0,3,0,NULL,6,10,29
+2763,Executive Dashboard data model Optimisation,2015-02-26,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2764,Building datamart,2015-02-26,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,6,10,29
+2765,Interviews,2015-02-26,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,21,7,19
+2771,Discussion on executive dashboard,2015-02-27,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2773,Google Analytics Top Layer,2015-02-27,NULL,15,2015-09-24,2015-09-24,0,5,0,NULL,25,10,29
+2781,Credit Note issue,2015-03-02,NULL,15,2015-09-24,2015-09-24,1,1.5,875,NULL,26,4,5
+2782,Retail Changes & Live,2015-03-02,NULL,15,2015-09-24,2015-09-24,1,5.5,875,NULL,26,4,5
+2784,Aptonia Rupture Issue,2015-03-02,NULL,15,2015-09-24,2015-09-24,1,0.5,875,NULL,26,4,5
+2785,Supply sync and check,2015-03-02,NULL,15,2015-09-24,2015-09-24,1,0.5,875,NULL,26,4,5
+2791,Live Extracts (Sales & returns & tq/o tax),2015-03-03,NULL,15,2015-09-24,2015-09-24,1,2.5,875,NULL,26,4,5
+2792,Live Play crash issue & Executive Dashboard Excel FIle,2015-03-03,NULL,15,2015-09-24,2015-09-24,1,5.5,875,NULL,26,4,5
+2802,Data model Summary data generator,2015-03-04,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2803,Customer Analytics investigations,2015-03-04,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2811,Discussions$$$ Bad Sellers Report & Executive Dashboard ,2015-03-05,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2817,Bad Sellers Report & Supply impact analysis,2015-03-06,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2826,Production Report Issue investigation,2015-03-09,NULL,15,2015-09-24,2015-09-24,1,4,875,NULL,26,4,5
+2827,Customer Profiling,2015-03-09,NULL,15,2015-09-24,2015-09-24,1,1,875,NULL,26,4,5
+2828,Executive Reporting changes,2015-03-09,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2834,Noida Extract,2015-03-10,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2835,Hourly Loads & changes,2015-03-10,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2843,Store Visit - Mysore Road Store,2015-03-11,NULL,15,2015-09-24,2015-09-24,1,5,875,NULL,26,4,5
+2846,Middle Layer Model optimisation,2015-03-11,NULL,15,2015-09-24,2015-09-24,1,3,875,NULL,26,4,5
+2854,Executive Report Changes$$$ discussions,2015-03-12,NULL,15,2015-09-24,2015-09-24,1,8,875,NULL,26,4,5
+2864,Discussion & changes,2015-03-13,NULL,15,2015-09-24,2015-09-24,1,2,875,NULL,26,4,5
+2865,Interview,2015-03-13,NULL,15,2015-09-24,2015-09-24,0,2,0,NULL,21,7,19
