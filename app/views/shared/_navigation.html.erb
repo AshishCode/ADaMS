@@ -2,14 +2,16 @@
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-            
+
             <li id="my_timesheet">
                 <a href="<%= my_timesheet_path(current_user.id) %>" ><span class="fa-stack fa-lg pull-left"><i class="fa fa-clock-o fa-stack-1x "></i></span> My Timesheet</a>
             </li>
             <li class="active" id="li_akira">
                 <a href="/timesheet"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span>Akira Timesheet</a>
             </li>
-            
+            <% 
+                case current_user.id
+                when 1,2,4,10,21  %>
             <li id="manage_details">
                 <a href="/details" id = "details"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x"></i></span> Manage Details</a>
                 <!--
@@ -33,6 +35,9 @@
 
                   </ul>   
             </li>
+            <%
+                end
+            %>
             <li>
                 <a href="/signout"><span class="fa-stack fa-lg pull-left"><i class="fa fa-sign-out fa-stack-1x "></i></span>Sign Out</a>
             </li>

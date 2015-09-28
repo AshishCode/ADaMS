@@ -13,6 +13,10 @@ class TimesheetController < ApplicationController
   	#method to return the timesheet of a particular employee
   	def my_index
   		
+  		if current_user.id != params[:employee_id]
+  			params[:employee_id] = current_user.id;
+  		else
+  		end
   		#for inline editing part
   		@timesheet = Timesheet.where(:employee_id => params[:employee_id])
   		@roles = Role.all.map{|x| [x.id, x.role_name]}
