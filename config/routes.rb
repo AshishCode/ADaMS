@@ -77,11 +77,10 @@ Rails.application.routes.draw do
   get 'timesheet/cascade/rate' => 'timesheet#update_rate'
   get 'timesheet/cascade/role' => 'timesheet#update_role'
 
-
   #post #routes for timesheet entries
   post '/timesheet/new' => 'timesheet#create'
   post '/timesheet/:id' => 'timesheet#create_inline'
-  
+
   #put routes
   put '/timesheet.(:id)' => 'timesheet#update', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }
 

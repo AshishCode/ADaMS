@@ -4,7 +4,46 @@
 			Timesheet	
 		</title>
 	</head>
-	<body>	
+	<body>
+		<div class="col-sm-9" style="margin-top:5px;">	
+	  		<form style="margin-top: -20px;" id ="date_filter" action="/timesheet" method="GET" class="form-horizontal">
+			<div class="form-group">
+					<div class="col-sm-3"> 
+						<label for="start_date"> Start Date :</label>
+							<input class ="form-control" type="date" name="start_date" id="start_date" value="<%= 
+								if params.has_key?(:start_date)
+									params[:start_date]
+								else
+									Date.today - 30
+								end %>"/>
+					</div>
+					<div class="col-sm-3"> 
+						<label for="end_date"> End Date :</label>
+							<input class="form-control" type="date" name="end_date" id="end_date" value="<%= 
+								if params.has_key?(:end_date)
+									params[:end_date]
+								else	
+									Date.today
+								end %>"/>
+					</div>
+					<div class="col-sm-3"> 
+						<label for="employee_id"> Employee :</label>
+							<select name="employee_id" class="form-control">
+								<option class="form-control" value="0">All</option>
+								<%
+									@users.each { |user|
+								%>
+								<option class="form-control" value="<%= user.id %>"><%= user.name%></option>
+								<% } %>
+							</select>
+					</div>
+					<div class="col-sm-3">
+						<button id="submit_filter" class="buttons" style="margin-top: 12%; border-radius: 100px;"><i class="glyphicon glyphicon-ok"></i> </button>
+					</div>
+				</div>
+
+			</form>
+		</div>	
 		<table id ="boots" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="date" data-sort-order ="desc"
 		> 
 

@@ -1,9 +1,23 @@
 class TimesheetController < ApplicationController
 	respond_to :html, :json
 
-	#method to fetch all the timesheet entries
+	#method to fetch all the timesheet entries on the basis of form and default
 	def index
-		@timesheet = Timesheet.all
+		if (params.has_key?(:start_date) && params.has_key?(:end_date) && params.has_key?(:employee_id))
+			
+			if params[:end_date]>params[:start_date]
+				if params[:employee_id] == "0"
+					@timesheet = Timesheet.where("timesheetdate BETWEEN ? AND ?",params[:start_date], params[:end_date])
+				else
+					@timesheet = Timesheet.where("employee_id =? AND timesheetdate BETWEEN ? AND ?", params[:employee_id], params[:start_date], params[:end_date])
+				end
+			else
+				@timesheet = Timesheet.where("timesheetdate BETWEEN CURRENT_DATE -30 AND CURRENT_DATE")	
+			end
+		else
+			@timesheet = Timesheet.where("timesheetdate BETWEEN CURRENT_DATE -30 AND CURRENT_DATE")
+		end
+
 		@users  = User.all
 		@client = Client.all
 		@project = Project.all
@@ -14,11 +28,19 @@ class TimesheetController < ApplicationController
   	def my_index
   		
   		if current_user.id != params[:employee_id]
-  			params[:employee_id] = current_user.id;
+  			params[:employee_id] = current_user.id
   		else
   		end
   		#for inline editing part
-  		@timesheet = Timesheet.where(:employee_id => params[:employee_id])
+  		if (params.has_key?(:start_date) && params.has_key?(:end_date))
+
+  			if params[:end_date]>params[:start_date]
+  				@timesheet = Timesheet.where("employee_id = ? AND timesheetdate BETWEEN ? AND ? ", params[:employee_id],params[:start_date], params[:end_date])
+  			else
+  			end
+  		else
+  			@timesheet = Timesheet.where("employee_id = ? AND timesheetdate BETWEEN CURRENT_DATE - INTERVAL '7 days' AND CURRENT_DATE", params[:employee_id])
+  		end
   		@roles = Role.all.map{|x| [x.id, x.role_name]}
   		@workspace = [["Home","Home"],["Office","Office"],["Clientsite","Clientsite"]]
   		@is_billed = [["true","Yes"],["false","No"]]
