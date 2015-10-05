@@ -188,14 +188,17 @@
       
       var path = window.location.pathname;
 
-      if(path != "/timesheet")
-        $("#li_akira").removeClass('active');
+      if(path == "/timesheet")
+        $("#li_akira").addClass('active');
 
       if (path.indexOf("/timesheet/") >= 0)        
        $("#my_timesheet").addClass('active');
 
       if(path == "/details")
         $("#manage_details").addClass('active');
+
+      if(path == "/reports")
+        $("#li_reports").addClass('active');
 
 
     });

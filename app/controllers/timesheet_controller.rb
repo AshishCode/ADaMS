@@ -3,13 +3,29 @@ class TimesheetController < ApplicationController
 
 	#method to fetch all the timesheet entries on the basis of form and default
 	def index
-		if (params.has_key?(:start_date) && params.has_key?(:end_date) && params.has_key?(:employee_id))
+
+		#creating array of the ids in case the input value is "all"
+		if params[:employee_id] == '0'
+			params[:employee_id] = User.pluck(:id)
+		else
+		end
+		if params[:client_id] == '0'
+			params[:client_id] = Client.pluck(:id)
+		else
+		end
+		if params[:project_id] == '0'
+			params[:project_id] = Project.pluck(:id)
+		else
+		end
+
+		#filter parameters
+		if (params.has_key?(:start_date) && params.has_key?(:end_date))
 			
 			if params[:end_date]>params[:start_date]
-				if params[:employee_id] == "0"
-					@timesheet = Timesheet.where("timesheetdate BETWEEN ? AND ?",params[:start_date], params[:end_date])
+				if params.has_key?(:is_billed)
+					@timesheet = Timesheet.where(:employee_id => params[:employee_id], :client_id => params[:client_id], :project_id => params[:project_id], :is_billed =>  params[:is_billed]).where("timesheetdate BETWEEN ? AND ?", params[:start_date], params[:end_date])
 				else
-					@timesheet = Timesheet.where("employee_id =? AND timesheetdate BETWEEN ? AND ?", params[:employee_id], params[:start_date], params[:end_date])
+					@timesheet = Timesheet.where(:employee_id => params[:employee_id], :client_id => params[:client_id], :project_id => params[:project_id]).where("timesheetdate BETWEEN ? AND ?", params[:start_date], params[:end_date])
 				end
 			else
 				@timesheet = Timesheet.where("timesheetdate BETWEEN CURRENT_DATE -30 AND CURRENT_DATE")	

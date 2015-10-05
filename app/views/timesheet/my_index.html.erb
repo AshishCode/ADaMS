@@ -55,7 +55,7 @@
 	  			<i class="glyphicon glyphicon-plus"></i> &nbsp;Add Entry
 	  		</button>
 	  	</div>
-	  	<div class="col-sm-9">	
+	  	<div id="filter_div" class="col-sm-9">	
 	  		<form id ="date_filter" action="/timesheet/<%= current_user.id.to_s%>" method="GET" class="form-horizontal">
 			<div class="form-group">
 					<div class="col-sm-3"> 
@@ -329,14 +329,14 @@
  			$("#add_new").click(function () {
  				$("#inline_form").slideToggle();
  				$("#add_new").hide();
-
+ 				$("#filter_div").hide();
 
 			});
 
 			$("#cancel").click(function () {
  				$("#inline_form").slideToggle();
  				$("#add_new").show();
-
+ 				$("#filter_div").show();
 			});
 
 			/*

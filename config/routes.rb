@@ -113,11 +113,17 @@ Rails.application.routes.draw do
   put '/role.(:id)' => 'details#update_role', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }, :as => :role
   put '/currency.(:id)' => 'details#update_currency', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }, :as => :currency
 
-
+  #
   #google auth routes
+  #
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
+
+  #
+  #Report related routes
+  #
+  get '/reports' => 'reports#index'
 
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]

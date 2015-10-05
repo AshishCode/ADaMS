@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Reports
+	</title>
+</head>
+<body>
+	<div class="report_div">
+		<div class="col-sm-3" style="margin-top:5%;">
+			<ul class="nav nav-pills nav-stacked">
+			<% @client.each { |client| %>
+			  <li><a href="#"><%= client.client_name %></a></li>
+			<% } %>
+			</ul>
+		</div>
+		<div class="col-sm-9">
+			<table id ="reports" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="date" data-sort-order ="desc"
+				> 
+
+					<thead>                      
+		  			<tr class="success">                          
+					    <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
+					    <th data-sortable="true">Client</th>
+					    <th data-sortable="true">Project</th>
+					    <th>Employee_Name</th>
+					    <th>Total Hours</th>
+					    <th>Role</th>
+					    <th>Rate</th>
+					    <th>Income</th>
+					    <th>Service tax(On INR Only)</th>
+					    <th>Gross Income</th>
+					    <th>Net Payable Amount</th>			    
+					  </tr>
+					</thead>
+					<tbody>
+				<% @timesheet.each do |entry| %>
+				  <tr>
+				    <!-- <td></td> -->
+				    
+				    <td><%=	@client.where("id" =>entry.client_id).first.client_name
+				    										%></td> 
+				    <td><%= @project.where("id" => entry.project_id).first.project_name %></td>
+				    <td><%= User.find(entry.employee_id).name %></td>   
+				    <td><%= entry.total_hours %></td>  
+				    <td><%= @rolez.where("id" => entry.role_id).first.role_name %></td>  
+				    <td><%= entry.rate %></td> 
+				    <td><%= entry.rate*entry.total_hours %></td>
+				    <td><%= if @currency_names[@rolez.where(:id => entry.role_id).first.currency_id] == "₹"
+				    			'%.2f' % (0.14 * entry.rate * entry.total_hours)
+				    		else
+				    			"None"
+				    		end %></td>
+				    <td><%= '%.2f' % ((entry.rate*entry.total_hours) + (0.14 * entry.rate * entry.total_hours)) %></td>
+				    <td><%= '%.2f' % ((0.9 * entry.rate * entry.total_hours) + (0.14 * entry.rate * entry.total_hours))%></td>
+				  </tr>
+				<% end %>      
+				</tbody>
+				</table>
+		</div>
+	</div> 
+</body>
+<script type="text/javascript">
+	
+</script>
+</html>
