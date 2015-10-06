@@ -4,18 +4,28 @@
 jQuery ->
   $('.best_in_place').best_in_place()
 
-$ ->
-  $(document).on 'change', '#client_select', (evt) ->
-    $.ajax 'cascade/project',
-      type: 'GET'
-      dataType: 'script'
-      data: {
-        client_id: $("#client_select option:selected").val()
-      }
-      error: (jqXHR, textStatus, errorThrown) ->
-        console.log("AJAX Error: #{textStatus}")
-      success: (data, textStatus, jqXHR) ->
-        console.log("Dynamic client select OK!")
+$(document).on 'change', '#client_select', (evt) ->
+  project = undefined
+  project = undefined
+  $.ajax 'cascade/project',
+    type: 'GET'
+    dataType: 'JSON'
+    data: client_id: $('#client_select option:selected').val()
+    error: (jqXHR, textStatus, errorThrown) ->
+      console.log 'AJAX Error: ' + textStatus
+    success: (data, textStatus, jqXHR) ->
+      project = $('#project_select')
+      project.empty()
+      project.prepend '<option value=\'\' selected=\'selected\'>Select role</option>'
+      $.each data, (index, value) ->
+        opt = undefined
+        opt = undefined
+        opt = $('<option/>')
+        opt.attr 'value', value[0]
+        opt.text value[1]
+        opt.appendTo project
+        return
+      return
 
 $(document).on 'change', '#role_select', (evt) ->
   $.ajax 'cascade/rate',
@@ -25,11 +35,11 @@ $(document).on 'change', '#role_select', (evt) ->
     error: (jqXHR, textStatus, errorThrown) ->
       console.log 'AJAX Error: ' + textStatus
     success: (data, textStatus, jqXHR) ->
-      $('#timesheets_rate').val(data)
-      $('#timesheets_is_billed_1').prop('checked', true)
-
+      $('#timesheets_rate').val data
+      $('#timesheets_is_billed_1').prop 'checked', true
 
 $(document).on 'change', '#project_select', (evt) ->
+  role = undefined
   role = undefined
   $.ajax 'cascade/role',
     type: 'GET'
@@ -42,6 +52,7 @@ $(document).on 'change', '#project_select', (evt) ->
       role.empty()
       role.prepend '<option value=\'\' selected=\'selected\'>Select role</option>'
       $.each data, (index, value) ->
+        opt = undefined
         opt = undefined
         opt = $('<option/>')
         opt.attr 'value', value[0]

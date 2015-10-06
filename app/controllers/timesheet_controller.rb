@@ -84,11 +84,12 @@ class TimesheetController < ApplicationController
 	def update_project
 		@client_select = params[:client_id]
 		@clients = Client.where("id = ?", @client_select)
-		@projects = Project.where("id = ?",@clients[0][:id]).all
+		@projects = Project.where("client_id = ?",@clients[0][:id]).all
 		
-		respond_to do |format|
-      		format.js
-    	end
+		render :json => @projects.map {|p| [p.id, p.project_name]}
+		#respond_to do |format|
+      	#	format.js
+    	#end
     	#respond_to do |format|
     	#	msg = { :status => @projects, :message => "Success!", :html => "<b></b>" }
     	#	format.json  { render :json => msg } # don't do msg.to_json
