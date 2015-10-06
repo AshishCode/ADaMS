@@ -7,7 +7,7 @@ jQuery ->
 $(document).on 'change', '#client_select', (evt) ->
   project = undefined
   project = undefined
-  $.ajax 'cascade/project',
+  $.ajax '/timesheet/cascade/project',
     type: 'GET'
     dataType: 'JSON'
     data: client_id: $('#client_select option:selected').val()

@@ -49,7 +49,7 @@
 			<div class="form-group">
 					<div class="col-sm-3"> 
 						<label for="client_id"> Clients :</label>
-							<select name="client_id" class="form-control">
+							<select id="client_select" name="client_id" class="form-control">
 								<option class="form-control" value="0">All</option>
 								<%
 									@client.each { |client|
@@ -60,7 +60,7 @@
 					</div>
 					<div class="col-sm-3"> 
 						<label for="project_id"> Projects :</label>
-							<select name="project_id" class="form-control">
+							<select id="project_select" name="project_id" class="form-control">
 								<option class="form-control" value="0">All</option>
 								<%
 									@project.each { |project|
