@@ -83,9 +83,17 @@
 					</div>
 					<div class="col-sm-3">
 		    			<label for="is_billed">Is Billed :</label><br>
-			  				<input type="radio" name="is_billed" value="1" />
+		    				<% if params.has_key?(:is_billed) && params[:is_billed]=='1' %>
+			  					<input type="radio" name="is_billed" value="1" checked="checked"/>
+			  				<% else %>
+			  					<input type="radio" name="is_billed" value="1"/>
+			  				<% end %>
 			  			<label class="styled_label" for="is_billed_yes">Yes</label>&nbsp;
-			  				<input type="radio" name="is_billed" value="0"/>
+			  				<% if params.has_key?(:is_billed) && params[:is_billed]=='0' %>
+			  					<input type="radio" name="is_billed" value="0" checked="checked" />
+			  				<% else %>
+			  					<input type="radio" name="is_billed" value="0"/>
+			  				<% end %>	
 			  			<label class="styled_label" for="is_billed_no">No</label>&nbsp;
 		    		</div>
 					<div class="col-sm-3">
