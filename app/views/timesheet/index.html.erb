@@ -36,10 +36,14 @@
 							<select name="employee_id" class="form-control">
 								<option class="form-control" value="0">All</option>
 								<%
-									@users.each { |user|
+									@users.each { |user| if (params.has_key?(:employee_id) && (user.id.to_s == params[:employee_id].to_s))
+								%>
+								<option class="form-control" value="<%= user.id %>" selected><%= user.name%></option>
+								<% else
 								%>
 								<option class="form-control" value="<%= user.id %>"><%= user.name%></option>
-								<% } %>
+								<%
+								end } %>
 							</select>
 					</div>
 					<div class="col-sm-3">
@@ -52,10 +56,14 @@
 							<select id="client_select" name="client_id" class="form-control">
 								<option class="form-control" value="0">All</option>
 								<%
-									@client.each { |client|
+									@client.each { |client| if (params.has_key?(:client_id) && (client.id.to_s == params[:client_id].to_s))
+								%>
+								<option class="form-control" value="<%= client.id %>" selected><%= client.client_name%></option>
+								<% else
 								%>
 								<option class="form-control" value="<%= client.id %>"><%= client.client_name%></option>
-								<% } %>
+								<%
+								end } %>
 							</select>
 					</div>
 					<div class="col-sm-3"> 
@@ -63,10 +71,14 @@
 							<select id="project_select" name="project_id" class="form-control">
 								<option class="form-control" value="0">All</option>
 								<%
-									@project.each { |project|
+									@project.each { |project| if (params.has_key?(:project_id) && (project.id.to_s == params[:project_id].to_s))
+								%>
+								<option class="form-control" value="<%= project.id %>" selected><%= project.project_code%></option>
+								<% else
 								%>
 								<option class="form-control" value="<%= project.id %>"><%= project.project_code%></option>
-								<% } %>
+								<% 
+								end } %>
 							</select>
 					</div>
 					<div class="col-sm-3">
