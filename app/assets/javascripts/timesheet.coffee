@@ -16,7 +16,7 @@ $(document).on 'change', '#client_select', (evt) ->
     success: (data, textStatus, jqXHR) ->
       project = $('#project_select')
       project.empty()
-      project.prepend '<option value=\'\' selected=\'selected\'>Select role</option>'
+      project.prepend '<option value=\'\' selected=\'selected\'>Select project</option>'
       $.each data, (index, value) ->
         opt = undefined
         opt = undefined

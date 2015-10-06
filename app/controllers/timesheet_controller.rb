@@ -61,7 +61,7 @@ class TimesheetController < ApplicationController
   		@workspace = [["Home","Home"],["Office","Office"],["Clientsite","Clientsite"]]
   		@is_billed = [["true","Yes"],["false","No"]]
   		@clients = Client.all.map {|x| [x.id, x.client_name]}
-  		@projects = Project.all.map {|x| [x.id, x.project_name]}
+  		@projects = Project.all.map {|x| [x.id, x.project_code]}
 
   		#for the insertion part
   		@timesheets = Timesheet.new
@@ -86,7 +86,7 @@ class TimesheetController < ApplicationController
 		@clients = Client.where("id = ?", @client_select)
 		@projects = Project.where("client_id = ?",@clients[0][:id]).all
 		
-		render :json => @projects.map {|p| [p.id, p.project_name]}
+		render :json => @projects.map {|p| [p.id, p.project_code]}
 		#respond_to do |format|
       	#	format.js
     	#end

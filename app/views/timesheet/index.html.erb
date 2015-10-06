@@ -65,7 +65,7 @@
 								<%
 									@project.each { |project|
 								%>
-								<option class="form-control" value="<%= project.id %>"><%= project.project_name%></option>
+								<option class="form-control" value="<%= project.id %>"><%= project.project_code%></option>
 								<% } %>
 							</select>
 					</div>
@@ -107,7 +107,7 @@
 		  <tr>
 		    <!-- <td></td> -->
 		    <td><%= @client.where("id" =>entry.client_id).first.client_name%></td> 
-		    <td><%= @project.where("id" => entry.project_id).first.project_name %></td>  
+		    <td><%= @project.where("id" => entry.project_id).first.project_code %></td>  
 		    <td><%= entry.task %></td> 
 
 		    <td><%= entry.timesheetdate %></td>  

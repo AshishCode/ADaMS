@@ -98,7 +98,7 @@
 			<div class="col-sm-3">
 			    <label for="project">Project</label>
 				  	<%= select("timesheets", "project_id", 
-			       @project.collect {|p| [ p.project_name, p.id ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "project_select"
+			       @project.collect {|p| [ p.project_code, p.id ] },{include_blank: "Select"}, {:class => "form-control", :required => true, :id => "project_select"
 			       	}) %>
 			</div>
 			<div class="col-sm-3">
@@ -193,7 +193,7 @@
 		  <tr>
 		    <!-- <td></td> -->
 		    <td><%= @client.where("id" =>entry.client_id).first.client_name %></td> 
-		    <td><%= @project.where("id" => entry.project_id).first.project_name %></td>  
+		    <td><%= @project.where("id" => entry.project_id).first.project_code %></td>  
 		    <td><%= best_in_place entry, :task, type: :textarea %></td> 
 
 		    <td><%= best_in_place entry, :timesheetdate, :as => :date %></td>  
