@@ -57,8 +57,13 @@ ActiveRecord::Schema.define(version: 20150925071818) do
     t.datetime "updated_at",       null: false
     t.text     "role_description"
     t.integer  "currency_id"
+    t.integer  "currencies_id"
     t.integer  "project_id"
+    t.integer  "projects_id"
   end
+
+  add_index "roles", ["currencies_id"], name: "index_roles_on_currencies_id", using: :btree
+  add_index "roles", ["projects_id"], name: "index_roles_on_projects_id", using: :btree
 
   create_table "timesheets", force: :cascade do |t|
     t.text     "task"
@@ -74,7 +79,14 @@ ActiveRecord::Schema.define(version: 20150925071818) do
     t.integer  "project_id"
     t.integer  "client_id"
     t.integer  "role_id"
+    t.integer  "projects_id"
+    t.integer  "clients_id"
+    t.integer  "roles_id"
   end
+
+  add_index "timesheets", ["clients_id"], name: "index_timesheets_on_clients_id", using: :btree
+  add_index "timesheets", ["projects_id"], name: "index_timesheets_on_projects_id", using: :btree
+  add_index "timesheets", ["roles_id"], name: "index_timesheets_on_roles_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "provider"
