@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+#angular js
+gem 'angularjs-rails', '~> 1.4.4'
 #font-awesome
 gem "font-awesome-rails"
 

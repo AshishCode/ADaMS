@@ -21,4 +21,6 @@
 //= require bootstrap-sprockets
 //= require bootstrap-table
 //= require bootstrap-table-filter
+//= require angular
+//= require ag-grid
 //= require_tree .

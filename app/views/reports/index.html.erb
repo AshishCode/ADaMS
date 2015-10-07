@@ -1,66 +1,185 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>
-		Reports
-	</title>
-</head>
-<body>
-	<div class="report_div">
-		<div class="col-sm-3" style="margin-top:5%;">
-			<ul class="nav nav-pills nav-stacked">
-			<% @client.each { |client| %>
-			  <li><a href="#"><%= client.client_name %></a></li>
-			<% } %>
-			</ul>
-		</div>
-		<div class="col-sm-9">
-			<table id ="reports" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="date" data-sort-order ="desc"
-				> 
-
-					<thead>                      
-		  			<tr class="success">                          
-					    <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
-					    <th data-sortable="true">Client</th>
-					    <th data-sortable="true">Project</th>
-					    <th>Employee_Name</th>
-					    <th>Total Hours</th>
-					    <th>Role</th>
-					    <th>Rate</th>
-					    <th>Income</th>
-					    <th>Service tax(On INR Only)</th>
-					    <th>Gross Income</th>
-					    <th>Net Payable Amount</th>			    
-					  </tr>
-					</thead>
-					<tbody>
-				<% @timesheet.each do |entry| %>
-				  <tr>
-				    <!-- <td></td> -->
-				    
-				    <td><%=	@client.where("id" =>entry.client_id).first.client_name
-				    										%></td> 
-				    <td><%= @project.where("id" => entry.project_id).first.project_name %></td>
-				    <td><%= User.find(entry.employee_id).name %></td>   
-				    <td><%= entry.total_hours %></td>  
-				    <td><%= @rolez.where("id" => entry.role_id).first.role_name %></td>  
-				    <td><%= entry.rate %></td> 
-				    <td><%= entry.rate*entry.total_hours %></td>
-				    <td><%= if @currency_names[@rolez.where(:id => entry.role_id).first.currency_id] == "₹"
-				    			'%.2f' % (0.14 * entry.rate * entry.total_hours)
-				    		else
-				    			"None"
-				    		end %></td>
-				    <td><%= '%.2f' % ((entry.rate*entry.total_hours) + (0.14 * entry.rate * entry.total_hours)) %></td>
-				    <td><%= '%.2f' % ((0.9 * entry.rate * entry.total_hours) + (0.14 * entry.rate * entry.total_hours))%></td>
-				  </tr>
-				<% end %>      
-				</tbody>
-				</table>
-		</div>
-	</div> 
-</body>
+<head lang="en">
 <script type="text/javascript">
-	
+        //angular running only once..so reloading the page once to load it..temporary fix
+        $(document).ready(function() {
+            if (window.location.href.indexOf('reload')==-1) {
+                 window.location.replace(window.location.href+'?reload');
+            }
+        });
+
+        //angular code for the grid table
+        var fileBrowserModule = angular.module('account', ['agGrid']);
+
+        fileBrowserModule.controller('accountController', function($scope) {
+
+        var columnDefs = [
+            {headerName: 'Clients', field: 'item', width: 200, cellRenderer: {
+                renderer: 'group'
+            }},
+            //{headerName: "", field: "projects",headerGroup: '', width: 120},
+            //employee_details header
+            //{headerName: "Employee_Name", field: "employee_name",headerGroup: 'Employee_Details', width: 120},
+            {headerName: "Total_hours", field: "total_hours",headerGroup: 'Employee_Details', width: 90},
+            //{headerName: "Role", field: "role", headerGroup: 'Employee_Details', width: 70},
+            {headerName: "Rate", field: "rate", headerGroup: 'Employee_Details', width: 70},
+            //invoice_details header
+            {headerName: "Income", field: "income", headerGroup: 'Invoice_Details', width: 90},
+            {headerName: "Service tax(On INR Only)", field: "servicetax", headerGroup: 'Invoice_Details',width: 170},
+            {headerName: "Gross_Income", field: "gross_income", headerGroup: 'Invoice_Details', width: 110},
+            {headerName: "Net_payable", field: "net_payable", headerGroup: 'Invoice_Details', width: 90}
+        ];
+
+        // function currencyRenderer(params) {
+        //     if (params.value) {
+        //         return '£ ' + params.value.toLocaleString();
+        //     } else {
+        //         return null;
+        //     }
+        // }
+
+        $scope.gridOptions = {
+            columnDefs: columnDefs,
+            rowData: createRowData(),
+            //rowSelection: 'single',
+            groupKeys: ['category', 'projects', 'roles'],
+            groupUseEntireRow: false,
+            groupHeaders: true,
+            groupDefaultExpanded: false,
+            groupIncludeFooter: false,
+            groupAggFields: ['total_hours','income','servicetax','gross_income','net_payable'],
+            groupAggFunction: groupAggFunction,
+            enableColResize: true,
+            enableSorting: true,
+            forPrint: true,
+            groupSuppressAutoColumn: true,
+            icons: {
+                groupExpanded: '<i class="fa fa-minus-square-o"/>',
+                groupContracted: '<i class="fa fa-plus-square-o"/>'
+            },
+            enableFilter: false
+        };
+        function groupAggFunction(rows) {
+
+            var sums = {
+                total_hours:0,
+                income: 0,
+                servicetax: 0,
+                gross_income: 0,
+                net_payable: 0
+
+            };
+
+            rows.forEach(function(row) {
+
+                var data = row.data;
+
+                sums.total_hours += parseFloat(data.total_hours);
+                sums.income += parseFloat(data.income);
+                sums.servicetax += parseFloat(data.servicetax);
+                sums.gross_income += parseFloat(data.gross_income);
+                sums.net_payable += parseFloat(data.net_payable);
+
+            });
+            return sums;
+         }
+
+
+        function createRowData() {
+            var rows = [];
+            <% @client.each {|client| @timesheet.each { |entry| if entry.client_id == client.id %>
+            ['<%= @project.where("id" => entry.project_id).first.project_code %>'].forEach( function (item) {
+                //rows.push({category: "<%= client.client_name %>", item: item});
+            //});
+            
+
+            //rows.forEach( function(row) {
+            var row =[];
+                row.item ="<%= User.find(entry.employee_id).name %>";
+                row.projects = "<%= @project.where("id" => entry.project_id).first.project_code %>";
+                row.category = "<%= client.client_name %>"
+                row.employee_name = "<%= User.find(entry.employee_id).name %>";
+                row.total_hours = "<%= (entry.total_hours).to_f %>";
+                row.roles = "<%= @rolez.where("id" => entry.role_id).first.role_name %>";
+                row.rate = "<%= @currency_names[@rolez.where("id" => entry.role_id).first.currency_id].to_s + ' ' + entry.rate.to_s %>";
+                row.income = "<%= (entry.rate*entry.total_hours) %>";
+                row.servicetax = "<%= if @currency_names[@rolez.where(:id => entry.role_id).first.currency_id] == "₹"
+                                '%.2f' % (0.14 * entry.rate * entry.total_hours)
+                            else
+                                '0'
+                            end %>";
+                row.gross_income = "<%= '%.2f' % ((entry.rate*entry.total_hours) + (0.14 * entry.rate * entry.total_hours)) %>";
+                row.net_payable = "<%= '%.2f' % ((0.9 * entry.rate * entry.total_hours) + (0.14 * entry.rate * entry.total_hours)) %>";
+
+            //});
+            rows.push(row);
+        });
+            <% else
+               end
+            } } %>
+
+            return rows;
+        }
+    });
+
 </script>
+</head>
+
+<body ng-app="account" style="padding: 10px">
+
+    <div ng-controller="accountController" style="">
+        <div ag-grid="gridOptions" style="height: 100%; width:100%;" class="ag-blue">
+        </div>
+    </div>
+
+    <div class="report_div">
+        <div>
+            <table id ="reports" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="date" data-sort-order ="desc"
+                > 
+
+                    <thead>                      
+                    <tr class="success">                          
+                        <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
+                        <th data-sortable="true">Client</th>
+                        <th data-sortable="true">Project</th>
+                        <th>Employee_Name</th>
+                        <th>Total Hours</th>
+                        <th>Role</th>
+                        <th>Rate</th>
+                        <th>Income</th>
+                        <th>Service tax(On INR Only)</th>
+                        <th>Gross Income</th>
+                        <th>Net Payable Amount</th>             
+                      </tr>
+                    </thead>
+                    <tbody>
+                <% @timesheet.each do |entry| %>
+                  <tr>
+                    <!-- <td></td> -->
+                    
+                    <td><%= @client.where("id" =>entry.client_id).first.client_name
+                                                            %></td> 
+                    <td><%= @project.where("id" => entry.project_id).first.project_name %></td>
+                    <td><%= User.find(entry.employee_id).name %></td>   
+                    <td><%= entry.total_hours %></td>  
+                    <td><%= @rolez.where("id" => entry.role_id).first.role_name %></td>  
+                    <td><%= entry.rate %></td> 
+                    <td><%= entry.rate*entry.total_hours %></td>
+                    <td><%= if @currency_names[@rolez.where(:id => entry.role_id).first.currency_id] == "₹"
+                                '%.2f' % (0.14 * entry.rate * entry.total_hours)
+                            else
+                                "None"
+                            end %></td>
+                    <td><%= '%.2f' % ((entry.rate*entry.total_hours) + (0.14 * entry.rate * entry.total_hours)) %></td>
+                    <td><%= '%.2f' % ((0.9 * entry.rate * entry.total_hours) + (0.14 * entry.rate * entry.total_hours))%></td>
+                  </tr>
+                <% end %>      
+                </tbody>
+                </table>
+        </div>
+    </div>
+
+</body>
+
 </html>
