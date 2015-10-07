@@ -34,7 +34,7 @@ class TimesheetController < ApplicationController
 			@timesheet = Timesheet.where("timesheetdate BETWEEN CURRENT_DATE -30 AND CURRENT_DATE")
 		end
 
-		@users  = User.all
+		@users  = User.all.order("name")
 		@client = Client.all
 		@project = Project.all
 		@rolez = Role.all
