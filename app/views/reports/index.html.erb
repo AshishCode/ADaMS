@@ -24,6 +24,7 @@
             {headerName: "Total_hours", field: "total_hours",headerGroup: 'Employee_Details', width: 90},
             //{headerName: "Role", field: "role", headerGroup: 'Employee_Details', width: 70},
             {headerName: "Rate", field: "rate", headerGroup: 'Employee_Details', width: 70},
+            {headerName: "Is_Billed", field: "is_billed", headerGroup: 'Employee_Details', width: 90},
             //invoice_details header
             {headerName: "Income", field: "income", headerGroup: 'Invoice_Details', width: 90},
             {headerName: "Service tax(On INR Only)", field: "servicetax", headerGroup: 'Invoice_Details',width: 170},
@@ -103,6 +104,7 @@
                 row.total_hours = "<%= (entry.total_hours).to_f %>";
                 row.roles = "<%= @rolez.where("id" => entry.role_id).first.role_name %>";
                 row.rate = "<%= @currency_names[@rolez.where("id" => entry.role_id).first.currency_id].to_s + ' ' + entry.rate.to_s %>";
+                row.is_billed = "<%= if entry.is_billed then 'Yes' else 'No' end %>";
                 row.income = "<%= (entry.rate*entry.total_hours) %>";
                 row.servicetax = "<%= if @currency_names[@rolez.where(:id => entry.role_id).first.currency_id] == "₹"
                                 '%.2f' % (0.14 * entry.rate * entry.total_hours)
