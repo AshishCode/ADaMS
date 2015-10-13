@@ -240,6 +240,13 @@
 	</body>
 
 		<script type="text/javascript">
+			
+		//changing date range to selected timesheet date to prevent ranged entries
+		$("#timesheets_timesheetdate").change(function(){
+
+			$("#date_range").val($("#timesheets_timesheetdate").val());
+
+		});
 
 		//submitting the form on click of tick
 		$("#submit_filter").click(function(){

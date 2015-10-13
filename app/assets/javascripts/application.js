@@ -23,4 +23,7 @@
 //= require bootstrap-table-filter
 //= require angular
 //= require ag-grid
+//= require ui.dropdownchecklist-1.5-min
+//= require bootstrap-multiselect
+//= require bootstrap-multiselect-collapsible-groups
 //= require_tree .
