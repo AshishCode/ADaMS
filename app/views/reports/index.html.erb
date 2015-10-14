@@ -12,12 +12,7 @@
             }
         });
 
-window.onload = function () {
-    if (! localStorage.justOnce) {
-        localStorage.setItem("justOnce", "true");
-        window.location.reload();
-    }
-}
+
 
         //angular code for the grid table
         var fileBrowserModule = angular.module('account', ['agGrid']);
@@ -54,7 +49,11 @@ window.onload = function () {
             columnDefs: columnDefs,
             rowData: createRowData(),
             //rowSelection: 'single',
-            groupKeys: ['category', 'projects','month', 'roles'],
+            <% if params[:report_type] == "weekly" %>
+                groupKeys: ['month','week','category', 'projects', 'roles'],
+            <% else %>
+                groupKeys: ['month','category', 'projects', 'roles'],
+            <% end %>
             groupUseEntireRow: false,
             groupHeaders: true,
             groupDefaultExpanded: false,
@@ -119,10 +118,19 @@ window.onload = function () {
             month[11] = "November";
             month[12] = "December";
 
+            //week array
+            var week = new Array();
+            week[1] = "Week-1";
+            week[2] = "Week-2";
+            week[3] = "Week-3";
+            week[4] = "Week-4";
+            week[5] = "Week-5";
+
             //rows.forEach( function(row) {
             var row =[];
                 row.item ="<%= User.find(entry.employee_id).name %>";
                 row.month = month[<%= entry.month %>];
+                row.week = "Week " + <%= entry.week %>;
                 row.projects = "<%= @project.where("id" => entry.project_id).first.project_code %>";
                 row.category = "<%= client.client_name %>"
                 row.employee_name = "<%= User.find(entry.employee_id).name %>";
@@ -149,8 +157,6 @@ window.onload = function () {
             return rows;
         }
     });
-
-
 
 </script>
 </head>
@@ -251,7 +257,7 @@ window.onload = function () {
         </div>
     </div>
 </div>
-    <div class="report_div">
+    <div class="report_div" style="display:none;">
         <div>
             <table id ="reports" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="date" data-sort-order ="desc"
                 > 
@@ -264,6 +270,7 @@ window.onload = function () {
                         <th>Employee_Name</th>
                         <th>Total Hours</th>
                         <th>Month</th>
+                        <th>Week</th>
                         <th>Role</th>
                         <th>Rate</th>
                         <th>Income</th>
@@ -296,8 +303,17 @@ window.onload = function () {
                         month[10] = "October"
                         month[11] = "November"
                         month[12] = "December"
+
+                       #week array
+                       week = Array.new
+                       week[1] = "Week-1"
+                       week[2] = "Week-2"
+                       week[3] = "Week-3"
+                       week[4] = "Week-4"
+                       week[5] = "Week-5"
                     %>
                     <td><%= month[entry.month] %></td> 
+                    <td><%= "Week " + entry.week.to_s %></td>
                     <td><%= @rolez.where("id" => entry.role_id).first.role_name %></td>  
                     <td><%= entry.rate %></td> 
                     <td><%= entry.rate*entry.total_hours %></td>
@@ -321,6 +337,10 @@ window.onload = function () {
 $("#monthly_radio").change(function(){
     document.getElementById("from_date").disabled = false;
     document.getElementById("to_date").disabled = false;
+
+    $("#from_date").datepicker('option', 'maxDate', 'today');
+    $("#to_date").datepicker('option', 'maxDate', 'today');    
+
 });
 
 $("#weekly_radio").change(function(){
@@ -328,12 +348,12 @@ $("#weekly_radio").change(function(){
     document.getElementById("to_date").disabled = false;
 
     //disabling the dates before the current month and after current date
-    var date = new Date(new Date());
-    var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
-    $("#from_date").datepicker('option', 'minDate', firstDay);
+    //var date = new Date(new Date());
+    //var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+    //$("#from_date").datepicker('option', 'minDate', firstDay);
     $("#from_date").datepicker('option', 'maxDate', 'today');
 
-    $("#to_date").datepicker('option', 'minDate', firstDay);
+    //$("#to_date").datepicker('option', 'minDate', firstDay);
     $("#to_date").datepicker('option', 'maxDate', 'today');    
 });
 
@@ -362,17 +382,34 @@ $( "#from_date" ).datepicker({
                 //setting the minimum and maximum date in the to calendar
 
                 if(document.getElementById("weekly_radio").checked){
+                    //disabling the dates in to and from before the current month and after last date of current month
+                    var date = new Date(dateText);
+                    var firstDayMonth = new Date(date.getFullYear(), date.getMonth(), 1);
+                    var lastDayMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+
+                    //from_input
+                    $("#from_date").datepicker('option', 'minDate', firstDayMonth);
+                    $("#from_date").datepicker('option', 'maxDate', 'today');    
+
+                    //to_input
+                    $("#to_date").datepicker('option', 'maxDate', 'today'); 
+
                     var curr = new Date(dateText); // get current selected date
                     var first = curr.getDate() - curr.getDay(); // First day is the day of the month - the day of the week
                     var last = first + 6; // last day is the first day + 6
 
                     //var firstday = new Date(curr.setDate(first)).toUTCString();
 
-                    var firstday = new Date(curr.getFullYear(), curr.getMonth(), first);
+                    var firstdayWeek = new Date(curr.getFullYear(), curr.getMonth(), first);
                     //var lastday = new Date(curr.setDate(last)).toUTCString();
                     //alert(firstday + "---" + lastday);
                     //    alert(dateText);
-                    $("#from_date").datepicker('setDate', firstday);
+                    $("#from_date").datepicker('setDate', firstdayWeek);
+
+                    //removing the min date constraint from from date after week selection
+                    $("#from_date").datepicker('option', 'minDate', null);
+                    //setting the minimum date of to_date to the selected date in from
+                    $("#to_date").datepicker('option', 'minDate',firstdayWeek);
 
                 }
             }
@@ -404,12 +441,23 @@ $( "#to_date" ).datepicker({
                     var lastday = new Date(curr.getFullYear(), curr.getMonth(), last);
                     //alert(firstday + "---" + lastday);
 
-                    $("#to_date").datepicker('setDate', lastday);
+                    //changing the selected date to next week last date in case date is lesser than the selected from date
+                    if($("#from_date").val()>dateText){
+                        var from = new Date($("#from_date").val()); // get current date
+                        var last = from.getDate() - from.getDay() + 6;
+                        var lastday = new Date(curr.getFullYear(), curr.getMonth(), last);
+                        $("#to_date").datepicker('setDate', lastday);
+
+                    } else {
+                        
+                        $("#to_date").datepicker('setDate', lastday);
+
+                    }
 
                 }
         }
 });
-//code for using checklist filter
+// code for using checklist filter
 // $(document).ready(function(){
 //     //disabling week and month select on the basis of year or month selected
 //     $("#year_select").change(function(){
