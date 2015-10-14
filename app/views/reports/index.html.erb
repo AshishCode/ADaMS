@@ -389,7 +389,7 @@ $( "#from_date" ).datepicker({
 
                     //from_input
                     $("#from_date").datepicker('option', 'minDate', firstDayMonth);
-                    $("#from_date").datepicker('option', 'maxDate', 'today');    
+                    $("#from_date").datepicker('option', 'maxDate', lastDayMonth);    
 
                     //to_input
                     $("#to_date").datepicker('option', 'maxDate', 'today'); 
@@ -408,6 +408,7 @@ $( "#from_date" ).datepicker({
 
                     //removing the min date constraint from from date after week selection
                     $("#from_date").datepicker('option', 'minDate', null);
+                    $("#from_date").datepicker('option', 'maxDate', 'today');
                     //setting the minimum date of to_date to the selected date in from
                     $("#to_date").datepicker('option', 'minDate',firstdayWeek);
 
@@ -441,16 +442,25 @@ $( "#to_date" ).datepicker({
                     var lastday = new Date(curr.getFullYear(), curr.getMonth(), last);
                     //alert(firstday + "---" + lastday);
 
+                    var from = new Date($("#from_date").val()); // get current date
                     //changing the selected date to next week last date in case date is lesser than the selected from date
                     if($("#from_date").val()>dateText){
-                        var from = new Date($("#from_date").val()); // get current date
                         var last = from.getDate() - from.getDay() + 6;
                         var lastday = new Date(curr.getFullYear(), curr.getMonth(), last);
                         $("#to_date").datepicker('setDate', lastday);
 
                     } else {
                         
-                        $("#to_date").datepicker('setDate', lastday);
+                        if(lastday.getMonth() != curr.getMonth()){
+                            //calculating last day of the month and fixing it as max date temporarily
+                            var lastDay = new Date(from.getFullYear(), from.getMonth() + 1, 0);
+                            $("#to_date").datepicker('option', 'maxDate', lastDay);
+                            $("#to_date").datepicker('setDate', lastday);
+                            $("#to_date").datepicker('option', 'maxDate', 'today');
+
+                        } else {
+                            $("#to_date").datepicker('setDate', lastday);
+                        }
 
                     }
 
