@@ -2,22 +2,25 @@
 <html>
 <head lang="en">
 <style type="text/css">
-
+        #submit {
+                background-color: #428BCA;
+                //float:left;
+            }
 </style>
 <script type="text/javascript">
-        //angular running only once..so reloading the page once to load it..temporary fix
-        $(document).ready(function() {
-            if (window.location.href.indexOf('reload')==-1) {
-                 window.location.replace(window.location.href+'?reload');
-            }
-        });
+    //angular running only once..so reloading the page once to load it..temporary fix
+    $(document).ready(function() {
+        if (window.location.href.indexOf('reload')==-1) {
+             window.location.replace(window.location.href+'?reload');
+        }
+    });
 
 
 
         //angular code for the grid table
-        var fileBrowserModule = angular.module('account', ['agGrid']);
+    var fileBrowserModule = angular.module('account', ['agGrid']);
 
-        fileBrowserModule.controller('accountController', function($scope) {
+    fileBrowserModule.controller('accountController', function($scope) {
 
         var columnDefs = [
             {headerName: 'Clients', field: 'item', width: 200, cellRenderer: {
@@ -93,7 +96,7 @@
             });
 
             return sums;
-         }
+         };
 
 
         function createRowData() {
@@ -144,8 +147,16 @@
                             else
                                 '0.00'
                             end %>";
-                row.gross_income = "<%= '%.2f' % ((if entry.is_billed then 1 else 0 end).to_f * ((entry.rate*entry.total_hours) + (0.14 * entry.rate * entry.total_hours))) %>";
-                row.net_payable = "<%= '%.2f' % ((if entry.is_billed then 1 else 0 end).to_f * ((0.9 * entry.rate * entry.total_hours) + (0.14 * entry.rate * entry.total_hours))) %>";
+                row.gross_income = "<%= if @currency_names[@rolez.where(:id => entry.role_id).first.currency_id] == "₹"
+                                        '%.2f' % ((if entry.is_billed then 1 else 0 end).to_f * ((entry.rate*entry.total_hours) + (0.14 * entry.rate * entry.total_hours)))
+                                        else
+                                            '%.2f' % ((if entry.is_billed then 1 else 0 end).to_f * (entry.rate*entry.total_hours))
+                                        end %>";
+                row.net_payable = "<%= if @currency_names[@rolez.where(:id => entry.role_id).first.currency_id] == "₹"
+                                        '%.2f' % ((if entry.is_billed then 1 else 0 end).to_f * ((0.9 * entry.rate * entry.total_hours) + (0.14 * entry.rate * entry.total_hours))) 
+                                        else
+                                            '%.2f' % ((if entry.is_billed then 1 else 0 end).to_f * (0.9 * entry.rate * entry.total_hours))
+                                        end%>";
 
             //});
             rows.push(row);
@@ -155,39 +166,69 @@
             } } %>
 
             return rows;
-        }
+        };
     });
 
 </script>
 </head>
 
-<body  style="padding: 10px">
+<body>
 <form class="form-horizontal" method="GET" action="/reports" id="filter">
     <div class="form-group">
-        <div class="col-sm-3">
+        <div class="col-sm-2">
             <label for="filter_type"> Report type :</label> <br>
-                <input id="monthly_radio" type="radio" name="report_type" required="required" value="monthly" /> <label for="monthly_radio">Monthly</label>
-                <input id="weekly_radio" type="radio" name="report_type" required="required" value="weekly" /> <label for="weekly_radio">Weekly</label>
+
+                <% if params[:report_type] == "monthly" %>
+                    <input id="monthly_radio" type="radio" name="report_type" required="required" value="monthly" checked="checked" /> <label for="monthly_radio">Monthly</label>
+                <%  else %>
+                    <input id="monthly_radio" type="radio" name="report_type" required="required" value="monthly" /> <label for="monthly_radio">Monthly</label>
+                <% end %>
+                <% if params[:report_type] == 'weekly' %>
+                    <input id="weekly_radio" type="radio" name="report_type" required="required" value="weekly" checked ="checked"  /> <label for="weekly_radio">Weekly</label>
+                <%  else %>
+                    <input id="weekly_radio" type="radio" name="report_type" required="required" value="weekly" /> <label for="weekly_radio">Weekly</label>
+                <% end %>
         </div>
         <div class="col-sm-3">
             <label for="from_date">From :</label>
             <input style="width:auto;" class="form-control" value="<%= if params.has_key?(:from_date)
                                                                             params[:from_date]
                                                                         else
-                                                                            Date.today - 30 
+                                                                            (Date.today - 30).strftime("%m/%d/%Y") 
                                                                         end  %>" 
-            name="from_date" id="from_date" required="required" disabled/>
+            name="from_date" id="from_date" required="required" <% if params.has_key?(:report_type) 
+                                                                    else %> 
+                                                                    disabled 
+                                                                <% end %>/>
         </div>
         <div class="col-sm-3">
             <label for="to_date">To :</label>
             <input style="width:auto;" class="form-control" value="<%= if params.has_key?(:to_date)
                                                                             params[:to_date]
                                                                         else
-                                                                            Date.today 
+                                                                            Date.today.strftime("%m/%d/%Y") 
                                                                         end  %>" 
-            name="to_date" id="to_date" required="required" disabled/>
+            name="to_date" id="to_date" required="required" <% if params.has_key?(:report_type) 
+                                                                else %>
+                                                                disabled
+                                                            <% end %> />
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
+            <label for="is_billed">Is Billed :</label><br>
+                <% if params.has_key?(:is_billed) && params[:is_billed]=='true' %>
+                    <input type="radio" name="is_billed" value="true" checked="checked"/>
+                <% else %>
+                    <input type="radio" name="is_billed" value="true"/>
+                <% end %>
+            <label class="styled_label" for="is_billed_yes">Yes</label>&nbsp;
+                <% if params.has_key?(:is_billed) && params[:is_billed]=='false' %>
+                    <input type="radio" name="is_billed" value="false" checked="checked" />
+                <% else %>
+                    <input type="radio" name="is_billed" value="false"/>
+                <% end %>   
+            <label class="styled_label" for="is_billed_no">No</label>&nbsp;
+        </div>
+        <div class="col-sm-2">
             <button id="submit" class="buttons" style="border-radius:100px;margin-top: 9%;"><i class="glyphicon glyphicon-ok"></i> </button>
         </div>
     </div>

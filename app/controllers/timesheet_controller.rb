@@ -197,7 +197,7 @@ class TimesheetController < ApplicationController
 	private 
 	#parameters for update
 	def timesheet_params
-		params.require(:timesheet).permit(:client,:project,:task,:timesheetdate,:hours,:role,:rate,:is_billed,:workspace,:comments, 
+		params.require(:timesheet).permit(:client_id,:project_id,:task,:timesheetdate,:hours,:role_id,:rate,:is_billed,:workspace,:comments, 
 		:employee_id)
 	end
 

@@ -112,6 +112,12 @@ Rails.application.routes.draw do
   put '/project.(:id)' => 'details#update_project', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }, :as => :project
   put '/role.(:id)' => 'details#update_role', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }, :as => :role
   put '/currency.(:id)' => 'details#update_currency', :constraints => { :id => /[0-9A-Za-z\-\.]+/ }, :as => :currency
+  
+  #
+  #Report related routes
+  #
+  get '/reports' => 'reports#index'
+  #post '/reports' => 'reports#index'
 
   #
   #google auth routes
@@ -120,10 +126,7 @@ Rails.application.routes.draw do
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
-  #
-  #Report related routes
-  #
-  get '/reports' => 'reports#index'
+
 
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]

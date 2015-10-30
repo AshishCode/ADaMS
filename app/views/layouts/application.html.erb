@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Adams</title>
+    <title>Adams</title>
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  
+
 </head>
 <style type="text/css">
 
@@ -152,7 +153,7 @@
           
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="active" ><button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></button></li>
+                                <li class="active" ><button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="fa fa-bars" aria-hidden="true"></span></button></li>
                                 <li style="margin-left:157%; margin-top:-18%;">
                                   <span><b><%= current_user.email %></b></span>
                                 </li>
@@ -183,6 +184,11 @@
   </div> 
 </body>
 <script type="text/javascript">
+
+    //storing pagination
+    $("ul li").change(function(){
+        alert("yoo");
+    });
 
     //setting up the active class manually for the menu items - based on the current url
     $(document).ready(function() {

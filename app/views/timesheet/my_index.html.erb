@@ -28,6 +28,11 @@
 				//float:left;
 			}
 
+			#submit_filter {
+				background-color: #428BCA;
+				//float:left;
+			}
+
 			#date_input {
 				    //margin-left: 5%;
 			}
@@ -199,9 +204,26 @@
 		    <td><%= best_in_place entry, :timesheetdate, :as => :date %></td>  
 
 		    <td><%= best_in_place entry, :hours %></td> 
-		    <td><%= #best_in_place entry, :role, :type=>:select, :collection => @roles
-		    		@rolez.where("id" => entry.role_id).first.role_name
-		     %></td> 
+		    <td><%= best_in_place entry, :role_id, :type=>:select, :collection => @rolez.where("project_id =?", entry.project_id).all.map{|x| [x.id, x.role_name]}
+		    		#@rolez.where("id" => entry.role_id).first.role_name
+		     %></td>
+		     <!-- code to cascade the roles with rate -->
+		     <% if ((@rolez.where("id" => entry.role_id).first.rate) != (entry.rate)) %>
+		     <script type="text/javascript">
+		     	 var timesheet = {'rate': <%= @rolez.where("id" => entry.role_id).first.rate %>};
+		     	$.ajax({
+				    url: '/timesheet.<%= entry.id %>',
+				    type: 'PUT',
+				    dataType: "json",
+				    data: {timesheet:timesheet},
+				    success: function(result) {
+				        //reload the page so as to reflect the changes
+				        location.reload();
+				    }
+				});
+		     </script>
+		     <% else
+		 		end %>
 		    <td><%= entry.rate %></td>  
 		    <td><%= best_in_place entry, :is_billed, :type=>:select, :collection => @is_billed %></td>  
 		    <td><%= best_in_place entry, :workspace, :type=>:select, :collection => @workspace %></td>   
