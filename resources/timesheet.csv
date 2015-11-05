@@ -1,445 +1,445 @@
-﻿id,task,timesheetdate,comments,employee_id,created_at,updated_at,is_billed,hours,rate,workspace,project_id,client_id,role_id
-1,Bugzilla issues,2015-10-01,NULL,4,2015-11-05,2015-11-05,1,1.5,1375,NULL,18,5,54
-2,induction,2015-10-01,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-3,induction,2015-10-01,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-4,"Package for Stock, made minor changes in the database connections for all the transformations.",2015-10-01,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-5,Bugzilla issues,2015-10-01,NULL,21,2015-11-05,2015-11-05,1,1.5,1875,NULL,18,5,51
-6,Bugzilla issues,2015-10-01,NULL,21,2015-11-05,2015-11-05,1,5.5,1875,NULL,18,5,51
-7,Acess is given to users for reports,2015-10-01,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-8,Testing on rupture summary for retail dashboard,2015-10-01,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-9,Testing on stock report for retail database,2015-10-01,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-10,Training - Induction,2015-10-01,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-11,Tutorials on QlikView,2015-10-01,Radhika K,9,2015-11-05,2015-11-05,0,6,0,NULL,27,10,17
-12,"Running WAPP Fix, Access, WH Rupture Issue",2015-10-01,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-13,SQL server on cloud options and analysis,2015-10-01,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-14,Sales Loading and Checking for CRN using substring fucntion in Order column,2015-10-01,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-15,Induction,2015-10-01,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-16,"Apex Dashboard requirements, meetings, build and setup",2015-10-01,NULL,10,2015-11-05,2015-11-05,1,8,1500,NULL,7,5,45
-17,"Apex Dashboard requirements, meetings, build and setup",2015-10-01,NULL,6,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
-18,Agronomy project : working on cube and reconciliation,2015-10-01,NULL,5,2015-11-05,2015-11-05,0,8,25,NULL,28,12,56
-19,Meetings and discussions.,2015-10-01,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-20,Cube clean up and reconciliation,2015-10-02,in hive,4,2015-11-05,2015-11-05,1,6,40,NULL,28,12,28
-21,SBA Issues,2015-10-02,Adding 1 Hour for Analysis from Lokesh,21,2015-11-05,2015-11-05,0,2,62.5,NULL,28,12,60
-22,Bugzilla issues - MFR & postioning,2015-10-02,NULL,21,2015-11-05,2015-11-05,1,3.5,1875,NULL,18,5,51
-23,Gandhi Jayanthi,2015-10-02,NULL,2,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
-24,Gandhi Jayanthi,2015-10-02,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
-25,Gandhi Jayanthi,2015-10-02,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
-26,Gandhi Jayanthi,2015-10-02,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
-27,Gandhi Jayanthi,2015-10-02,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
-28,Gandhi Jayanthi,2015-10-02,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
-29,Gandhi Jayanthi,2015-10-02,NULL,5,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
-30,National Holiday,2015-10-02,NULL,9,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
-31,Gandhi Jayanthi,2015-10-02,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
-32,Cube clean up and reconciliation - Potato Quality Report,2015-10-03,in hive,4,2015-11-05,2015-11-05,1,6,40,NULL,28,12,28
-33,Reconilliation issues + Potato Quality Report,2015-10-03,Converted to 320 rate,21,2015-11-05,2015-11-05,0,6,62.5,NULL,28,12,60
-34,Entries from 2 and 3 oct at 320 rate,2015-10-03,in hive,21,2015-11-05,2015-11-05,1,12.5,40,NULL,28,12,28
-35,"Testing WACP, Server Support",2015-10-03,NULL,9,2015-11-05,2015-11-05,1,6,750,NULL,26,4,53
-36,Cube clean up and reconciliation - PPV report,2015-10-04,in hive,4,2015-11-05,2015-11-05,1,3,40,NULL,28,12,28
-37,Comvita Datawarehouse ETL enhancement design: understanding the project and extraction layer table changes,2015-10-05,NULL,5,2015-11-05,2015-11-05,1,4,25,NULL,12,12,2003
-38,"Stream Lookup for certain fields (Stock Package), issue handling and reloading of records after making changes to Stock job",2015-10-05,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-39,Bugzilla issues,2015-10-05,Carried Over,21,2015-11-05,2015-11-05,1,5,1875,NULL,18,5,51
-40,Access is given to users for reports like retail and supply,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-41,Testing on stock report for Zirakpur and Anubhava store,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
-42,Testing on transaction and stock for zirakpur store,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-43,Testing on sales for last week for all the stores,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-44,On Leave,2015-10-05,NULL,2,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-45,Testing on North zone report,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,4,750,NULL,26,4,53
-46,"Introduction,SQL syntax rules,Statement types, Dynamic and static SQL, Constraints Views, Where clause",2015-10-05,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-47,"Introduction,SQL syntax rules,Statement types, Dynamic and static SQL, Constraints Views, Where clause",2015-10-05,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-48,Checking Amritsar Sales and loading (retial DB down),2015-10-05,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-49,Going Live with WACP Fix - Implementation and testing discussion,2015-10-05,NULL,21,2015-11-05,2015-11-05,1,3,875,NULL,26,4,5
-50,Bugzilla issues - MFR & postioning,2015-10-05,NULL,21,2015-11-05,2015-11-05,1,6,1875,NULL,18,5,51
-51,SQL training ,2015-10-05,NULL,6,2015-11-05,2015-11-05,0,5,0,NULL,30,7,49
-52,Customer Profiling Analytics Prototype using Tableau ,2015-10-05,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,6,10,31
-53,Comvita Datawarehouse ETL enhancement design: sql layer changes,2015-10-05,NULL,5,2015-11-05,2015-11-05,1,4,25,NULL,12,12,2003
-54,"Apex Dashboard requirements, meetings, build and setup",2015-10-05,NULL,10,2015-11-05,2015-11-05,1,8,1500,NULL,7,5,45
-55,"Apex Dashboard requirements, meetings, build and setup",2015-10-05,NULL,6,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
-56,Pending cube and view changes and prepare for deployment,2015-10-05,in hive,4,2015-11-05,2015-11-05,1,1.5,40,NULL,28,12,28
-57,SQL Training,2015-10-05,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-58,"Distinct Top,  order by and group by, Views, Sub queries, Update , Union, Delete , Truncate, Drop ",2015-10-06,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-59,"Distinct Top,  order by and group by, Views, Sub queries, Update , Union, Delete , Truncate, Drop ",2015-10-06,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-60,"Distinct Top,  order by and group by, Views, Sub queries, Update , Union, Delete , Truncate, Drop ",2015-10-06,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-61,Meetings in Chennai,2015-10-06,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,22,2,1
-62,IsRuptureRecord moved to FactAttributes in Data Model Optimisation.,2015-10-06,NULL,21,2015-11-05,2015-11-05,1,5,875,NULL,26,4,5
-63,Computed Stock for Zirakpur and Baroda Store,2015-10-06,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-64,Testing on stock report on 4th October for Zirakpur and Anubhava stores.,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
-65,Testing on sales from 24th to 4th October for all the stores,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,3,750,NULL,26,4,53
-66,Testing on stock and transactions for Zirakpur.,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
-67,Access is given to users for Retail and Supply.,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-68,Testing on North zone report for sales and CSAT.,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,1.5,750,NULL,26,4,53
-69,"QlikView Performance testing, Cheklist, CSAT changes",2015-10-06,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-70,Loading sales data for bannerghatta stores(first loaded order/oderline stage tables and then fact.sales),2015-10-06,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-71,SQL training ,2015-10-06,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,30,7,49
-72,Customer Profiling Analytics Prototype using Tableau ,2015-10-06,NULL,6,2015-11-05,2015-11-05,0,5,0,NULL,6,10,31
-73,Comvita Datawarehouse ETL enhancement design: sql extraction layer changes,2015-10-06,NULL,5,2015-11-05,2015-11-05,1,2,25,NULL,12,12,2003
-74,Comvita Datawarehouse ETL enhancement design: SSIS extraction layer changes,2015-10-06,NULL,5,2015-11-05,2015-11-05,1,6,25,NULL,12,12,2003
-75,"Apex Dashboard requirements, meetings, build and setup",2015-10-06,NULL,6,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
-76,SQL Training,2015-10-06,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-77,"Joins, Aliasis, Information Schema, Variables",2015-10-07,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-78,"Joins, Aliasis, Information Schema, Variables",2015-10-07,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-79,"Joins, Aliasis, Information Schema, Variables",2015-10-07,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-80,"Access given to users for Retail,Supply and Ad-hoc.",2015-10-07,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-81,Testing on Zirakpur store for B Twin.,2015-10-07,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
-82,Started replicating the sales tab (Training).,2015-10-07,Radhika K,9,2015-11-05,2015-11-05,0,2,0,NULL,27,10,17
-83,Basics of Incremental data loads Tutorial.,2015-10-07,Radhika K,9,2015-11-05,2015-11-05,0,2,0,NULL,27,10,17
-84,QlikView Tutorial,2015-10-07,Radhika K,9,2015-11-05,2015-11-05,0,1,0,NULL,27,10,17
-85,"SAP BW investigation, call with France team",2015-10-07,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-86,"Testing computed stock for Baroda and Zirakpur Store. (Summation Error), SSIS Basics",2015-10-07,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-87,"Research on data migration from SAP ,Postgresql and MSSQL",2015-10-07,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-88,SQL training ,2015-10-07,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,30,7,49
-89,Customer Profiling Analytics Prototype using Tableau ,2015-10-07,NULL,6,2015-11-05,2015-11-05,0,5,0,NULL,6,10,31
-90,"Newfeel Stock Value Issue debugging, Bike Accessories Stock Issue",2015-10-07,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-91,Comvita Datawarehouse ETL enhancement design: incremental layer changes,2015-10-07,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-92,Pending cube and view changes and prepare for deployment,2015-10-07,in hive,4,2015-11-05,2015-11-05,1,3,40,NULL,28,12,28
-93,Call with Alec and issues,2015-10-07,NULL,4,2015-11-05,2015-11-05,1,1,25,NULL,8,11,18
-94,Cumulative time spent on Adams,2015-10-07,NULL,4,2015-11-05,2015-11-05,0,2,0,NULL,14,7,22
-95,SQL Training,2015-10-07,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-96,"if else, case, while , stored procedures",2015-10-08,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-97,"If else, case, while , stored procedures",2015-10-08,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-98,"If else, case, while , stored procedures",2015-10-08,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-99,"If else, case, while , stored procedures",2015-10-08,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-100,SQL training ,2015-10-08,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,30,7,49
-101,meeting with abishek and Siddharth on Retail KPIs ,2015-10-08,NULL,6,2015-11-05,2015-11-05,0,2,0,NULL,21,7,19
-102,Customer Profiling Analytics Prototype using Tableau ,2015-10-08,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,6,10,31
-103,SSIS (ppt) (Getting started),2015-10-08,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-104,Sales tab replication. And Qlikview tutorials.(Training),2015-10-08,Radhika K,9,2015-11-05,2015-11-05,0,3,0,NULL,27,10,17
-105,Access given to users for Retail. And started load for Distribute Ad-hoc report.,2015-10-08,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-106,Category names and tax rates from Retail. Testing on calculation of tax rate.,2015-10-08,Radhika K,9,2015-11-05,2015-11-05,0,4,0,NULL,27,10,17
-107,"CSV file genration approaches and investigation, Changes to get landline information",2015-10-08,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-108,feasibility study of postgres & MSSQL with SAP BW,2015-10-08,NULL,21,2015-11-05,2015-11-05,1,12.5,875,NULL,26,4,5
-109,CSV Creation Statistics from Pentaho,2015-10-08,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-110,"Data Model Fact Attributes Join 1.1, Retail Rupture Expression Fix, looking into bike accessories stock, Baroda WAPP testing",2015-10-08,NULL,9,2015-11-05,2015-11-05,1,7.5,750,NULL,26,4,53
-111,Comvita Datawarehouse ETL enhancement design: incremental layer changes,2015-10-08,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-112,"Initial discussion with Nilesh, Ritesh and Kannan on Aspire project",2015-10-08,NULL,10,2015-11-05,2015-11-05,1,2,1500,NULL,1036,5,2001
-113,Prepare workbooks for testing and reconciliation,2015-10-08,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,28,12,28
-114,Deploy to UAT and fix issues,2015-10-08,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,28,12,28
-115,Report development,2015-10-08,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,28,12,28
-116,ComVita review and work with Abhinav,2015-10-08,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,12,12,44
-117,SQL Training,2015-10-08,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-118,"Initial discussion with Nilesh, Ritesh and Ashiwini on Aspire project",2015-10-08,NULL,21,2015-11-05,2015-11-05,1,2,1500,NULL,1036,5,2001
-119,Understanding the product and work around with issues and deployment ,2015-10-09,NULL,6,2015-11-05,2015-11-05,0,9,1125,NULL,1036,5,2002
-120,SQL training ,2015-10-09,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-121,Bugzilla issues - MFR & postioning,2015-10-09,NULL,21,2015-11-05,2015-11-05,1,3,1875,NULL,18,5,51
-122,Qliksense Executive dashboard,2015-10-09,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-123,Access given to users for Retail and started loaded for Distribute Ad-hoc Report.,2015-10-09,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-124,Comvita Datawarehouse ETL enhancement design: incremental layer changes and testing,2015-10-09,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-125,Testing on tax calculations in Retail.,2015-10-09,Radhika K,9,2015-11-05,2015-11-05,0,7.5,0,NULL,27,10,17
-126,Meeting and discussions - checking feasibility of postgres with SAP BW,2015-10-09,NULL,21,2015-11-05,2015-11-05,1,4,875,NULL,26,4,5
-127,Exporting CSV from Pentaho (stock Table),2015-10-09,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-128,"Meeting with Virginie Regarding WAPP Fix, Retail Expression Testing and Itemwise debugging, Meeting with ravi, Reloading CC Comparision for BIPP, Rupture Testing Expression-Duplicate ProductIDs Issue",2015-10-09,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-129,Exporting CSV from Pentaho (Sales),2015-10-09,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
-130,"Code Walkthrough, Batch File setup for web deploy and SVN setup",2015-10-09,NULL,10,2015-11-05,2015-11-05,1,10,1500,NULL,1036,5,2001
-131,Handover and get idea about work start. Prepare auto publish scripts,2015-10-09,NULL,4,2015-11-05,2015-11-05,1,4,1125,NULL,1036,5,2002
-132,ComVita review and work with Abhinav,2015-10-09,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,12,12,44
-133,Training discussion and training,2015-10-09,NULL,4,2015-11-05,2015-11-05,0,3,0,NULL,30,7,48
-134,SQL Training,2015-10-09,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-135,User management UI Issues fix ,2015-10-10,NULL,6,2015-11-05,2015-11-05,1,8,1125,NULL,1036,5,2002
-136,User Management high priority issue fix and setup,2015-10-10,NULL,10,2015-11-05,2015-11-05,1,8,1500,NULL,1036,5,2001
-137,Handover and get idea about work start. Prepare auto publish scripts,2015-10-10,NULL,4,2015-11-05,2015-11-05,1,10,1125,NULL,1036,5,2002
-138,"Issues categorization , fixes, testing and deployment",2015-10-11,NULL,10,2015-11-05,2015-11-05,1,9,1500,NULL,1036,5,2001
-139,Handover and get idea about work start. Prepare auto publish scripts,2015-10-11,NULL,4,2015-11-05,2015-11-05,1,9,1125,NULL,1036,5,2002
-140,Review of SQL,2015-10-12,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-141,Review of SQL,2015-10-12,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-142,Review of SQL,2015-10-12,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-143,Bugzilla issues - analysis & update,2015-10-12,NULL,21,2015-11-05,2015-11-05,1,0.5,1875,NULL,18,5,51
-144,"Merge, Temp Tables, Review",2015-10-12,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-145,"Merge, Temp Tables, Review",2015-10-12,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-146,"Merge, Temp Tables, Review",2015-10-12,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-147,"Merge, Temp Tables, Review",2015-10-12,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-148,"Access given to users for supply and retail,Started load for Distribute Ad-hoc Report",2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,0.5,750,NULL,26,4,53
-149,"Issues categorization , fixes, testing and deployment",2015-10-12,NULL,10,2015-11-05,2015-11-05,1,9.5,1500,NULL,1036,5,2001
-150,User management UI Issues fix ,2015-10-12,NULL,6,2015-11-05,2015-11-05,1,9,1125,NULL,1036,5,2002
-151,"Bugzilla issues - MFR , postioning & missing obs",2015-10-12,NULL,21,2015-11-05,2015-11-05,1,6,1875,NULL,18,5,51
-152,Testing on m_transaction for BIKE ACCESSORIES for the week 18.,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,0.5,750,NULL,26,4,53
-153,Testing on last week's sales for all the stores,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,2,750,NULL,26,4,53
-154,Testing on stock for Zirakpur and Anubhava stores on 11th and 10th October.,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,2.5,750,NULL,26,4,53
-155,Testing on m_transaction for Zirakpur store,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,0.5,750,NULL,26,4,53
-156,Testing on Tax calculation in Retail.,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,1.5,750,NULL,26,4,53
-157,"Meetings, File data format changes, Qlikview optimization testing",2015-10-12,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-158,"A Codes List updated, Baroda m_transactions issue in WAPP, Bike Accessories Transactions, Stock Isuue in Live, doing full load.",2015-10-12,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-159,ETL enhancement project: Incremental implementation in packages,2015-10-12,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-160,Testing and changes,2015-10-12,in hive,4,2015-11-05,2015-11-05,1,4,40,NULL,12,12,44
-161,Adams discussion,2015-10-12,NULL,4,2015-11-05,2015-11-05,0,1,0,NULL,14,7,22
-162,"BAPS Issue fixes with worklist, activity and project master",2015-10-12,NULL,4,2015-11-05,2015-11-05,1,4,25,NULL,8,11,18
-163,Sick - Off,2015-10-12,NULL,2,2015-11-05,2015-11-05,0,3,0,NULL,31,6,12
-164,Sick Leave,2015-10-12,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,31,6,12
-165,QlikView Training ,2015-10-12,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-166,"Issues categorization , fixes, testing and deployment",2015-10-13,NULL,10,2015-11-05,2015-11-05,1,10.5,1500,NULL,1036,5,2001
-167,"Merge, Temp Tables, Error Handling, case study",2015-10-13,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-168,"Merge, Temp Tables, Error Handling, case study",2015-10-13,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-169,"Merge, Temp Tables, Error Handling, case study",2015-10-13,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-170,"Merge, Temp Tables, Error Handling, case study",2015-10-13,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-171,"Bugzilla issues - missing obs, missing bm & pi tool issues",2015-10-13,NULL,21,2015-11-05,2015-11-05,1,5.5,1875,NULL,18,5,51
-172,Access given to users for retail and Started load for Distribute Ad-hoc report .,2015-10-13,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-173,Testing on stock for Zirakpur Store on 11th OCT.,2015-10-13,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-174,Testing on stock for Bike Accessories in retail and supply,2015-10-13,Radhika K,9,2015-11-05,2015-11-05,1,5,750,NULL,26,4,53
-175,Tutorial on where exists(Training) and Started doing Review report.,2015-10-13,NULL,8,2015-11-05,2015-11-05,0,4.5,0,NULL,27,10,17
-176,Testing on stock for Bike Accessories for week 17 and 18.,2015-10-13,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-177,QlikView CSV Loaders - Stock,2015-10-13,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-178,ETL enhancement project: Testing packages,2015-10-13,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-179,User management UI Issues fix ,2015-10-13,NULL,6,2015-11-05,2015-11-05,1,10,1125,NULL,1036,5,2002
-180,System Reminders revamp/change,2015-10-13,NULL,4,2015-11-05,2015-11-05,1,8,25,NULL,8,11,18
-181,"Zirakpur Stock Testing, Anubhava Stock Testing, Access, A Codes Change, Fact Attributes change in Data Model",2015-10-13,NULL,21,2015-11-05,2015-11-05,1,4,875,NULL,26,4,5
-182,SQL Training,2015-10-13,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-183,QlikView Training ,2015-10-13,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-184,"Cursors, Triggers, Transactions",2015-10-14,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-185,"Cursors, Triggers, Transactions",2015-10-14,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-186,"Cursors, Triggers, Transactions",2015-10-14,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-187,"Cursors, Triggers, Transactions",2015-10-14,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-188,"Issues categorization , fixes, testing and deployment",2015-10-14,NULL,10,2015-11-05,2015-11-05,1,10.5,1500,NULL,1036,5,2001
-189,ETL enhancement project: Testing packages,2015-10-14,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-190,User management UI Issues fix ,2015-10-14,NULL,6,2015-11-05,2015-11-05,1,9,1125,NULL,1036,5,2002
-191,System Reminders revamp/change,2015-10-14,NULL,4,2015-11-05,2015-11-05,1,8,25,NULL,8,11,18
-192,Access given to users for retail and started the load for Distribute ad-hoc report.,2015-10-14,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-193,Changes made in BI Portal for screenshots and done with the review report.,2015-10-14,NULL,8,2015-11-05,2015-11-05,0,5.5,0,NULL,23,8,41
-194,Testing on the stock report for CAR and CAC on 13th OCT.,2015-10-14,Radhika K,9,2015-11-05,2015-11-05,1,6,750,NULL,26,4,53
-195,"Qlikview CSV Loader - Sales, QlikTech Meeting, Performance Testing",2015-10-14,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-196,Discussions ,2015-10-14,NULL,21,2015-11-05,2015-11-05,1,3,875,NULL,26,4,5
-197,"Warehouse Locator Testing from Backup QVDs and live Warehouse locator files,  Qlikview Performance Issue Meeting, retail Optimisation Testing in Dashboard tab",2015-10-14,NULL,21,2015-11-05,2015-11-05,1,6,875,NULL,26,4,5
-198,SQL Training,2015-10-14,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-199,QlikView Training ,2015-10-14,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-200,KT and issues fix,2015-10-15,NULL,10,2015-11-05,2015-11-05,1,3,1500,NULL,1036,5,2001
-201,ETL enhancement project: Testing packages and documenting,2015-10-15,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-202,Understanding the Medical System in USA using Aspire product,2015-10-15,NULL,6,2015-11-05,2015-11-05,0,8,1125,NULL,1036,5,2002
-203,Other changes/issue fixes,2015-10-15,NULL,4,2015-11-05,2015-11-05,1,8,25,NULL,8,11,18
-204,"functions, cursors, triggers, pivot",2015-10-15,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-205,"functions, cursors, triggers, pivot",2015-10-15,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-206,"functions, cursors, triggers, pivot",2015-10-15,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-207,"functions, cursors, triggers, pivot",2015-10-15,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-208,Testing on stock for Zirakpur Store on 13th OCT. and Transactions ,2015-10-15,Radhika K,9,2015-11-05,2015-11-05,1,1.5,750,NULL,26,4,53
-209,BI Portal model and report,2015-10-15,NULL,8,2015-11-05,2015-11-05,0,4,0,NULL,23,8,41
-210,Testing on stock for CAR and CAC on 13th OCT.,2015-10-15,Radhika K,9,2015-11-05,2015-11-05,1,6.5,750,NULL,26,4,53
-211,Qlikview CSV - Stock format final changes,2015-10-15,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-212,"Changes in Supply Dashboard for Rupture Changes and testing, StockDB Full load, Warehouse Locators Monitoring",2015-10-15,NULL,21,2015-11-05,2015-11-05,1,4,875,NULL,26,4,5
-213,SQL Training,2015-10-15,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-214,QlikView Training ,2015-10-15,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-215,ETL enhancement project: Testing packages and documenting,2015-10-16,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-216,Understanding the Medical System in USA using Aspire product,2015-10-16,NULL,6,2015-11-05,2015-11-05,0,8,1125,NULL,1036,5,2002
-217,"New work review, discussion estimates",2015-10-16,NULL,4,2015-11-05,2015-11-05,1,4,25,NULL,8,11,18
-218,Resourcing meeting,2015-10-16,NULL,4,2015-11-05,2015-11-05,0,1,0,NULL,21,7,19
-219,"Dynamic SQL, Case study",2015-10-16,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-220,"Dynamic SQL, Case study",2015-10-16,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-221,"Dynamic SQL, Case study",2015-10-16,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-222,Leave,2015-10-16,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-223,BI Portal model and report,2015-10-16,NULL,8,2015-11-05,2015-11-05,0,7.5,0,NULL,23,8,41
-224,Distribute Ad-hoc report loaded and access given to users,2015-10-16,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-225,Ad-Hoc Report Expressions - optimization,2015-10-16,NULL,2,2015-11-05,2015-11-05,1,2,875,NULL,26,4,5
-226,"QlikView CSV file format changes, Stock Issues",2015-10-16,NULL,2,2015-11-05,2015-11-05,1,6,875,NULL,26,4,5
-227,SQL Training,2015-10-16,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-228,QlikView Training ,2015-10-16,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-229,Syupply rupture Changes and Testing,2015-10-16,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-230,Client travel,2015-10-17,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
-231,Fix issue with buy credits page,2015-10-18,NULL,4,2015-11-05,2015-11-05,1,4,1125,NULL,1036,5,2002
-232,Client travel,2015-10-18,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
-233,Project review in college,2015-10-19,NULL,8,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-234,"Why SSIS, basics, Intro to DFT, CFT, Configurations and intro to Source and Destination in DFT",2015-10-19,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-235,"Why SSIS, basics, Intro to DFT, CFT, Configurations and intro to Source and Destination in DFT",2015-10-19,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-236,"Why SSIS, basics, Intro to DFT, CFT, Configurations and intro to Source and Destination in DFT",2015-10-19,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-237,"Why SSIS, basics, Intro to DFT, CFT, Configurations and intro to Source and Destination in DFT",2015-10-19,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-238,"Bugzilla issues - missing obs, missing bm issues",2015-10-19,NULL,21,2015-11-05,2015-11-05,1,7.5,1875,NULL,18,5,51
-239,SSIS Training,2015-10-19,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-240,Discussion for CCD & HL 7,2015-10-19,NULL,21,2015-11-05,2015-11-05,1,1,1500,NULL,7,5,45
-241,"Introdcution, meetings and architecture overview and documents",2015-10-19,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
-242,"Decathlon Visit, Meeting with Ravi & Asif, Amazon S3 Configuration",2015-10-19,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-243,"Weekly Status Update, Access, A Codes List, SupplyOptimisation",2015-10-19,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-244,QlikView Practice,2015-10-19,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-245,Created list CPG KPIs,2015-10-19,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
-246,File Upload Functionality and Project Master Selection without postback,2015-10-19,NULL,4,2015-11-05,2015-11-05,1,8,25,NULL,8,11,18
-247,ETL enhancement project: deployment,2015-10-19,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-248,"Bugzilla issues - missing obs, missing bm issues",2015-10-20,NULL,21,2015-11-05,2015-11-05,1,6.5,1875,NULL,18,5,51
-249,Demo for parser CCD & HL 7,2015-10-20,NULL,21,2015-11-05,2015-11-05,1,2,1500,NULL,7,5,45
-250,"Imperiatives discussion, arch discussion and meeting with Chanal bruner",2015-10-20,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
-251,Case Study Review,2015-10-20,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-252,Case Study Review,2015-10-20,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-253,Case Study Review,2015-10-20,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-254,Case Study Review,2015-10-20,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-255,Finding a Solution for file transfer from Azure to AWS S3,2015-10-20,Nikhil's Time,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-256,Exploring various methods of extracting data from ccd files,2015-10-20,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
-257,SSIS Training,2015-10-20,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-258,"QlikView SAP Sales csv loader, WH Rupture Investigation",2015-10-20,NULL,2,2015-11-05,2015-11-05,1,0,875,NULL,26,4,5
-259,Qlikview tutorials and thesis preparation for the project.,2015-10-20,NULL,8,2015-11-05,2015-11-05,0,7,0,NULL,23,8,41
-260,Testing on stock for Zirakpur Store on 19th OCT and Started load for Distribute Ad-hoc report.,2015-10-20,Radhika K,21,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-261,Supply Optimisation,2015-10-20,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-262,Created list CPG KPIs,2015-10-20,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
-263,Sick - Food Poisoning,2015-10-20,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,31,6,12
-264,ETL enhancement project: deployment,2015-10-20,NULL,5,2015-11-05,2015-11-05,1,5,25,NULL,12,12,2003
-265,ETL enhancement project: comparing dev and prod,2015-10-20,NULL,5,2015-11-05,2015-11-05,1,3,25,NULL,12,12,2003
-266,Review of previous topics,2015-10-21,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-267,Review of previous topics,2015-10-21,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-268,Review of previous topics,2015-10-21,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-269,Review of previous topics,2015-10-21,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-270,"Bugzilla issues - missing obs, missing bm issues, entry detail",2015-10-21,NULL,21,2015-11-05,2015-11-05,1,3.5,1875,NULL,18,5,51
-271,Sick leave,2015-10-21,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,31,6,12
-272,Parser implementation Discussion,2015-10-21,NULL,21,2015-11-05,2015-11-05,1,5,1500,NULL,7,5,45
-273,Ad-Hoc Report Expressions - optimization,2015-10-21,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-274,Started load for Distribute Ad-hoc report. Testing on stock for Noida Store,2015-10-21,Radhika K,9,2015-11-05,2015-11-05,1,0,750,NULL,26,4,53
-275,Thesis Preparation,2015-10-21,NULL,8,2015-11-05,2015-11-05,0,5,0,NULL,23,8,41
-276, Testing on sales amount for JAN-JUNE for all the stores.
+﻿task,timesheetdate,comments,employee_id,created_at,updated_at,is_billed,hours,rate,workspace,project_id,client_id,role_id
+Bugzilla issues,2015-10-01,NULL,4,2015-11-05,2015-11-05,1,1.5,1375,NULL,18,5,54
+induction,2015-10-01,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+induction,2015-10-01,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Package for Stock, made minor changes in the database connections for all the transformations.",2015-10-01,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+Bugzilla issues,2015-10-01,NULL,21,2015-11-05,2015-11-05,1,1.5,1875,NULL,18,5,51
+Bugzilla issues,2015-10-01,NULL,21,2015-11-05,2015-11-05,1,5.5,1875,NULL,18,5,51
+Acess is given to users for reports,2015-10-01,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+Testing on rupture summary for retail dashboard,2015-10-01,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+Testing on stock report for retail database,2015-10-01,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+Training - Induction,2015-10-01,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+Tutorials on QlikView,2015-10-01,Radhika K,9,2015-11-05,2015-11-05,0,6,0,NULL,27,10,17
+"Running WAPP Fix, Access, WH Rupture Issue",2015-10-01,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+SQL server on cloud options and analysis,2015-10-01,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Sales Loading and Checking for CRN using substring fucntion in Order column,2015-10-01,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+Induction,2015-10-01,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Apex Dashboard requirements, meetings, build and setup",2015-10-01,NULL,10,2015-11-05,2015-11-05,1,8,1500,NULL,7,5,45
+"Apex Dashboard requirements, meetings, build and setup",2015-10-01,NULL,6,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
+Agronomy project : working on cube and reconciliation,2015-10-01,NULL,5,2015-11-05,2015-11-05,0,8,25,NULL,28,12,56
+Meetings and discussions.,2015-10-01,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+Cube clean up and reconciliation,2015-10-02,in hive,4,2015-11-05,2015-11-05,1,6,40,NULL,28,12,28
+SBA Issues,2015-10-02,Adding 1 Hour for Analysis from Lokesh,21,2015-11-05,2015-11-05,0,2,62.5,NULL,28,12,60
+Bugzilla issues - MFR & postioning,2015-10-02,NULL,21,2015-11-05,2015-11-05,1,3.5,1875,NULL,18,5,51
+Gandhi Jayanthi,2015-10-02,NULL,2,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
+Gandhi Jayanthi,2015-10-02,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
+Gandhi Jayanthi,2015-10-02,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
+Gandhi Jayanthi,2015-10-02,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
+Gandhi Jayanthi,2015-10-02,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
+Gandhi Jayanthi,2015-10-02,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
+Gandhi Jayanthi,2015-10-02,NULL,5,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
+National Holiday,2015-10-02,NULL,9,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
+Gandhi Jayanthi,2015-10-02,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,9,6,11
+Cube clean up and reconciliation - Potato Quality Report,2015-10-03,in hive,4,2015-11-05,2015-11-05,1,6,40,NULL,28,12,28
+Reconilliation issues + Potato Quality Report,2015-10-03,Converted to 320 rate,21,2015-11-05,2015-11-05,0,6,62.5,NULL,28,12,60
+Entries from 2 and 3 oct at 320 rate,2015-10-03,in hive,21,2015-11-05,2015-11-05,1,12.5,40,NULL,28,12,28
+"Testing WACP, Server Support",2015-10-03,NULL,9,2015-11-05,2015-11-05,1,6,750,NULL,26,4,53
+Cube clean up and reconciliation - PPV report,2015-10-04,in hive,4,2015-11-05,2015-11-05,1,3,40,NULL,28,12,28
+Comvita Datawarehouse ETL enhancement design: understanding the project and extraction layer table changes,2015-10-05,NULL,5,2015-11-05,2015-11-05,1,4,25,NULL,12,12,2003
+"Stream Lookup for certain fields (Stock Package), issue handling and reloading of records after making changes to Stock job",2015-10-05,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+Bugzilla issues,2015-10-05,Carried Over,21,2015-11-05,2015-11-05,1,5,1875,NULL,18,5,51
+Access is given to users for reports like retail and supply,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+Testing on stock report for Zirakpur and Anubhava store,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
+Testing on transaction and stock for zirakpur store,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+Testing on sales for last week for all the stores,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+On Leave,2015-10-05,NULL,2,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+Testing on North zone report,2015-10-05,Radhika K,9,2015-11-05,2015-11-05,1,4,750,NULL,26,4,53
+"Introduction,SQL syntax rules,Statement types, Dynamic and static SQL, Constraints Views, Where clause",2015-10-05,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Introduction,SQL syntax rules,Statement types, Dynamic and static SQL, Constraints Views, Where clause",2015-10-05,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Checking Amritsar Sales and loading (retial DB down),2015-10-05,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+Going Live with WACP Fix - Implementation and testing discussion,2015-10-05,NULL,21,2015-11-05,2015-11-05,1,3,875,NULL,26,4,5
+Bugzilla issues - MFR & postioning,2015-10-05,NULL,21,2015-11-05,2015-11-05,1,6,1875,NULL,18,5,51
+SQL training ,2015-10-05,NULL,6,2015-11-05,2015-11-05,0,5,0,NULL,30,7,49
+Customer Profiling Analytics Prototype using Tableau ,2015-10-05,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,6,10,31
+Comvita Datawarehouse ETL enhancement design: sql layer changes,2015-10-05,NULL,5,2015-11-05,2015-11-05,1,4,25,NULL,12,12,2003
+"Apex Dashboard requirements, meetings, build and setup",2015-10-05,NULL,10,2015-11-05,2015-11-05,1,8,1500,NULL,7,5,45
+"Apex Dashboard requirements, meetings, build and setup",2015-10-05,NULL,6,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
+Pending cube and view changes and prepare for deployment,2015-10-05,in hive,4,2015-11-05,2015-11-05,1,1.5,40,NULL,28,12,28
+SQL Training,2015-10-05,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+"Distinct Top,  order by and group by, Views, Sub queries, Update , Union, Delete , Truncate, Drop ",2015-10-06,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Distinct Top,  order by and group by, Views, Sub queries, Update , Union, Delete , Truncate, Drop ",2015-10-06,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Distinct Top,  order by and group by, Views, Sub queries, Update , Union, Delete , Truncate, Drop ",2015-10-06,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Meetings in Chennai,2015-10-06,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,22,2,1
+IsRuptureRecord moved to FactAttributes in Data Model Optimisation.,2015-10-06,NULL,21,2015-11-05,2015-11-05,1,5,875,NULL,26,4,5
+Computed Stock for Zirakpur and Baroda Store,2015-10-06,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+Testing on stock report on 4th October for Zirakpur and Anubhava stores.,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
+Testing on sales from 24th to 4th October for all the stores,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,3,750,NULL,26,4,53
+Testing on stock and transactions for Zirakpur.,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
+Access is given to users for Retail and Supply.,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+Testing on North zone report for sales and CSAT.,2015-10-06,Radhika K,9,2015-11-05,2015-11-05,1,1.5,750,NULL,26,4,53
+"QlikView Performance testing, Cheklist, CSAT changes",2015-10-06,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Loading sales data for bannerghatta stores(first loaded order/oderline stage tables and then fact.sales),2015-10-06,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+SQL training ,2015-10-06,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,30,7,49
+Customer Profiling Analytics Prototype using Tableau ,2015-10-06,NULL,6,2015-11-05,2015-11-05,0,5,0,NULL,6,10,31
+Comvita Datawarehouse ETL enhancement design: sql extraction layer changes,2015-10-06,NULL,5,2015-11-05,2015-11-05,1,2,25,NULL,12,12,2003
+Comvita Datawarehouse ETL enhancement design: SSIS extraction layer changes,2015-10-06,NULL,5,2015-11-05,2015-11-05,1,6,25,NULL,12,12,2003
+"Apex Dashboard requirements, meetings, build and setup",2015-10-06,NULL,6,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
+SQL Training,2015-10-06,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+"Joins, Aliasis, Information Schema, Variables",2015-10-07,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Joins, Aliasis, Information Schema, Variables",2015-10-07,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Joins, Aliasis, Information Schema, Variables",2015-10-07,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Access given to users for Retail,Supply and Ad-hoc.",2015-10-07,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+Testing on Zirakpur store for B Twin.,2015-10-07,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
+Started replicating the sales tab (Training).,2015-10-07,Radhika K,9,2015-11-05,2015-11-05,0,2,0,NULL,27,10,17
+Basics of Incremental data loads Tutorial.,2015-10-07,Radhika K,9,2015-11-05,2015-11-05,0,2,0,NULL,27,10,17
+QlikView Tutorial,2015-10-07,Radhika K,9,2015-11-05,2015-11-05,0,1,0,NULL,27,10,17
+"SAP BW investigation, call with France team",2015-10-07,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+"Testing computed stock for Baroda and Zirakpur Store. (Summation Error), SSIS Basics",2015-10-07,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+"Research on data migration from SAP ,Postgresql and MSSQL",2015-10-07,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+SQL training ,2015-10-07,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,30,7,49
+Customer Profiling Analytics Prototype using Tableau ,2015-10-07,NULL,6,2015-11-05,2015-11-05,0,5,0,NULL,6,10,31
+"Newfeel Stock Value Issue debugging, Bike Accessories Stock Issue",2015-10-07,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+Comvita Datawarehouse ETL enhancement design: incremental layer changes,2015-10-07,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+Pending cube and view changes and prepare for deployment,2015-10-07,in hive,4,2015-11-05,2015-11-05,1,3,40,NULL,28,12,28
+Call with Alec and issues,2015-10-07,NULL,4,2015-11-05,2015-11-05,1,1,25,NULL,8,11,18
+Cumulative time spent on Adams,2015-10-07,NULL,4,2015-11-05,2015-11-05,0,2,0,NULL,14,7,22
+SQL Training,2015-10-07,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+"if else, case, while , stored procedures",2015-10-08,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"If else, case, while , stored procedures",2015-10-08,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"If else, case, while , stored procedures",2015-10-08,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"If else, case, while , stored procedures",2015-10-08,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+SQL training ,2015-10-08,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,30,7,49
+meeting with abishek and Siddharth on Retail KPIs ,2015-10-08,NULL,6,2015-11-05,2015-11-05,0,2,0,NULL,21,7,19
+Customer Profiling Analytics Prototype using Tableau ,2015-10-08,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,6,10,31
+SSIS (ppt) (Getting started),2015-10-08,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Sales tab replication. And Qlikview tutorials.(Training),2015-10-08,Radhika K,9,2015-11-05,2015-11-05,0,3,0,NULL,27,10,17
+Access given to users for Retail. And started load for Distribute Ad-hoc report.,2015-10-08,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+Category names and tax rates from Retail. Testing on calculation of tax rate.,2015-10-08,Radhika K,9,2015-11-05,2015-11-05,0,4,0,NULL,27,10,17
+"CSV file genration approaches and investigation, Changes to get landline information",2015-10-08,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+feasibility study of postgres & MSSQL with SAP BW,2015-10-08,NULL,21,2015-11-05,2015-11-05,1,12.5,875,NULL,26,4,5
+CSV Creation Statistics from Pentaho,2015-10-08,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+"Data Model Fact Attributes Join 1.1, Retail Rupture Expression Fix, looking into bike accessories stock, Baroda WAPP testing",2015-10-08,NULL,9,2015-11-05,2015-11-05,1,7.5,750,NULL,26,4,53
+Comvita Datawarehouse ETL enhancement design: incremental layer changes,2015-10-08,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+"Initial discussion with Nilesh, Ritesh and Kannan on Aspire project",2015-10-08,NULL,10,2015-11-05,2015-11-05,1,2,1500,NULL,1036,5,2001
+Prepare workbooks for testing and reconciliation,2015-10-08,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,28,12,28
+Deploy to UAT and fix issues,2015-10-08,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,28,12,28
+Report development,2015-10-08,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,28,12,28
+ComVita review and work with Abhinav,2015-10-08,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,12,12,44
+SQL Training,2015-10-08,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+"Initial discussion with Nilesh, Ritesh and Ashiwini on Aspire project",2015-10-08,NULL,21,2015-11-05,2015-11-05,1,2,1500,NULL,1036,5,2001
+Understanding the product and work around with issues and deployment ,2015-10-09,NULL,6,2015-11-05,2015-11-05,0,9,1125,NULL,1036,5,2002
+SQL training ,2015-10-09,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Bugzilla issues - MFR & postioning,2015-10-09,NULL,21,2015-11-05,2015-11-05,1,3,1875,NULL,18,5,51
+Qliksense Executive dashboard,2015-10-09,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Access given to users for Retail and started loaded for Distribute Ad-hoc Report.,2015-10-09,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+Comvita Datawarehouse ETL enhancement design: incremental layer changes and testing,2015-10-09,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+Testing on tax calculations in Retail.,2015-10-09,Radhika K,9,2015-11-05,2015-11-05,0,7.5,0,NULL,27,10,17
+Meeting and discussions - checking feasibility of postgres with SAP BW,2015-10-09,NULL,21,2015-11-05,2015-11-05,1,4,875,NULL,26,4,5
+Exporting CSV from Pentaho (stock Table),2015-10-09,NULL,13,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+"Meeting with Virginie Regarding WAPP Fix, Retail Expression Testing and Itemwise debugging, Meeting with ravi, Reloading CC Comparision for BIPP, Rupture Testing Expression-Duplicate ProductIDs Issue",2015-10-09,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+Exporting CSV from Pentaho (Sales),2015-10-09,NULL,11,2015-11-05,2015-11-05,1,8,875,NULL,13,4,52
+"Code Walkthrough, Batch File setup for web deploy and SVN setup",2015-10-09,NULL,10,2015-11-05,2015-11-05,1,10,1500,NULL,1036,5,2001
+Handover and get idea about work start. Prepare auto publish scripts,2015-10-09,NULL,4,2015-11-05,2015-11-05,1,4,1125,NULL,1036,5,2002
+ComVita review and work with Abhinav,2015-10-09,in hive,4,2015-11-05,2015-11-05,1,2,40,NULL,12,12,44
+Training discussion and training,2015-10-09,NULL,4,2015-11-05,2015-11-05,0,3,0,NULL,30,7,48
+SQL Training,2015-10-09,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+User management UI Issues fix ,2015-10-10,NULL,6,2015-11-05,2015-11-05,1,8,1125,NULL,1036,5,2002
+User Management high priority issue fix and setup,2015-10-10,NULL,10,2015-11-05,2015-11-05,1,8,1500,NULL,1036,5,2001
+Handover and get idea about work start. Prepare auto publish scripts,2015-10-10,NULL,4,2015-11-05,2015-11-05,1,10,1125,NULL,1036,5,2002
+"Issues categorization , fixes, testing and deployment",2015-10-11,NULL,10,2015-11-05,2015-11-05,1,9,1500,NULL,1036,5,2001
+Handover and get idea about work start. Prepare auto publish scripts,2015-10-11,NULL,4,2015-11-05,2015-11-05,1,9,1125,NULL,1036,5,2002
+Review of SQL,2015-10-12,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Review of SQL,2015-10-12,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Review of SQL,2015-10-12,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Bugzilla issues - analysis & update,2015-10-12,NULL,21,2015-11-05,2015-11-05,1,0.5,1875,NULL,18,5,51
+"Merge, Temp Tables, Review",2015-10-12,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Merge, Temp Tables, Review",2015-10-12,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Merge, Temp Tables, Review",2015-10-12,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Merge, Temp Tables, Review",2015-10-12,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Access given to users for supply and retail,Started load for Distribute Ad-hoc Report",2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,0.5,750,NULL,26,4,53
+"Issues categorization , fixes, testing and deployment",2015-10-12,NULL,10,2015-11-05,2015-11-05,1,9.5,1500,NULL,1036,5,2001
+User management UI Issues fix ,2015-10-12,NULL,6,2015-11-05,2015-11-05,1,9,1125,NULL,1036,5,2002
+"Bugzilla issues - MFR , postioning & missing obs",2015-10-12,NULL,21,2015-11-05,2015-11-05,1,6,1875,NULL,18,5,51
+Testing on m_transaction for BIKE ACCESSORIES for the week 18.,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,0.5,750,NULL,26,4,53
+Testing on last week's sales for all the stores,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,2,750,NULL,26,4,53
+Testing on stock for Zirakpur and Anubhava stores on 11th and 10th October.,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,2.5,750,NULL,26,4,53
+Testing on m_transaction for Zirakpur store,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,0.5,750,NULL,26,4,53
+Testing on Tax calculation in Retail.,2015-10-12,Radhika K,21,2015-11-05,2015-11-05,0,1.5,750,NULL,26,4,53
+"Meetings, File data format changes, Qlikview optimization testing",2015-10-12,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+"A Codes List updated, Baroda m_transactions issue in WAPP, Bike Accessories Transactions, Stock Isuue in Live, doing full load.",2015-10-12,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+ETL enhancement project: Incremental implementation in packages,2015-10-12,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+Testing and changes,2015-10-12,in hive,4,2015-11-05,2015-11-05,1,4,40,NULL,12,12,44
+Adams discussion,2015-10-12,NULL,4,2015-11-05,2015-11-05,0,1,0,NULL,14,7,22
+"BAPS Issue fixes with worklist, activity and project master",2015-10-12,NULL,4,2015-11-05,2015-11-05,1,4,25,NULL,8,11,18
+Sick - Off,2015-10-12,NULL,2,2015-11-05,2015-11-05,0,3,0,NULL,31,6,12
+Sick Leave,2015-10-12,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,31,6,12
+QlikView Training ,2015-10-12,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+"Issues categorization , fixes, testing and deployment",2015-10-13,NULL,10,2015-11-05,2015-11-05,1,10.5,1500,NULL,1036,5,2001
+"Merge, Temp Tables, Error Handling, case study",2015-10-13,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Merge, Temp Tables, Error Handling, case study",2015-10-13,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Merge, Temp Tables, Error Handling, case study",2015-10-13,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Merge, Temp Tables, Error Handling, case study",2015-10-13,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Bugzilla issues - missing obs, missing bm & pi tool issues",2015-10-13,NULL,21,2015-11-05,2015-11-05,1,5.5,1875,NULL,18,5,51
+Access given to users for retail and Started load for Distribute Ad-hoc report .,2015-10-13,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+Testing on stock for Zirakpur Store on 11th OCT.,2015-10-13,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+Testing on stock for Bike Accessories in retail and supply,2015-10-13,Radhika K,9,2015-11-05,2015-11-05,1,5,750,NULL,26,4,53
+Tutorial on where exists(Training) and Started doing Review report.,2015-10-13,NULL,8,2015-11-05,2015-11-05,0,4.5,0,NULL,27,10,17
+Testing on stock for Bike Accessories for week 17 and 18.,2015-10-13,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+QlikView CSV Loaders - Stock,2015-10-13,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+ETL enhancement project: Testing packages,2015-10-13,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+User management UI Issues fix ,2015-10-13,NULL,6,2015-11-05,2015-11-05,1,10,1125,NULL,1036,5,2002
+System Reminders revamp/change,2015-10-13,NULL,4,2015-11-05,2015-11-05,1,8,25,NULL,8,11,18
+"Zirakpur Stock Testing, Anubhava Stock Testing, Access, A Codes Change, Fact Attributes change in Data Model",2015-10-13,NULL,21,2015-11-05,2015-11-05,1,4,875,NULL,26,4,5
+SQL Training,2015-10-13,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+QlikView Training ,2015-10-13,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+"Cursors, Triggers, Transactions",2015-10-14,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Cursors, Triggers, Transactions",2015-10-14,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Cursors, Triggers, Transactions",2015-10-14,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Cursors, Triggers, Transactions",2015-10-14,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Issues categorization , fixes, testing and deployment",2015-10-14,NULL,10,2015-11-05,2015-11-05,1,10.5,1500,NULL,1036,5,2001
+ETL enhancement project: Testing packages,2015-10-14,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+User management UI Issues fix ,2015-10-14,NULL,6,2015-11-05,2015-11-05,1,9,1125,NULL,1036,5,2002
+System Reminders revamp/change,2015-10-14,NULL,4,2015-11-05,2015-11-05,1,8,25,NULL,8,11,18
+Access given to users for retail and started the load for Distribute ad-hoc report.,2015-10-14,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+Changes made in BI Portal for screenshots and done with the review report.,2015-10-14,NULL,8,2015-11-05,2015-11-05,0,5.5,0,NULL,23,8,41
+Testing on the stock report for CAR and CAC on 13th OCT.,2015-10-14,Radhika K,9,2015-11-05,2015-11-05,1,6,750,NULL,26,4,53
+"Qlikview CSV Loader - Sales, QlikTech Meeting, Performance Testing",2015-10-14,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Discussions ,2015-10-14,NULL,21,2015-11-05,2015-11-05,1,3,875,NULL,26,4,5
+"Warehouse Locator Testing from Backup QVDs and live Warehouse locator files,  Qlikview Performance Issue Meeting, retail Optimisation Testing in Dashboard tab",2015-10-14,NULL,21,2015-11-05,2015-11-05,1,6,875,NULL,26,4,5
+SQL Training,2015-10-14,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+QlikView Training ,2015-10-14,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+KT and issues fix,2015-10-15,NULL,10,2015-11-05,2015-11-05,1,3,1500,NULL,1036,5,2001
+ETL enhancement project: Testing packages and documenting,2015-10-15,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+Understanding the Medical System in USA using Aspire product,2015-10-15,NULL,6,2015-11-05,2015-11-05,0,8,1125,NULL,1036,5,2002
+Other changes/issue fixes,2015-10-15,NULL,4,2015-11-05,2015-11-05,1,8,25,NULL,8,11,18
+"functions, cursors, triggers, pivot",2015-10-15,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"functions, cursors, triggers, pivot",2015-10-15,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"functions, cursors, triggers, pivot",2015-10-15,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"functions, cursors, triggers, pivot",2015-10-15,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Testing on stock for Zirakpur Store on 13th OCT. and Transactions ,2015-10-15,Radhika K,9,2015-11-05,2015-11-05,1,1.5,750,NULL,26,4,53
+BI Portal model and report,2015-10-15,NULL,8,2015-11-05,2015-11-05,0,4,0,NULL,23,8,41
+Testing on stock for CAR and CAC on 13th OCT.,2015-10-15,Radhika K,9,2015-11-05,2015-11-05,1,6.5,750,NULL,26,4,53
+Qlikview CSV - Stock format final changes,2015-10-15,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+"Changes in Supply Dashboard for Rupture Changes and testing, StockDB Full load, Warehouse Locators Monitoring",2015-10-15,NULL,21,2015-11-05,2015-11-05,1,4,875,NULL,26,4,5
+SQL Training,2015-10-15,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+QlikView Training ,2015-10-15,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+ETL enhancement project: Testing packages and documenting,2015-10-16,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+Understanding the Medical System in USA using Aspire product,2015-10-16,NULL,6,2015-11-05,2015-11-05,0,8,1125,NULL,1036,5,2002
+"New work review, discussion estimates",2015-10-16,NULL,4,2015-11-05,2015-11-05,1,4,25,NULL,8,11,18
+Resourcing meeting,2015-10-16,NULL,4,2015-11-05,2015-11-05,0,1,0,NULL,21,7,19
+"Dynamic SQL, Case study",2015-10-16,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Dynamic SQL, Case study",2015-10-16,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Dynamic SQL, Case study",2015-10-16,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Leave,2015-10-16,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+BI Portal model and report,2015-10-16,NULL,8,2015-11-05,2015-11-05,0,7.5,0,NULL,23,8,41
+Distribute Ad-hoc report loaded and access given to users,2015-10-16,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+Ad-Hoc Report Expressions - optimization,2015-10-16,NULL,2,2015-11-05,2015-11-05,1,2,875,NULL,26,4,5
+"QlikView CSV file format changes, Stock Issues",2015-10-16,NULL,2,2015-11-05,2015-11-05,1,6,875,NULL,26,4,5
+SQL Training,2015-10-16,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+QlikView Training ,2015-10-16,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+Syupply rupture Changes and Testing,2015-10-16,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+Client travel,2015-10-17,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
+Fix issue with buy credits page,2015-10-18,NULL,4,2015-11-05,2015-11-05,1,4,1125,NULL,1036,5,2002
+Client travel,2015-10-18,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
+Project review in college,2015-10-19,NULL,8,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+"Why SSIS, basics, Intro to DFT, CFT, Configurations and intro to Source and Destination in DFT",2015-10-19,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Why SSIS, basics, Intro to DFT, CFT, Configurations and intro to Source and Destination in DFT",2015-10-19,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Why SSIS, basics, Intro to DFT, CFT, Configurations and intro to Source and Destination in DFT",2015-10-19,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Why SSIS, basics, Intro to DFT, CFT, Configurations and intro to Source and Destination in DFT",2015-10-19,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Bugzilla issues - missing obs, missing bm issues",2015-10-19,NULL,21,2015-11-05,2015-11-05,1,7.5,1875,NULL,18,5,51
+SSIS Training,2015-10-19,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+Discussion for CCD & HL 7,2015-10-19,NULL,21,2015-11-05,2015-11-05,1,1,1500,NULL,7,5,45
+"Introdcution, meetings and architecture overview and documents",2015-10-19,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
+"Decathlon Visit, Meeting with Ravi & Asif, Amazon S3 Configuration",2015-10-19,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+"Weekly Status Update, Access, A Codes List, SupplyOptimisation",2015-10-19,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+QlikView Practice,2015-10-19,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+Created list CPG KPIs,2015-10-19,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
+File Upload Functionality and Project Master Selection without postback,2015-10-19,NULL,4,2015-11-05,2015-11-05,1,8,25,NULL,8,11,18
+ETL enhancement project: deployment,2015-10-19,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+"Bugzilla issues - missing obs, missing bm issues",2015-10-20,NULL,21,2015-11-05,2015-11-05,1,6.5,1875,NULL,18,5,51
+Demo for parser CCD & HL 7,2015-10-20,NULL,21,2015-11-05,2015-11-05,1,2,1500,NULL,7,5,45
+"Imperiatives discussion, arch discussion and meeting with Chanal bruner",2015-10-20,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
+Case Study Review,2015-10-20,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Case Study Review,2015-10-20,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Case Study Review,2015-10-20,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Case Study Review,2015-10-20,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Finding a Solution for file transfer from Azure to AWS S3,2015-10-20,Nikhil's Time,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Exploring various methods of extracting data from ccd files,2015-10-20,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
+SSIS Training,2015-10-20,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+"QlikView SAP Sales csv loader, WH Rupture Investigation",2015-10-20,NULL,2,2015-11-05,2015-11-05,1,0,875,NULL,26,4,5
+Qlikview tutorials and thesis preparation for the project.,2015-10-20,NULL,8,2015-11-05,2015-11-05,0,7,0,NULL,23,8,41
+Testing on stock for Zirakpur Store on 19th OCT and Started load for Distribute Ad-hoc report.,2015-10-20,Radhika K,21,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Supply Optimisation,2015-10-20,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+Created list CPG KPIs,2015-10-20,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
+Sick - Food Poisoning,2015-10-20,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,31,6,12
+ETL enhancement project: deployment,2015-10-20,NULL,5,2015-11-05,2015-11-05,1,5,25,NULL,12,12,2003
+ETL enhancement project: comparing dev and prod,2015-10-20,NULL,5,2015-11-05,2015-11-05,1,3,25,NULL,12,12,2003
+Review of previous topics,2015-10-21,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Review of previous topics,2015-10-21,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Review of previous topics,2015-10-21,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Review of previous topics,2015-10-21,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Bugzilla issues - missing obs, missing bm issues, entry detail",2015-10-21,NULL,21,2015-11-05,2015-11-05,1,3.5,1875,NULL,18,5,51
+Sick leave,2015-10-21,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,31,6,12
+Parser implementation Discussion,2015-10-21,NULL,21,2015-11-05,2015-11-05,1,5,1500,NULL,7,5,45
+Ad-Hoc Report Expressions - optimization,2015-10-21,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Started load for Distribute Ad-hoc report. Testing on stock for Noida Store,2015-10-21,Radhika K,9,2015-11-05,2015-11-05,1,0,750,NULL,26,4,53
+Thesis Preparation,2015-10-21,NULL,8,2015-11-05,2015-11-05,0,5,0,NULL,23,8,41
+ Testing on sales amount for JAN-JUNE for all the stores.
 Testing on Rupture summary and Sales for retail and supply.,2015-10-21,Radhika K,9,2015-11-05,2015-11-05,1,1.5,750,NULL,26,4,53
-277,"Testing on Supply Optimisation, Access, taking live Supply and Data Model",2015-10-21,NULL,9,2015-11-05,2015-11-05,1,7,750,NULL,26,4,53
-278,"EDW analysis, architecture workflow, data flow and etc.,",2015-10-21,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
-279,Set Analysis QlikView ,2015-10-21,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-280,On Leave,2015-10-21,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-281,Interview,2015-10-21,NULL,4,2015-11-05,2015-11-05,0,1.5,0,NULL,21,7,19
-282,Worklist page changes,2015-10-21,NULL,4,2015-11-05,2015-11-05,1,4.5,25,NULL,8,11,18
-283,Performance review documents prep and discussion,2015-10-21,NULL,4,2015-11-05,2015-11-05,0,2,0,NULL,21,7,19
-284,ETL enhancement project: deployment,2015-10-21,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-285,Going through the Code provided by Emids and storing the data in a database for inspection,2015-10-21,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
-286,On Leave,2015-10-22,NULL,2,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-287,"Event Handlers, Union All, Sort,Merge, Derived Columns",2015-10-22,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-288,"Event Handlers, Union All, Sort,Merge, Derived Columns",2015-10-22,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-289,"Event Handlers, Union All, Sort,Merge, Derived Columns",2015-10-22,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-290,"Event Handlers, Union All, Sort,Merge, Derived Columns",2015-10-22,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-291,SSIS Training,2015-10-22,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-292,Holiday,2015-10-22,NULL,21,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-293,Access given to users for retail and supply. And Distribute ad-hoc report loaded.,2015-10-22,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-294,"EDW analysis, architecture workflow, data flow and etc.,",2015-10-22,NULL,10,2015-11-05,2015-11-05,1,10,2250,NULL,1037,5,2004
-295,Set Analyisis Examples practice Qlikview,2015-10-22,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-296,On Leave,2015-10-22,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-297,Understanding code and walkthrough with Ashish,2015-10-22,NULL,4,2015-11-05,2015-11-05,1,3,1125,NULL,7,5,46
-298,"Training SSIS - Event Handlers, Logging and DFT/CFT differences",2015-10-22,NULL,4,2015-11-05,2015-11-05,0,5,0,NULL,30,7,48
-299,LEAVE,2015-10-22,NULL,5,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-300,Thesis Preparation,2015-10-22,NULL,8,2015-11-05,2015-11-05,0,4.5,0,NULL,23,8,41
-301,Testing on retail dashboard. and Testing on data-model,2015-10-22,Radhika K,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-302,"Data Model Validation, Ad-Hoc Optimisation",2015-10-22,NULL,21,2015-11-05,2015-11-05,1,3,875,NULL,26,4,5
-303,Setting up Mirth and MDHT software and exploring the ccd parsing capabilities,2015-10-22,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
-304,On Leave,2015-10-23,NULL,2,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-305,Bugzilla issues - new MFR issues,2015-10-23,NULL,21,2015-11-05,2015-11-05,1,0.5,1875,NULL,18,5,51
-306,Parser implementation Discussion,2015-10-23,NULL,21,2015-11-05,2015-11-05,1,1,1500,NULL,7,5,45
-307,"EDW analysis, architecture workflow, data flow and etc.,",2015-10-23,NULL,10,2015-11-05,2015-11-05,1,9,2250,NULL,1037,5,2004
-308,"Derived Columns, Conditional Split, Variables, Scope, Expressions",2015-10-23,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-309,"Derived Columns, Conditional Split, Variables, Scope, Expressions",2015-10-23,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-310,"Derived Columns, Conditional Split, Variables, Scope, Expressions",2015-10-23,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-311,"Derived Columns, Conditional Split, Variables, Scope, Expressions",2015-10-23,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-312,Practice QlikView,2015-10-23,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-313,Created Presentation for CPG KPIs,2015-10-23,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
-314,Code setup and help with issues,2015-10-23,NULL,4,2015-11-05,2015-11-05,1,4,1125,NULL,7,5,46
-315,Activity Grid page changes,2015-10-23,NULL,4,2015-11-05,2015-11-05,1,4,25,NULL,8,11,18
-316,ETL enhancement project: comparing dev and prod,2015-10-23,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-317,Thesis Preparation,2015-10-23,NULL,8,2015-11-05,2015-11-05,0,7,0,NULL,23,8,41
-318,Testing on supply dashboard and started load for Distribute Ad-hoc report,2015-10-23,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-319,Setting up Everest Framework and testing ccd parsing,2015-10-23,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
-320,SSIS Training,2015-10-23,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-321,"Supply Testing, InRangeIssue",2015-10-23,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-322,Bugzilla issues - new MFR issues,2015-10-23,NULL,21,2015-11-05,2015-11-05,1,3.5,1875,NULL,18,5,51
-323,Onlife Interviews,2015-10-24,NULL,10,2015-11-05,2015-11-05,1,9,1000,NULL,1038,5,2005
-324,Setting up Everest Framework and testing ccd parsing,2015-10-24,NULL,1,2015-11-05,2015-11-05,1,2,1125,NULL,7,5,46
-325,On Leave,2015-10-26,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-326,"LookUp, Exercise 1 2 and 3, sql execute task, row count",2015-10-26,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-327,"LookUp, Exercise 1 2 and 3, sql execute task, row count",2015-10-26,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-328,"LookUp, Exercise 1 2 and 3, sql execute task, row count",2015-10-26,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-329,"LookUp, Exercise 1 2 and 3, sql execute task, row count",2015-10-26,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-330,SSIS Training,2015-10-26,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-331,QlikView practice and Batch script editing,2015-10-26,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-332,"EDW analysis, universes, reports, functional roadmap",2015-10-26,NULL,10,2015-11-05,2015-11-05,1,12,2250,NULL,1037,5,2004
-333,Apervita Everest Parser & Call,2015-10-26,NULL,21,2015-11-05,2015-11-05,1,4,1500,NULL,7,5,45
-334,Saint Gobain Demo,2015-10-26,NULL,21,2015-11-05,2015-11-05,0,6,0,NULL,22,2,2
-335,"Decathlon Store Visit, Meeting with Ravi, Virgine, Anirudh",2015-10-26,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-336,"Ad-hoc Expressions change, Access, Status Update",2015-10-26,NULL,9,2015-11-05,2015-11-05,1,10,750,NULL,26,4,53
-337,Access given to users for Madurai and Rohin stores,2015-10-26,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
-338,Thesis Preparation,2015-10-26,NULL,8,2015-11-05,2015-11-05,0,3,0,NULL,23,8,41
-339,Converting the ccd to object and exploring the data of the object,2015-10-26,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
-340,Laptop service,2015-10-26,NULL,8,2015-11-05,2015-11-05,0,4,0,NULL,23,8,41
-341,Training SSIS,2015-10-26,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-342,ETL enhancement project: comparing dev and prod,2015-10-26,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
-343,"ForEach Loop, Sql Task , Sql Script task , sequence container, for loop container",2015-10-27,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-344,"ForEach Loop, Sql Task , Sql Script task , sequence container, for loop container",2015-10-27,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-345,"ForEach Loop, Sql Task , Sql Script task , sequence container, for loop container",2015-10-27,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-346,"ForEach Loop, Sql Task , Sql Script task , sequence container, for loop container",2015-10-27,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-347,"EDW analysis,meetings with CM team ,John and Mike and DQS",2015-10-27,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
-348,"ApplyMap, Lookup and joins in qlikview",2015-10-27,NULL,13,2015-11-05,2015-11-05,0,4,0,NULL,27,10,17
-349,SSIS Training,2015-10-27,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-350,Apervita Stage Design & Call,2015-10-27,NULL,21,2015-11-05,2015-11-05,1,5,1500,NULL,7,5,45
-351,Saint Gobain Demo,2015-10-27,NULL,21,2015-11-05,2015-11-05,0,4,0,NULL,22,2,2
-352,Testing SAP DB Sales against Qlikview,2015-10-27,Nikhil's,2,2015-11-05,2015-11-05,1,0,875,NULL,26,4,5
-353,"SAP Sales Data Format Changes, WH Rupture Investigation",2015-10-27,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-354,"Comparing the data from the object with the data required and making a list, making everest documentation",2015-10-27,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
-355,"Adhoc Testing, ",2015-10-27,NULL,9,2015-11-05,2015-11-05,1,6,750,NULL,26,4,53
-356,Testing on CAR and CAC stock on 26th and 27th OCT.,2015-10-27,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
-357,Testing on Ad-hoc report,2015-10-27,Radhika K,21,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-358,Thesis Preparation,2015-10-27,NULL,8,2015-11-05,2015-11-05,0,4,0,NULL,23,8,41
-359,Saint Gobain Data Understanding and Insight Generation ,2015-10-27,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
-360,Training SSIS,2015-10-27,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-361,SQL certification prep,2015-10-27,NULL,5,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
-362,Saintgobain Data Handling,2015-10-27,NULL,5,2015-11-05,2015-11-05,0,2,0,NULL,30,7,49
-363,"Bugzilla issues - new MOR ,entry detail issues",2015-10-28,NULL,21,2015-11-05,2015-11-05,1,4,1875,NULL,18,5,51
-364,Saint Gobain Demo,2015-10-28,NULL,21,2015-11-05,2015-11-05,0,4.5,0,NULL,22,2,2
-365,Apervita Stage Design & Call,2015-10-28,NULL,21,2015-11-05,2015-11-05,1,3,1500,NULL,7,5,45
-366,"EDW analysis,meetings with Byrne and Cactus team, MoM and DQS",2015-10-28,NULL,10,2015-11-05,2015-11-05,1,9,2250,NULL,1037,5,2004
-367,Qlikview documentation and practice,2015-10-28,NULL,13,2015-11-05,2015-11-05,0,3,0,NULL,27,10,17
-368,"Sales Data format testing, Stock format testing",2015-10-28,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-369,Testing SAP DB sales against Qlikview,2015-10-28,Nikhil's,2,2015-11-05,2015-11-05,1,2.5,875,NULL,26,4,5
-370,Generating stock data CSVs for 2015 (jan - june),2015-10-28,Nikhil's,2,2015-11-05,2015-11-05,1,0,875,NULL,26,4,5
-371,"Ad-Hoc Testing. Access, BIPP Issue",2015-10-28,NULL,9,2015-11-05,2015-11-05,1,7,750,NULL,26,4,53
-372,Distribute Ad-hoc report loaded and access given to users,2015-10-28,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-373,Testing on Ad-hoc report,2015-10-28,Radhika K,9,2015-11-05,2015-11-05,1,3,750,NULL,26,4,53
-374,Thesis Preparation,2015-10-28,NULL,8,2015-11-05,2015-11-05,0,4.5,0,NULL,23,8,41
-375,Saint Gobain Data Analysis and Model Building ,2015-10-28,NULL,6,2015-11-05,2015-11-05,0,9,0,NULL,6,10,31
-376,"Script Task, Execute process Task, File System Task, Execute Package Task",2015-10-28,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-377,"Script Task, Execute process Task, File System Task, Execute Package Task",2015-10-28,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-378,"Script Task, Execute process Task, File System Task, Execute Package Task",2015-10-28,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-379,"Script Task, Execute process Task, File System Task, Execute Package Task",2015-10-28,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-380,Training SSIS,2015-10-28,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-381,SQL certification prep,2015-10-28,NULL,5,2015-11-05,2015-11-05,0,3,0,NULL,30,7,49
-382,Saintgobain Data Handling,2015-10-28,NULL,5,2015-11-05,2015-11-05,0,5,0,NULL,30,7,49
-383,SSIS Training,2015-10-28,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-384,Bugzilla issues - 7dlb entry detail & late entry issues,2015-10-29,NULL,21,2015-11-05,2015-11-05,1,4.5,1875,NULL,18,5,51
-385,Apervita Stage Design & Call,2015-10-29,NULL,21,2015-11-05,2015-11-05,1,4,1500,NULL,7,5,45
-386,"EDW analysis,meetings with HCA team and DQS",2015-10-29,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
-387,practicing scripting for qlikview,2015-10-29,NULL,13,2015-11-05,2015-11-05,0,6.5,0,NULL,27,10,17
-388,Open Orders Data for SAP,2015-10-29,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-389,Correcting the "satisfacion rating" script for retail qvw,2015-10-29,Nikhil's,2,2015-11-05,2015-11-05,1,0.5,875,NULL,26,4,5
-390,Relating Vendor and partner Data sheets,2015-10-29,Nikhil's,2,2015-11-05,2015-11-05,1,2,875,NULL,26,4,5
-391,North Zone Report Change,2015-10-29,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-392,Distribute Ad-hoc report loaded and access given to users,2015-10-29,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
-393,Thesis Preparation,2015-10-29,NULL,8,2015-11-05,2015-11-05,0,7.5,0,NULL,23,8,41
-394,Saint Gobain Model Validations and Analysis ,2015-10-29,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
-395,"Event Handlers,Logging, Job Scheduling, Checkpoints, Breakpoins, Data viewers",2015-10-29,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-396,"Event Handlers,Logging, Job Scheduling, Checkpoints, Breakpoins, Data viewers",2015-10-29,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-397,"Event Handlers,Logging, Job Scheduling, Checkpoints, Breakpoins, Data viewers",2015-10-29,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-398,"Event Handlers,Logging, Job Scheduling, Checkpoints, Breakpoins, Data viewers",2015-10-29,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-399,Training SSIS,2015-10-29,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-400,SQL certification prep,2015-10-29,NULL,5,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
-401,Saintgobain Data Handling,2015-10-29,NULL,5,2015-11-05,2015-11-05,0,2,0,NULL,30,7,49
-402,SSIS Training,2015-10-29,NULL,12,2015-11-05,2015-11-05,0,3,0,NULL,30,7,48
-403,Started analysing Cognos Reporting tool,2015-10-29,NULL,12,2015-11-05,2015-11-05,0,6,0,NULL,30,7,48
-404,Bugzilla issues - 7 day adl entry detail & late entry issues,2015-10-30,NULL,21,2015-11-05,2015-11-05,1,6.5,1875,NULL,18,5,51
-405,Apervita Stage Design & Call,2015-10-30,NULL,21,2015-11-05,2015-11-05,1,5,1500,NULL,7,5,45
-406,"EDW analysis,DQS and Visuals",2015-10-30,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
-407,QlikView Support Tasks - Need to Change,2015-10-30,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
-408,QlikView Support Tasks - Need to Change,2015-10-30,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
-409,Day off for thesis submission,2015-10-30,NULL,8,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-410,Congos Tutorials ,2015-10-30,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,30,7,48
-411,Saint Gobain testing differnet scenarios,2015-10-30,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,6,10,31
-412,Logging Template,2015-10-30,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-413,Logging Template,2015-10-30,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-414,Logging Template,2015-10-30,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-415,Logging Template,2015-10-30,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
-416,Training SSIS,2015-10-30,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-417,SQL certification prep,2015-10-30,NULL,5,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
-418,Akira Linkedin Page change,2015-10-30,NULL,5,2015-11-05,2015-11-05,0,2,0,NULL,30,7,49
-419,Exercies on Qlikview script ,2015-10-30,NULL,13,2015-11-05,2015-11-05,0,6,0,NULL,27,10,17
-420,Analysis on Load time of various objects in retail qlikview report.,2015-10-30,Nikhil's,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
-421,Leave ,2015-10-30,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
-422,Changes and deployment,2015-10-30,To be invoiced in november due to Agr Budget limitation,4,2015-11-05,2015-11-05,0,6.5,40,NULL,28,12,28
-423,Analysing Cognos Reporting tool,2015-11-02,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
-424,Changes and deployment,2015-11-02,Carry forward from last month,4,2015-11-05,2015-11-05,1,6.5,40,NULL,28,12,28
-425,"Technical Design, qvd study",2015-11-02,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
-426,Testing Executive report qlikview against supply and retail,2015-11-03,Nikhil's,2,2015-11-05,2015-11-05,1,4,875,NULL,26,4,5
-427,"Technical Design, qvd study",2015-11-03,NULL,13,2015-11-05,2015-11-05,0,2,0,NULL,27,10,17
-428,Vodafone SIM Activation,2015-11-03,NULL,13,2015-11-05,2015-11-05,0,1,0,NULL,22,2,1
-429,Generating stock data CSVs for 2015 (jan - june),2015-10-28,NULL,21,2015-11-05,2015-11-05,1,2.5,875,NULL,26,4,5
-430,Decathlon (15th Sept 2015 to 15th Oct 2015),2015-10-05,NULL,15,2015-11-05,2015-11-05,1,644,43.27,NULL,1,4,59
-431,Tableau Certification prep ,2015-11-05,NULL,6,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
-432,Explaination of CPG KPIs and Mock Data prepartion ,2015-11-02,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
-433,Mock up Data Prep for CPG Dashboards ,2015-11-04,NULL,6,2015-11-05,2015-11-05,0,2,0,NULL,6,10,31
-434,Tableau Certification prep ,2015-11-03,NULL,6,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
-435,Tableau Certification prep ,2015-11-04,NULL,6,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
-436,Mock up Data Prep for CPG Dashboards ,2015-11-03,NULL,6,2015-11-05,2015-11-05,0,2,0,NULL,6,10,31
-437,Mock up Data Prep for CPG Dashboards ,2015-11-05,NULL,6,2015-11-05,2015-11-05,0,3,0,NULL,6,10,31
-438,"Report Issues - QA report, 7ADL report issues",2015-11-02,NULL,21,2015-11-05,2015-11-05,1,5.5,1875,NULL,18,5,51
-439,"Report Issues - QA report, 7ADL report and late entry issues",2015-11-03,NULL,21,2015-11-05,2015-11-05,1,3.5,1875,NULL,18,5,51
-440,"PI tool issue fic, formatting and report issues in 7dlb",2015-11-04,NULL,21,2015-11-05,2015-11-05,1,6,1875,NULL,18,5,51
-441,Apervita Stage Call and discussion,2015-11-02,NULL,21,2015-11-05,2015-11-05,1,1,1500,NULL,7,5,45
-442,Apervita Stage Call and discussion,2015-11-03,NULL,21,2015-11-05,2015-11-05,1,1.5,1500,NULL,7,5,45
-443,NULL,NULL,NULL,NULL,2015-11-05,2015-11-05,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"Testing on Supply Optimisation, Access, taking live Supply and Data Model",2015-10-21,NULL,9,2015-11-05,2015-11-05,1,7,750,NULL,26,4,53
+"EDW analysis, architecture workflow, data flow and etc.,",2015-10-21,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
+Set Analysis QlikView ,2015-10-21,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+On Leave,2015-10-21,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+Interview,2015-10-21,NULL,4,2015-11-05,2015-11-05,0,1.5,0,NULL,21,7,19
+Worklist page changes,2015-10-21,NULL,4,2015-11-05,2015-11-05,1,4.5,25,NULL,8,11,18
+Performance review documents prep and discussion,2015-10-21,NULL,4,2015-11-05,2015-11-05,0,2,0,NULL,21,7,19
+ETL enhancement project: deployment,2015-10-21,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+Going through the Code provided by Emids and storing the data in a database for inspection,2015-10-21,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
+On Leave,2015-10-22,NULL,2,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+"Event Handlers, Union All, Sort,Merge, Derived Columns",2015-10-22,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Event Handlers, Union All, Sort,Merge, Derived Columns",2015-10-22,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Event Handlers, Union All, Sort,Merge, Derived Columns",2015-10-22,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Event Handlers, Union All, Sort,Merge, Derived Columns",2015-10-22,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+SSIS Training,2015-10-22,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+Holiday,2015-10-22,NULL,21,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+Access given to users for retail and supply. And Distribute ad-hoc report loaded.,2015-10-22,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+"EDW analysis, architecture workflow, data flow and etc.,",2015-10-22,NULL,10,2015-11-05,2015-11-05,1,10,2250,NULL,1037,5,2004
+Set Analyisis Examples practice Qlikview,2015-10-22,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+On Leave,2015-10-22,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+Understanding code and walkthrough with Ashish,2015-10-22,NULL,4,2015-11-05,2015-11-05,1,3,1125,NULL,7,5,46
+"Training SSIS - Event Handlers, Logging and DFT/CFT differences",2015-10-22,NULL,4,2015-11-05,2015-11-05,0,5,0,NULL,30,7,48
+LEAVE,2015-10-22,NULL,5,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+Thesis Preparation,2015-10-22,NULL,8,2015-11-05,2015-11-05,0,4.5,0,NULL,23,8,41
+Testing on retail dashboard. and Testing on data-model,2015-10-22,Radhika K,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+"Data Model Validation, Ad-Hoc Optimisation",2015-10-22,NULL,21,2015-11-05,2015-11-05,1,3,875,NULL,26,4,5
+Setting up Mirth and MDHT software and exploring the ccd parsing capabilities,2015-10-22,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
+On Leave,2015-10-23,NULL,2,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+Bugzilla issues - new MFR issues,2015-10-23,NULL,21,2015-11-05,2015-11-05,1,0.5,1875,NULL,18,5,51
+Parser implementation Discussion,2015-10-23,NULL,21,2015-11-05,2015-11-05,1,1,1500,NULL,7,5,45
+"EDW analysis, architecture workflow, data flow and etc.,",2015-10-23,NULL,10,2015-11-05,2015-11-05,1,9,2250,NULL,1037,5,2004
+"Derived Columns, Conditional Split, Variables, Scope, Expressions",2015-10-23,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Derived Columns, Conditional Split, Variables, Scope, Expressions",2015-10-23,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Derived Columns, Conditional Split, Variables, Scope, Expressions",2015-10-23,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Derived Columns, Conditional Split, Variables, Scope, Expressions",2015-10-23,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Practice QlikView,2015-10-23,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+Created Presentation for CPG KPIs,2015-10-23,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
+Code setup and help with issues,2015-10-23,NULL,4,2015-11-05,2015-11-05,1,4,1125,NULL,7,5,46
+Activity Grid page changes,2015-10-23,NULL,4,2015-11-05,2015-11-05,1,4,25,NULL,8,11,18
+ETL enhancement project: comparing dev and prod,2015-10-23,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+Thesis Preparation,2015-10-23,NULL,8,2015-11-05,2015-11-05,0,7,0,NULL,23,8,41
+Testing on supply dashboard and started load for Distribute Ad-hoc report,2015-10-23,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+Setting up Everest Framework and testing ccd parsing,2015-10-23,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
+SSIS Training,2015-10-23,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+"Supply Testing, InRangeIssue",2015-10-23,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+Bugzilla issues - new MFR issues,2015-10-23,NULL,21,2015-11-05,2015-11-05,1,3.5,1875,NULL,18,5,51
+Onlife Interviews,2015-10-24,NULL,10,2015-11-05,2015-11-05,1,9,1000,NULL,1038,5,2005
+Setting up Everest Framework and testing ccd parsing,2015-10-24,NULL,1,2015-11-05,2015-11-05,1,2,1125,NULL,7,5,46
+On Leave,2015-10-26,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+"LookUp, Exercise 1 2 and 3, sql execute task, row count",2015-10-26,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"LookUp, Exercise 1 2 and 3, sql execute task, row count",2015-10-26,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"LookUp, Exercise 1 2 and 3, sql execute task, row count",2015-10-26,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"LookUp, Exercise 1 2 and 3, sql execute task, row count",2015-10-26,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+SSIS Training,2015-10-26,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+QlikView practice and Batch script editing,2015-10-26,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+"EDW analysis, universes, reports, functional roadmap",2015-10-26,NULL,10,2015-11-05,2015-11-05,1,12,2250,NULL,1037,5,2004
+Apervita Everest Parser & Call,2015-10-26,NULL,21,2015-11-05,2015-11-05,1,4,1500,NULL,7,5,45
+Saint Gobain Demo,2015-10-26,NULL,21,2015-11-05,2015-11-05,0,6,0,NULL,22,2,2
+"Decathlon Store Visit, Meeting with Ravi, Virgine, Anirudh",2015-10-26,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+"Ad-hoc Expressions change, Access, Status Update",2015-10-26,NULL,9,2015-11-05,2015-11-05,1,10,750,NULL,26,4,53
+Access given to users for Madurai and Rohin stores,2015-10-26,Radhika K,9,2015-11-05,2015-11-05,1,1,750,NULL,26,4,53
+Thesis Preparation,2015-10-26,NULL,8,2015-11-05,2015-11-05,0,3,0,NULL,23,8,41
+Converting the ccd to object and exploring the data of the object,2015-10-26,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
+Laptop service,2015-10-26,NULL,8,2015-11-05,2015-11-05,0,4,0,NULL,23,8,41
+Training SSIS,2015-10-26,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+ETL enhancement project: comparing dev and prod,2015-10-26,NULL,5,2015-11-05,2015-11-05,1,8,25,NULL,12,12,2003
+"ForEach Loop, Sql Task , Sql Script task , sequence container, for loop container",2015-10-27,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"ForEach Loop, Sql Task , Sql Script task , sequence container, for loop container",2015-10-27,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"ForEach Loop, Sql Task , Sql Script task , sequence container, for loop container",2015-10-27,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"ForEach Loop, Sql Task , Sql Script task , sequence container, for loop container",2015-10-27,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"EDW analysis,meetings with CM team ,John and Mike and DQS",2015-10-27,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
+"ApplyMap, Lookup and joins in qlikview",2015-10-27,NULL,13,2015-11-05,2015-11-05,0,4,0,NULL,27,10,17
+SSIS Training,2015-10-27,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+Apervita Stage Design & Call,2015-10-27,NULL,21,2015-11-05,2015-11-05,1,5,1500,NULL,7,5,45
+Saint Gobain Demo,2015-10-27,NULL,21,2015-11-05,2015-11-05,0,4,0,NULL,22,2,2
+Testing SAP DB Sales against Qlikview,2015-10-27,Nikhil's,2,2015-11-05,2015-11-05,1,0,875,NULL,26,4,5
+"SAP Sales Data Format Changes, WH Rupture Investigation",2015-10-27,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+"Comparing the data from the object with the data required and making a list, making everest documentation",2015-10-27,NULL,1,2015-11-05,2015-11-05,1,8,1125,NULL,7,5,46
+"Adhoc Testing, ",2015-10-27,NULL,9,2015-11-05,2015-11-05,1,6,750,NULL,26,4,53
+Testing on CAR and CAC stock on 26th and 27th OCT.,2015-10-27,Radhika K,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
+Testing on Ad-hoc report,2015-10-27,Radhika K,21,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Thesis Preparation,2015-10-27,NULL,8,2015-11-05,2015-11-05,0,4,0,NULL,23,8,41
+Saint Gobain Data Understanding and Insight Generation ,2015-10-27,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
+Training SSIS,2015-10-27,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+SQL certification prep,2015-10-27,NULL,5,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
+Saintgobain Data Handling,2015-10-27,NULL,5,2015-11-05,2015-11-05,0,2,0,NULL,30,7,49
+"Bugzilla issues - new MOR ,entry detail issues",2015-10-28,NULL,21,2015-11-05,2015-11-05,1,4,1875,NULL,18,5,51
+Saint Gobain Demo,2015-10-28,NULL,21,2015-11-05,2015-11-05,0,4.5,0,NULL,22,2,2
+Apervita Stage Design & Call,2015-10-28,NULL,21,2015-11-05,2015-11-05,1,3,1500,NULL,7,5,45
+"EDW analysis,meetings with Byrne and Cactus team, MoM and DQS",2015-10-28,NULL,10,2015-11-05,2015-11-05,1,9,2250,NULL,1037,5,2004
+Qlikview documentation and practice,2015-10-28,NULL,13,2015-11-05,2015-11-05,0,3,0,NULL,27,10,17
+"Sales Data format testing, Stock format testing",2015-10-28,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Testing SAP DB sales against Qlikview,2015-10-28,Nikhil's,2,2015-11-05,2015-11-05,1,2.5,875,NULL,26,4,5
+Generating stock data CSVs for 2015 (jan - june),2015-10-28,Nikhil's,2,2015-11-05,2015-11-05,1,0,875,NULL,26,4,5
+"Ad-Hoc Testing. Access, BIPP Issue",2015-10-28,NULL,9,2015-11-05,2015-11-05,1,7,750,NULL,26,4,53
+Distribute Ad-hoc report loaded and access given to users,2015-10-28,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+Testing on Ad-hoc report,2015-10-28,Radhika K,9,2015-11-05,2015-11-05,1,3,750,NULL,26,4,53
+Thesis Preparation,2015-10-28,NULL,8,2015-11-05,2015-11-05,0,4.5,0,NULL,23,8,41
+Saint Gobain Data Analysis and Model Building ,2015-10-28,NULL,6,2015-11-05,2015-11-05,0,9,0,NULL,6,10,31
+"Script Task, Execute process Task, File System Task, Execute Package Task",2015-10-28,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Script Task, Execute process Task, File System Task, Execute Package Task",2015-10-28,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Script Task, Execute process Task, File System Task, Execute Package Task",2015-10-28,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Script Task, Execute process Task, File System Task, Execute Package Task",2015-10-28,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Training SSIS,2015-10-28,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+SQL certification prep,2015-10-28,NULL,5,2015-11-05,2015-11-05,0,3,0,NULL,30,7,49
+Saintgobain Data Handling,2015-10-28,NULL,5,2015-11-05,2015-11-05,0,5,0,NULL,30,7,49
+SSIS Training,2015-10-28,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+Bugzilla issues - 7dlb entry detail & late entry issues,2015-10-29,NULL,21,2015-11-05,2015-11-05,1,4.5,1875,NULL,18,5,51
+Apervita Stage Design & Call,2015-10-29,NULL,21,2015-11-05,2015-11-05,1,4,1500,NULL,7,5,45
+"EDW analysis,meetings with HCA team and DQS",2015-10-29,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
+practicing scripting for qlikview,2015-10-29,NULL,13,2015-11-05,2015-11-05,0,6.5,0,NULL,27,10,17
+Open Orders Data for SAP,2015-10-29,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+Correcting the "satisfacion rating" script for retail qvw,2015-10-29,Nikhil's,2,2015-11-05,2015-11-05,1,0.5,875,NULL,26,4,5
+Relating Vendor and partner Data sheets,2015-10-29,Nikhil's,2,2015-11-05,2015-11-05,1,2,875,NULL,26,4,5
+North Zone Report Change,2015-10-29,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+Distribute Ad-hoc report loaded and access given to users,2015-10-29,Radhika K,9,2015-11-05,2015-11-05,1,0.5,750,NULL,26,4,53
+Thesis Preparation,2015-10-29,NULL,8,2015-11-05,2015-11-05,0,7.5,0,NULL,23,8,41
+Saint Gobain Model Validations and Analysis ,2015-10-29,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
+"Event Handlers,Logging, Job Scheduling, Checkpoints, Breakpoins, Data viewers",2015-10-29,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Event Handlers,Logging, Job Scheduling, Checkpoints, Breakpoins, Data viewers",2015-10-29,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Event Handlers,Logging, Job Scheduling, Checkpoints, Breakpoins, Data viewers",2015-10-29,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+"Event Handlers,Logging, Job Scheduling, Checkpoints, Breakpoins, Data viewers",2015-10-29,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Training SSIS,2015-10-29,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+SQL certification prep,2015-10-29,NULL,5,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
+Saintgobain Data Handling,2015-10-29,NULL,5,2015-11-05,2015-11-05,0,2,0,NULL,30,7,49
+SSIS Training,2015-10-29,NULL,12,2015-11-05,2015-11-05,0,3,0,NULL,30,7,48
+Started analysing Cognos Reporting tool,2015-10-29,NULL,12,2015-11-05,2015-11-05,0,6,0,NULL,30,7,48
+Bugzilla issues - 7 day adl entry detail & late entry issues,2015-10-30,NULL,21,2015-11-05,2015-11-05,1,6.5,1875,NULL,18,5,51
+Apervita Stage Design & Call,2015-10-30,NULL,21,2015-11-05,2015-11-05,1,5,1500,NULL,7,5,45
+"EDW analysis,DQS and Visuals",2015-10-30,NULL,10,2015-11-05,2015-11-05,1,8,2250,NULL,1037,5,2004
+QlikView Support Tasks - Need to Change,2015-10-30,NULL,2,2015-11-05,2015-11-05,1,8,875,NULL,26,4,5
+QlikView Support Tasks - Need to Change,2015-10-30,NULL,9,2015-11-05,2015-11-05,1,8,750,NULL,26,4,53
+Day off for thesis submission,2015-10-30,NULL,8,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+Congos Tutorials ,2015-10-30,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,30,7,48
+Saint Gobain testing differnet scenarios,2015-10-30,NULL,6,2015-11-05,2015-11-05,0,4,0,NULL,6,10,31
+Logging Template,2015-10-30,NULL,11,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Logging Template,2015-10-30,NULL,24,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Logging Template,2015-10-30,NULL,26,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Logging Template,2015-10-30,NULL,25,2015-11-05,2015-11-05,0,8,0,NULL,30,7,49
+Training SSIS,2015-10-30,NULL,4,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+SQL certification prep,2015-10-30,NULL,5,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
+Akira Linkedin Page change,2015-10-30,NULL,5,2015-11-05,2015-11-05,0,2,0,NULL,30,7,49
+Exercies on Qlikview script ,2015-10-30,NULL,13,2015-11-05,2015-11-05,0,6,0,NULL,27,10,17
+Analysis on Load time of various objects in retail qlikview report.,2015-10-30,Nikhil's,9,2015-11-05,2015-11-05,1,2,750,NULL,26,4,53
+Leave ,2015-10-30,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,16,6,10
+Changes and deployment,2015-10-30,To be invoiced in november due to Agr Budget limitation,4,2015-11-05,2015-11-05,0,6.5,40,NULL,28,12,28
+Analysing Cognos Reporting tool,2015-11-02,NULL,12,2015-11-05,2015-11-05,0,8,0,NULL,30,7,48
+Changes and deployment,2015-11-02,Carry forward from last month,4,2015-11-05,2015-11-05,1,6.5,40,NULL,28,12,28
+"Technical Design, qvd study",2015-11-02,NULL,13,2015-11-05,2015-11-05,0,8,0,NULL,27,10,17
+Testing Executive report qlikview against supply and retail,2015-11-03,Nikhil's,2,2015-11-05,2015-11-05,1,4,875,NULL,26,4,5
+"Technical Design, qvd study",2015-11-03,NULL,13,2015-11-05,2015-11-05,0,2,0,NULL,27,10,17
+Vodafone SIM Activation,2015-11-03,NULL,13,2015-11-05,2015-11-05,0,1,0,NULL,22,2,1
+Generating stock data CSVs for 2015 (jan - june),2015-10-28,NULL,21,2015-11-05,2015-11-05,1,2.5,875,NULL,26,4,5
+Decathlon (15th Sept 2015 to 15th Oct 2015),2015-10-05,NULL,15,2015-11-05,2015-11-05,1,644,43.27,NULL,1,4,59
+Tableau Certification prep ,2015-11-05,NULL,6,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
+Explaination of CPG KPIs and Mock Data prepartion ,2015-11-02,NULL,6,2015-11-05,2015-11-05,0,8,0,NULL,6,10,31
+Mock up Data Prep for CPG Dashboards ,2015-11-04,NULL,6,2015-11-05,2015-11-05,0,2,0,NULL,6,10,31
+Tableau Certification prep ,2015-11-03,NULL,6,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
+Tableau Certification prep ,2015-11-04,NULL,6,2015-11-05,2015-11-05,0,6,0,NULL,30,7,49
+Mock up Data Prep for CPG Dashboards ,2015-11-03,NULL,6,2015-11-05,2015-11-05,0,2,0,NULL,6,10,31
+Mock up Data Prep for CPG Dashboards ,2015-11-05,NULL,6,2015-11-05,2015-11-05,0,3,0,NULL,6,10,31
+"Report Issues - QA report, 7ADL report issues",2015-11-02,NULL,21,2015-11-05,2015-11-05,1,5.5,1875,NULL,18,5,51
+"Report Issues - QA report, 7ADL report and late entry issues",2015-11-03,NULL,21,2015-11-05,2015-11-05,1,3.5,1875,NULL,18,5,51
+"PI tool issue fic, formatting and report issues in 7dlb",2015-11-04,NULL,21,2015-11-05,2015-11-05,1,6,1875,NULL,18,5,51
+Apervita Stage Call and discussion,2015-11-02,NULL,21,2015-11-05,2015-11-05,1,1,1500,NULL,7,5,45
+Apervita Stage Call and discussion,2015-11-03,NULL,21,2015-11-05,2015-11-05,1,1.5,1500,NULL,7,5,45
+NULL,NULL,NULL,NULL,2015-11-05,2015-11-05,NULL,NULL,NULL,NULL,NULL,NULL,NULL
