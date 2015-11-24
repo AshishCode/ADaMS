@@ -43,10 +43,11 @@ class TimesheetController < ApplicationController
   	#method to return the timesheet of a particular employee
   	def my_index
   		
-  		if current_user.id != params[:employee_id]
+  		if current_user.id != params[:employee_id] && (['1','2','4','10','21'].include? current_user.id)
   			params[:employee_id] = current_user.id
   		else
   		end
+
   		#for inline editing part
   		if (params.has_key?(:start_date) && params.has_key?(:end_date))
 

@@ -42,6 +42,17 @@ class ReportsController < ApplicationController
 		@currencies.each {|cr|
 			@currency_names [cr.id] = cr.currency_symbol
 		}
+
+		#employee weekly report
+		if (params.has_key?(:from_date) && params.has_key?(:to_date))
+
+			@employee_report = Timesheet.select("employee_id, sum(hours), (extract(week from timesheetdate)) as week").group("employee_id, week").where("timesheetdate >= ? AND timesheetdate <= ?", params[:from_date], params[:to_date] ).order("week")
+		else
+
+			@employee_report = Timesheet.select("employee_id, sum(hours), (extract(week from timesheetdate)) as week").group("employee_id, week").where("timesheetdate >= (CURRENT_DATE - 7)  AND timesheetdate <= CURRENT_DATE").order("week")
+
+		end
+
 	end
 
 	#this private method is used to permit the form parameters and make them

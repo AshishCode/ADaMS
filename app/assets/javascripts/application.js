@@ -21,6 +21,8 @@
 //= require bootstrap-sprockets
 //= require bootstrap-table
 //= require bootstrap-table-filter
+//= require bootstrap-table-export
+//= require tableExport.min
 //= require angular
 //= require ag-grid
 //= require ui.dropdownchecklist-1.5-min

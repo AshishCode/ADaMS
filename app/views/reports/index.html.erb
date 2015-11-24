@@ -95,8 +95,15 @@
                 sums.net_payable += parseFloat(data.net_payable);
             });
 
+            //sums.net_payable = numberWithCommas(sums.net_payable);
             return sums;
          };
+
+         //function which adds commas to the numbers
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            //return x.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
 
 
         function createRowData() {
@@ -156,7 +163,10 @@
                                         '%.2f' % ((if entry.is_billed then 1 else 0 end).to_f * ((0.9 * entry.rate * entry.total_hours) + (0.14 * entry.rate * entry.total_hours))) 
                                         else
                                             '%.2f' % ((if entry.is_billed then 1 else 0 end).to_f * (0.9 * entry.rate * entry.total_hours))
-                                        end%>";
+                                        end%>";  
+
+                //row.net_payable = numberWithCommas(row.net_payable);
+              
 
             //});
             rows.push(row);
@@ -298,7 +308,8 @@
         </div>
     </div>
 </div>
-    <div class="report_div" style="display:none;">
+
+<div class="report_div" style="display:none;">
         <div>
             <table id ="reports" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="date" data-sort-order ="desc"
                 > 
@@ -370,7 +381,34 @@
                 </tbody>
                 </table>
         </div>
-    </div>
+</div>
+
+<!-- EMployee weekly hours report -->
+<div>
+    
+    <table id ="employee_report" class ="table" data-show-export="true" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
+            <thead>                         
+            <tr class="success">                          
+                <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
+                <th data-sortable="true">Employee Name</th>                
+                <th data-sortable="true">Number of Hours</th>                
+                <th data-sortable="true">Week</th>
+              </tr>
+            </thead>
+            <tbody>
+        <% @employee_report.each do |employee| %>
+          <tr>
+            <!-- <td></td> -->
+            <td><%= User.find(employee.employee_id).name%></td>
+            <td><%= employee.sum%></td>     
+            <td><%= employee.week %></td>       
+          </tr>
+        <% end %>      
+        </tbody>
+        </table> 
+</div>
+
+
 
 </body>
 <script type="text/javascript">
