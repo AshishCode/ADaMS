@@ -81,7 +81,25 @@
 									Date.today
 								end %>"/>
 					</div>
-					<input type="hidden" name="employee_id" value="<%= current_user.id%>" />
+					<% case current_user.id
+						when 1,2,4,10,21
+					%>             					
+					<div class="col-sm-3"> 
+						<label for="employee_filter_id"> Employee :</label>
+							<select name="employee_filter_id" class="form-control">
+								<%
+									@users.each { |user| if (params.has_key?(:employee_filter_id) && (user.id.to_s == params[:employee_filter_id].to_s))
+								%>
+								<option class="form-control" value="<%= user.id %>" selected><%= user.name%></option>
+								<% else
+								%>
+								<option class="form-control" value="<%= user.id %>"><%= user.name%></option>
+								<%
+								end } %>
+							</select>
+					</div>
+					<% end %>
+					<!-- <input type="hidden" name="employee_id" value="" /> -->
 					<div class="col-sm-3">
 						<button id="submit_filter" class="buttons"><i class="glyphicon glyphicon-ok"></i> </button>
 					</div>
