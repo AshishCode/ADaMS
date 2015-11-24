@@ -86,13 +86,15 @@
 					%>             					
 					<div class="col-sm-3"> 
 						<label for="employee_filter_id"> Employee :</label>
-							<select name="employee_filter_id" class="form-control">
+							<select name="employee_filter_id" class="form-control">							
 								<%
 									@users.each { |user| if (params.has_key?(:employee_filter_id) && (user.id.to_s == params[:employee_filter_id].to_s))
 								%>
 								<option class="form-control" value="<%= user.id %>" selected><%= user.name%></option>
-								<% else
+								<% elsif (user.id.to_s == params[:employee_id] && !(params.has_key?(:employee_filter_id)))
 								%>
+								<option class="form-control" value="<%= user.id %>" selected><%= user.name%></option>
+								<% else %>
 								<option class="form-control" value="<%= user.id %>"><%= user.name%></option>
 								<%
 								end } %>
