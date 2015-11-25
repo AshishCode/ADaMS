@@ -140,7 +140,10 @@
             var row =[];
                 row.item ="<%= User.find(entry.employee_id).name %>";
                 row.month = month[<%= entry.month %>];
-                row.week = "Week " + <%= entry.week %>;
+                <% if params[:report_type] == 'weekly' %>                
+                    row.week = "Week " + <%= entry.week %>;
+                <% else
+                   end %>
                 row.projects = "<%= @project.where("id" => entry.project_id).first.project_code %>";
                 row.category = "<%= client.client_name %>"
                 row.employee_name = "<%= User.find(entry.employee_id).name %>";
@@ -365,7 +368,7 @@
                        week[5] = "Week-5"
                     %>
                     <td><%= month[entry.month] %></td> 
-                    <td><%= "Week " + entry.week.to_s %></td>
+                    <td><%= "Week" %></td> <!--entry.week.to_s-->
                     <td><%= @rolez.where("id" => entry.role_id).first.role_name %></td>  
                     <td><%= entry.rate %></td> 
                     <td><%= entry.rate*entry.total_hours %></td>
