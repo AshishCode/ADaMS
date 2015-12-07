@@ -185,11 +185,6 @@
 </body>
 <script type="text/javascript">
 
-    //storing pagination
-    $("ul li").change(function(){
-        alert("yoo");
-    });
-
     //setting up the active class manually for the menu items - based on the current url
     $(document).ready(function() {
       
@@ -202,20 +197,34 @@
        $("#my_timesheet").addClass('active');
 
       if(path == "/details")
+      {
         $("#manage_details").addClass('active');
+        $("#ul_reports").hide(); 
+      }
 
-      if(path == "/reports")
-        $("#li_reports").addClass('active');
+      if(path == "/reports" || path == "/reports?reload")
+      {
+        $("#li_reports").addClass('active');        
+      }
+
+      if(path == "/reports" || path == "/reports?reload")
+      {
+          $("#ul_details").hide();      
+      }
 
 
     });
 
     $('.nav-pills').on('click', function (e) {
       //e.preventDefault();
-      if(window.location.pathname != "/details")
-        $(this).closest('ul').find('li.active').removeClass('active');
-      
+
+      var path  = window.location.pathname;
+
       $(this).closest('li').addClass('active');
+
+      //if(path != "/details" && (path != "/reports" || path != "/reports?reload"))
+        //$(this).closest('ul').find('li.active').removeClass('active');
+      
 
     });
 
@@ -223,6 +232,12 @@
 
       if(window.location.pathname != "/details")
         window.location.replace("/details");
+    });
+
+    $("#reports_menu_tab").click(function(){
+
+      //if(window.location.pathname != "/reports")
+        window.location.replace("/reports");
     });
 
     //side bar toggle
@@ -264,7 +279,7 @@
 
       var path = window.location.pathname;
 
-      if(path != "/details")
+      if(path != "/details" && path != "/reports")
         initMenu();
 
     });

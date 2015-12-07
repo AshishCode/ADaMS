@@ -45,7 +45,7 @@ class TimesheetController < ApplicationController
 
   		if current_user.id != params[:employee_id]
   			 case current_user.id
-             	when 1,2,4,10,21
+             	when 1,2,4,10,21,29
              		if (params.has_key?(:employee_filter_id))
              			params[:employee_id] = params[:employee_filter_id]
              		else

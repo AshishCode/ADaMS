@@ -10,11 +10,19 @@
                 <a href="/timesheet"><span class="fa-stack fa-lg pull-left"><i class="fa fa-table fa-stack-1x "></i></span>Akira Timesheet</a>
             </li>
             <li id="li_reports">
-                <a href="/reports"><span class="fa-stack fa-lg pull-left"><i class="fa fa-area-chart fa-stack-1x"></i></span>Reports</a>
+                <a href="/reports" id="reports_menu_tab"><span class="fa-stack fa-lg pull-left"><i class="fa fa-area-chart fa-stack-1x"></i></span>Reports</a>
+
+                <ul class="nav-pills nav-stacked" style="list-style-type:none;" role="tablist" id = "ul_reports">
+
+                    <li role="presentation" class="active"><a href="#report_tab" aria-controls="reports" role="tab" data-toggle="tab"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Project Report</a></li>
+
+                    <li role="presentation"><a href="#employee_tab" aria-controls="employees" role="tab" data-toggle="tab"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Consultant Report</a></li>                    
+
+                </ul>
             </li>
             <% 
                 case current_user.id
-                when 1,2,4,10,21  %>
+                when 1,2,4,10,21,29  %>
             <li id="manage_details">
                 <a href="/details" id = "details"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x"></i></span> Manage Details</a>
                 <!--
@@ -26,7 +34,7 @@
 
                 </ul>
                 -->
-                 <ul class="nav-pills nav-stacked" style="list-style-type:none;" role="tablist">
+                 <ul class="nav-pills nav-stacked" style="list-style-type:none;" role="tablist" id = "ul_details">
 
                     <li role="presentation" class="active"><a href="#client" aria-controls="client" role="tab" data-toggle="tab"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Clients</a></li>
 

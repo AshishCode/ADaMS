@@ -55,9 +55,19 @@ class ReportsController < ApplicationController
 		}
 
 		#employee weekly report
-		if (params.has_key?(:from_date) && params.has_key?(:to_date))
+		if (params.has_key?(:from_date_emp) && params.has_key?(:to_date_emp))
+			#removing the extra ?reload from the parameter
+			@to_date_emp = params[:to_date_emp].sub! '?reload', ''		
 
-			@employee_report = Timesheet.select("employee_id, sum(hours), (extract(week from timesheetdate)) as week").group("employee_id, week").where("timesheetdate >= ? AND timesheetdate <= ?", params[:from_date], params[:to_date] ).order("week")
+			if(params.has_key?(:is_billed_emp) && @is_billed_emp == "true")
+				@is_billed_emp = params[:is_billed_emp].sub! '?reload', ''
+				#params[:is_billed_emp] = @is_billed_emp
+				@employee_report = Timesheet.select("employee_id, sum(hours), (extract(week from timesheetdate)) as week").group("employee_id, week").where("timesheetdate >= ? AND timesheetdate <= ? AND is_billed = true", params[:from_date_emp], @to_date_emp).order("week")
+			elsif (params.has_key?(:is_billed_emp) && @is_billed_emp == "false")
+				@employee_report = Timesheet.select("employee_id, sum(hours), (extract(week from timesheetdate)) as week").group("employee_id, week").where("timesheetdate >= ? AND timesheetdate <= ? AND is_billed = false", params[:from_date_emp], @to_date_emp).order("week")
+			else				
+				@employee_report = Timesheet.select("employee_id, sum(hours), (extract(week from timesheetdate)) as week").group("employee_id, week").where("timesheetdate >= ? AND timesheetdate <= ?", params[:from_date_emp], @to_date_emp ).order("week")
+			end
 		else
 
 			@employee_report = Timesheet.select("employee_id, sum(hours), (extract(week from timesheetdate)) as week").group("employee_id, week").where("timesheetdate >= (CURRENT_DATE - 7)  AND timesheetdate <= CURRENT_DATE").order("week")

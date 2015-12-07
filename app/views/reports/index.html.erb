@@ -186,132 +186,77 @@
 </head>
 
 <body>
-<form class="form-horizontal" method="GET" action="/reports" id="filter">
-    <div class="form-group">
-        <div class="col-sm-2">
-            <label for="filter_type"> Report type :</label> <br>
 
-                <% if params[:report_type] == "monthly" %>
-                    <input id="monthly_radio" type="radio" name="report_type" required="required" value="monthly" checked="checked" /> <label for="monthly_radio">Monthly</label>
-                <%  else %>
-                    <input id="monthly_radio" type="radio" name="report_type" required="required" value="monthly" /> <label for="monthly_radio">Monthly</label>
-                <% end %>
-                <% if params[:report_type] == 'weekly' %>
-                    <input id="weekly_radio" type="radio" name="report_type" required="required" value="weekly" checked ="checked"  /> <label for="weekly_radio">Weekly</label>
-                <%  else %>
-                    <input id="weekly_radio" type="radio" name="report_type" required="required" value="weekly" /> <label for="weekly_radio">Weekly</label>
-                <% end %>
-        </div>
-        <div class="col-sm-3">
-            <label for="from_date">From :</label>
-            <input style="width:auto;" class="form-control" value="<%= if params.has_key?(:from_date)
-                                                                            params[:from_date]
-                                                                        else
-                                                                            (Date.today - 30).strftime("%m/%d/%Y") 
-                                                                        end  %>" 
-            name="from_date" id="from_date" required="required" <% if params.has_key?(:report_type) 
-                                                                    else %> 
-                                                                    disabled 
-                                                                <% end %>/>
-        </div>
-        <div class="col-sm-3">
-            <label for="to_date">To :</label>
-            <input style="width:auto;" class="form-control" value="<%= if params.has_key?(:to_date)
-                                                                            params[:to_date]
-                                                                        else
-                                                                            Date.today.strftime("%m/%d/%Y") 
-                                                                        end  %>" 
-            name="to_date" id="to_date" required="required" <% if params.has_key?(:report_type) 
-                                                                else %>
-                                                                disabled
-                                                            <% end %> />
-        </div>
-        <div class="col-sm-2">
-            <label for="is_billed">Is Billed :</label><br>
-                <% if params.has_key?(:is_billed) && params[:is_billed]=='true' %>
-                    <input type="radio" name="is_billed" value="true" checked="checked"/>
-                <% else %>
-                    <input type="radio" name="is_billed" value="true"/>
-                <% end %>
-            <label class="styled_label" for="is_billed_yes">Yes</label>&nbsp;
-                <% if params.has_key?(:is_billed) && params[:is_billed]=='false' %>
-                    <input type="radio" name="is_billed" value="false" checked="checked" />
-                <% else %>
-                    <input type="radio" name="is_billed" value="false"/>
-                <% end %>   
-            <label class="styled_label" for="is_billed_no">No</label>&nbsp;
-        </div>
-        <div class="col-sm-2">
-            <button id="submit" class="buttons" style="border-radius:100px;margin-top: 9%;"><i class="glyphicon glyphicon-ok"></i> </button>
-        </div>
-    </div>
-</form>
-<!--
-<form method="GET" action="/reports" id="filter">
-    <input style="width:auto;" class="form-control" id="from_date"  min=""/>
-    <label for="year_select">Year :</label>
-    <select name="year" id="year_select" multiple>
-                    <option  value="2015">2015</option>
-                    <option  value="2014">2014</option>
-    </select>
-    &nbsp;
-    <label for="month_select">Month :</label>
-    <select name="month" id="month_select" multiple>
-                    <option  value="1">January</option>
-                    <option  value="2">February</option>
-                    <option  value="3">March</option>
-                    <option  value="4">April</option>
-                    <option  value="5">May</option>
-                    <option  value="6">June</option>
-                    <option  value="7">July</option>
-                    <option  value="8">August</option>
-                    <option  value="9">September</option>
-                    <option  value="10">October</option>
-                    <option  value="11">November</option>
-                    <option  value="12">December</option>
+<div class="tab-content">
 
-    </select>
-    &nbsp;
-    <label for="week_select">Week :</label>
-     <select name="week" id="week_select" multiple>
-                <%  date_entry = Date.today.strftime("%Y-%m-%d")
-                    data = date_entry.split('-')
-                    days = Time.days_in_month(data[1].to_i, data[0].to_i)
-                    weeks = days/(days-(data[2].to_i))
-                    i = 1
-                    until i > weeks do
-                        
-                    %>
-                    <option  value="1">Week <%= i %></option>
-                    <% i += 1
-                    end %>
-    </select>
-    <button id="submit" class="buttons" style="border-radius:100px;"><i class="glyphicon glyphicon-ok"></i> </button>
+    <div role="tabpanel" class="tab-pane fade in active" id="report_tab">
+        <form class="form-horizontal" method="GET" action="/reports" id="filter">
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label for="filter_type"> Report type :</label> <br>
 
-</form>
-
-<br>
--->
-<!-- <div id="filter_div" class="col-sm-9">  
-    <form id ="date_filter" action="/reports %>" method="GET" class="form-horizontal">
-    <div class="form-group">
-            <div class="col-sm-9"> 
-                   
+                        <% if params[:report_type] == "monthly" %>
+                            <input id="monthly_radio" type="radio" name="report_type" required="required" value="monthly" checked="checked" /> <label for="monthly_radio">Monthly</label>
+                        <%  else %>
+                            <input id="monthly_radio" type="radio" name="report_type" required="required" value="monthly" /> <label for="monthly_radio">Monthly</label>
+                        <% end %>
+                        <% if params[:report_type] == 'weekly' %>
+                            <input id="weekly_radio" type="radio" name="report_type" required="required" value="weekly" checked ="checked"  /> <label for="weekly_radio">Weekly</label>
+                        <%  else %>
+                            <input id="weekly_radio" type="radio" name="report_type" required="required" value="weekly" /> <label for="weekly_radio">Weekly</label>
+                        <% end %>
+                </div>
+                <div class="col-sm-3">
+                    <label for="from_date">From :</label>
+                    <input style="width:auto;" class="form-control" value="<%= if params.has_key?(:from_date)
+                                                                                    params[:from_date]
+                                                                                else
+                                                                                    (Date.today - 30).strftime("%m/%d/%Y") 
+                                                                                end  %>" 
+                    name="from_date" id="from_date" required="required" <% if params.has_key?(:report_type) 
+                                                                            else %> 
+                                                                            disabled 
+                                                                        <% end %>/>
+                </div>
+                <div class="col-sm-3">
+                    <label for="to_date">To :</label>
+                    <input style="width:auto;" class="form-control" value="<%= if params.has_key?(:to_date)
+                                                                                    params[:to_date]
+                                                                                else
+                                                                                    Date.today.strftime("%m/%d/%Y") 
+                                                                                end  %>" 
+                    name="to_date" id="to_date" required="required" <% if params.has_key?(:report_type) 
+                                                                        else %>
+                                                                        disabled
+                                                                    <% end %> />
+                </div>
+                <div class="col-sm-2">
+                    <label for="is_billed">Is Billed :</label><br>
+                        <% if params.has_key?(:is_billed) && params[:is_billed]=='true' %>
+                            <input type="radio" name="is_billed" value="true" checked="checked"/>
+                        <% else %>
+                            <input type="radio" name="is_billed" value="true"/>
+                        <% end %>
+                    <label class="styled_label" for="is_billed_yes">Yes</label>&nbsp;
+                        <% if params.has_key?(:is_billed) && params[:is_billed]=='false' %>
+                            <input type="radio" name="is_billed" value="false" checked="checked" />
+                        <% else %>
+                            <input type="radio" name="is_billed" value="false"/>
+                        <% end %>   
+                    <label class="styled_label" for="is_billed_no">No</label>&nbsp;
+                </div>
+                <div class="col-sm-2">
+                    <button id="submit" class="buttons" style="border-radius:100px;margin-top: 9%;"><i class="glyphicon glyphicon-ok"></i> </button>
+                </div>
             </div>
-            <div class="col-sm-3">
+        </form>
+        <div ng-app="account">    
+            <div ng-controller="accountController" style="">
+                <div ag-grid="gridOptions" style="height: 100%; width:100%;" class="ag-blue">
+                </div>
             </div>
         </div>
-
-    </form>
-</div> -->
-<div ng-app="account">
-    
-    <div ng-controller="accountController" style="">
-        <div ag-grid="gridOptions" style="height: 100%; width:100%;" class="ag-blue">
-        </div>
     </div>
-</div>
-
 <div class="report_div" style="display:none;">
         <div>
             <table id ="reports" class ="table "data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" data-show-filter="true" data-sort-name="date" data-sort-order ="desc"
@@ -386,10 +331,51 @@
         </div>
 </div>
 
+    <div role="tabpanel" class="tab-pane fade" id="employee_tab">
 <!-- EMployee weekly hours report -->
-<div>
-    
-    <table id ="employee_report" class ="table" data-show-export="true" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
+        <form class="form-horizontal" method="GET" action="/reports" id="filter_emp">
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="from_date_emp">From :</label>
+                    <input style="width:auto;" class="form-control" value="<%= if params.has_key?(:from_date_emp)
+                                                                                    params[:from_date_emp]
+                                                                                else
+                                                                                    (Date.today - 7).strftime("%m/%d/%Y") 
+                                                                                end  %>" 
+                    name="from_date_emp" id="from_date_emp" required="required" />
+                </div>
+                <div class="col-sm-3">
+                    <label for="to_date_emp">To :</label>
+                    <input style="width:auto;" class="form-control" value="<%= if params.has_key?(:to_date_emp)
+                                                                                    params[:to_date_emp]
+                                                                                else
+                                                                                    Date.today.strftime("%m/%d/%Y") 
+                                                                                end  %>" 
+                    name="to_date_emp" id="to_date_emp" required="required" />
+                </div>
+                <div class="col-sm-3">
+                    <label for="is_billed_emp">Is Billed : <%= %></label><br>
+                        <% @billed = params[:is_billed_emp].sub! '?reload',''
+                            if params.has_key?(:is_billed_emp) && @billed=='true' %>
+                            <input type="radio" name="is_billed_emp" value="true" checked="checked"/>
+                        <% else %>
+                            <input type="radio" name="is_billed_emp" value="true"/>
+                        <% end %>
+                    <label class="styled_label" for="is_billed_emp_yes">Yes</label>&nbsp;
+                        <% if params.has_key?(:is_billed_emp) && @billed=='false' %>
+                            <input type="radio" name="is_billed_emp" value="false" checked="checked" />
+                        <% else %>
+                            <input type="radio" name="is_billed_emp" value="false"/>
+                        <% end %>   
+                    <label class="styled_label" for="is_billed_emp_no">No</label>&nbsp;
+                </div>
+                <div class="col-sm-2">
+                    <button id="submit" class="buttons" style="border-radius:100px;margin-top: 9%;"><i class="glyphicon glyphicon-ok"></i> </button>
+                </div>
+            </div>
+        </form>
+        <div id = "employee_table">    
+            <table id ="employee_report" class ="table" data-show-export="true" data-toggle="table" data-show-columns="true" data-search="true" data-pagination="true" >
             <thead>                         
             <tr class="success">                          
                 <!-- <th data-field="id" data-align="right" data-sortable="true">ID</th> -->
@@ -399,16 +385,18 @@
               </tr>
             </thead>
             <tbody>
-        <% @employee_report.each do |employee| %>
+            <% @employee_report.each do |employee| %>
           <tr>
             <!-- <td></td> -->
             <td><%= User.find(employee.employee_id).name%></td>
             <td><%= employee.sum%></td>     
             <td><%= employee.week %></td>       
           </tr>
-        <% end %>      
-        </tbody>
-        </table> 
+            <% end %>      
+            </tbody>
+            </table> 
+        </div>
+    </div>
 </div>
 
 
@@ -548,6 +536,36 @@ $( "#to_date" ).datepicker({
 
                 }
         }
+});
+//datepicker for the employee weekly report
+$( "#from_date_emp" ).datepicker({
+      changeMonth: true,//this option for allowing user to select month
+      changeYear: true, //this option for allowing user to select from year range
+      inline: true,
+      showOtherMonths: true,
+      dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      maxDate: 'today',
+      onSelect: function(dateText) {
+            //setting the minimum and maximum date in the to calendar                        
+            $("#to_date_emp").datepicker('option', 'minDate', dateText);
+        }
+    });
+
+$( "#to_date_emp" ).datepicker({
+      changeMonth: true,//this option for allowing user to select month
+      changeYear: true, //this option for allowing user to select from year range
+      inline: true,
+      showOtherMonths: true,
+      maxDate: 'today',
+      dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      onSelect: function(dateText) {                     
+            //changing the selected date to next week last date in case date is lesser than the selected from date
+            if($("#from_date_empemp").val()>dateText)
+            {
+                alert("To-Date should be greater than From-Date !");
+                $("#to_date_emp").datepicker('setDate', $("#from_date_empemp").val());            
+            }
+    }
 });
 // code for using checklist filter
 // $(document).ready(function(){
