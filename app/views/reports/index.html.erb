@@ -354,8 +354,11 @@
                     name="to_date_emp" id="to_date_emp" required="required" />
                 </div>
                 <div class="col-sm-3">
-                    <label for="is_billed_emp">Is Billed : <%= %></label><br>
-                        <% @billed = params[:is_billed_emp].sub! '?reload',''
+                    <label for="is_billed_emp">Is Billed : </label><br>
+                        <%  if params.has_key?(:is_billed_emp)
+                                @billed = params[:is_billed_emp].sub! '?reload',''
+                            else
+                            end                                
                             if params.has_key?(:is_billed_emp) && @billed=='true' %>
                             <input type="radio" name="is_billed_emp" value="true" checked="checked"/>
                         <% else %>
