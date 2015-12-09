@@ -29,15 +29,15 @@
             //{headerName: "", field: "projects",headerGroup: '', width: 120},
             //employee_details header
             //{headerName: "Employee_Name", field: "employee_name",headerGroup: 'Employee_Details', width: 120},
-            {headerName: "Total_hours", field: "total_hours",headerGroup: 'Employee_Details', width: 90},
+            {headerName: "Total_hours", field: "total_hours",headerGroup: 'Employee_Details', width: 90, cellRenderer: numberWithCommas},
             //{headerName: "Role", field: "role", headerGroup: 'Employee_Details', width: 70},
-            {headerName: "Rate", field: "rate", headerGroup: 'Employee_Details', width: 70},
+            {headerName: "Rate", field: "rate", headerGroup: 'Employee_Details', width: 70, cellRenderer: numberWithCommas},
             {headerName: "Is_Billed", field: "is_billed", headerGroup: 'Employee_Details', width: 90},
             //invoice_details header
-            {headerName: "Income", field: "income", headerGroup: 'Invoice_Details', width: 90},
-            {headerName: "Service tax(On INR Only)", field: "servicetax", headerGroup: 'Invoice_Details',width: 170},
-            {headerName: "Gross_Income", field: "gross_income", headerGroup: 'Invoice_Details', width: 110},
-            {headerName: "Net_payable", field: "net_payable", headerGroup: 'Invoice_Details', width: 90}
+            {headerName: "Income", field: "income", headerGroup: 'Invoice_Details', width: 90, cellRenderer: numberWithCommas},
+            {headerName: "Service tax(On INR Only)", field: "servicetax", headerGroup: 'Invoice_Details',width: 170, cellRenderer: numberWithCommas},
+            {headerName: "Gross_Income", field: "gross_income", headerGroup: 'Invoice_Details', width: 110, cellRenderer: numberWithCommas},
+            {headerName: "Net_payable", field: "net_payable", headerGroup: 'Invoice_Details', width: 90, cellRenderer: numberWithCommas}
         ];
 
         // function currencyRenderer(params) {
@@ -100,9 +100,18 @@
          };
 
          //function which adds commas to the numbers
-        function numberWithCommas(x) {
-            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        function numberWithCommas(params) {
+            //return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             //return x.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            if (params.value) {
+
+                return params.value.toLocaleString();
+            
+            } else {
+                
+                return null;
+            }
+
         }
 
 
