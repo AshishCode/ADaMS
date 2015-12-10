@@ -63,6 +63,8 @@ class TimesheetController < ApplicationController
 
   			if params[:end_date]>params[:start_date]
   				@timesheet = Timesheet.where("employee_id = ? AND timesheetdate BETWEEN ? AND ? ", params[:employee_id],params[:start_date], params[:end_date])
+  			elsif (params[:end_date] == params[:start_date])
+  				@timesheet = Timesheet.where("employee_id = ? AND timesheetdate = ?", params[:employee_id],params[:start_date])
   			else
   			end
   		else

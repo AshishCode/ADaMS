@@ -398,11 +398,10 @@
             </thead>
             <tbody>
             <% @employee_report.each do |employee| %>
-          <tr>
-            <!-- <td></td> -->
-            <td><%= User.find(employee.employee_id).name%></td>
-            <td><%= employee.sum%></td>     
-            <td><%= employee.week %></td>       
+          <tr>            
+            <td><%= User.find(employee.employee_id).name%></td>             
+            <td><%= employee.sum%></td>
+            <td><%= employee.week %></td>
           </tr>
             <% end %>      
             </tbody>

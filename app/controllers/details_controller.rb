@@ -4,7 +4,7 @@ class DetailsController < ApplicationController
 	def index
 		#for redirecting the user if he is not admin
 		case current_user.id
-		when 1,2,4,10,21
+		when 1,2,4,10,21,29
 			#for displaying the data in these tables
 			@clients = Client.all
 			@projects = Project.all
